@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "get in touch"
+#title: "get in touch"
 #date: 2014-01-11 18:32
 comments: false
 sharing: false

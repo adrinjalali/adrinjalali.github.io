@@ -13,7 +13,7 @@ computational biology, with the aim of hopefully getting a PhD.
 
 #### Where
 Since December 2012, I live in Saarbrücken, Germany, employed by [Max-Planck Institute for Computer Science](http://www.mpi-inf.mpg.de/)
-in [Thomas Lengauer's group](http://www.mpi-inf.mpg.de/departments/d3/index.html).
+in [Prof. Dr. Dr. Thomas Lengauer's group](http://www.mpi-inf.mpg.de/departments/d3/index.html).
 
 #### Area of research
 I use/design machine learning tools to classify samples. The datasets I work on vary from

@@ -33,3 +33,5 @@ As a result of this part of my research, I can refer you to:
 + Nima Aghaeepour, Pratip K. Chattopadhyay, Anuradha Ganesan, Kieran O'Neill, Habil Zare, Adrin Jalali, Holger H. Hoos, Mario Roederer, and Ryan R. Brinkman. "_Early immunologic correlates of HIV protection can be identified from computational analysis of complex multivariate T-cell flow cytometry assays._" Bioinformatics 28, no. 7 (2012): 1009-1016, doi: 10.1093/bioinformatics/bts082
 
 †: equal contribution
+
+__List of publications__ available on [Google Scholar](http://scholar.google.de/citations?user=DnueQgoAAAAJ&hl=en).

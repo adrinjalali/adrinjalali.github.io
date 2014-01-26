@@ -8,17 +8,18 @@ footer: true
 ---
 
 #### Mailing address
-Campus E1 4, Saarbrücken, Germany,
+Campus E1 4, Saarbrücken, Germany,<br>
 Postal Code (PLZ): 66123
 
 #### E-Mails
 * ajalali ^as-usual^ mpi-inf.mpg.de (preferred for official emails)
 * adrin.jalali ^as-usual^ gmail.com (preferred for non-official emails)
 
-#### Professional accounts
-* Linkedin: http://www.linkedin.com/in/adrinjalali
-* github: https://github.com/adrinjalali
-* oDesk: https://www.odesk.com/o/profiles/users/_~01713e8b24c3a4a243/
+#### Professional profiles
+[Linkedin](http://www.linkedin.com/in/adrinjalali),
+[github](https://github.com/adrinjalali), 
+[stackoverflow](http://stackoverflow.com/users/2536294/adrin), and
+[oDesk](https://www.odesk.com/o/profiles/users/_~01713e8b24c3a4a243/).
 
 #### Social networks
 You can find me as adrin.jalali or adrinjalali on Twitter, G+, FB and probably 

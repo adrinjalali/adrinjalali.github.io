@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'adrin'
 SITENAME = 'Adrin Jalali'
+SITE_DESCRIPTION="Anyone who knows anything of history knows that great social changes are impossible without feminine upheaval. Social progress can be measured exactly by the social position of the fair sex, the ugly ones included -- Karl Marx"
 SITEURL = 'http://adrin.info'
 #SITEURL = 'file:///.'
 
@@ -22,8 +23,9 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Jinja2', 'http://jinja.pocoo.org/'),)
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/adrinjalali'),
-          ('stackoverflow', 'http://stackoverflow.com/users/2536294/adrin'),
+SOCIAL = (('email', 'mailto:adrin.jalali@gmail.com'),
+          ('github', 'https://github.com/adrinjalali'),
+          ('stack-overflow', 'http://stackoverflow.com/users/2536294/adrin'),
           ('linkedin', 'de.linkedin.com/in/adrinjalali'),)
 
 DEFAULT_PAGINATION = 10
@@ -38,10 +40,20 @@ DISPLAY_PAGES_ON_MENU=False
 MENUITEMS=(('Get in Touch', '/pages/get-in-touch'),
            ('Curriculum Vitae', '/pages/curriculum-vitae'),)
 
-THEME="pelican-themes/pelican-bootstrap3"
+THEME="pelican-themes/pelican-elegant"
 
-PLUGIN_PATH = ['/home/adrin/html/pelican/pelican-plugins/']
-#PLUGINS = [u'disqus_static']
+PLUGIN_PATH = ['pelican-plugins']
+PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
 DISQUS_SITENAME = u'adrin'
 DISQUS_SITEURL= u'adrin.info'
 DISQUS_SHORTNAME='adrin'
+RECENT_ARTICLES_COUNT=5
+MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
+DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
+STATIC_PATHS = ['theme/images', 'images']
+TAG_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
+SITE_LICENSE='<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.'
+
+MAILCHIMP_FORM_ACTION=True

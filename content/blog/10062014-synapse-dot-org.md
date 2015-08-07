@@ -1,6 +1,7 @@
 Title: synapse.org
 Date: 2014-6-10
-
+Category: Blog
+Tags: dream-challenge
 
 I decided to actually write on this blog (decision was made this morning and is final :D ).
 

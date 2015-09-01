@@ -7,23 +7,23 @@
         <meta name="author" content="adrin" />
         <meta name="copyright" content="adrin" />
 
-        <meta name="description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date ...
+        <meta name="description" content="I was reading this article on the ethics of editing human genome and I realized there’s a missing point in there. CRISPR in short is a technology that allows us to edit our own genome. Of course it has countless number of useful applications as it’s very simply ...
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content=", misc, " />
+<meta name="keywords" content="ethics, genome, ethics, " />
 
-<meta property="og:title" content="How to Synthesize Data Perfectly Suited for Gradient Boosting Classifier "/>
-<meta property="og:url" content="http://adrin.info/drafts/how-to-synthesize-data-perfectly-suited-for-gradient-boosting-classifier.html" />
-<meta property="og:description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date ..." />
+<meta property="og:title" content="On the ethics of CRISPR "/>
+<meta property="og:url" content="http://adrin.info/on-the-ethics-of-crispr.html" />
+<meta property="og:description" content="I was reading this article on the ethics of editing human genome and I realized there’s a missing point in there. CRISPR in short is a technology that allows us to edit our own genome. Of course it has countless number of useful applications as it’s very simply ..." />
 <meta property="og:site_name" content="Adrin Jalali" />
 <meta property="og:article:author" content="adrin" />
-<meta property="og:article:published_time" content="2014-11-13T00:00:00+01:00" />
-<meta name="twitter:title" content="How to Synthesize Data Perfectly Suited for Gradient Boosting Classifier ">
-<meta name="twitter:description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date ...">
+<meta property="og:article:published_time" content="2015-09-01T00:00:00+02:00" />
+<meta name="twitter:title" content="On the ethics of CRISPR ">
+<meta name="twitter:description" content="I was reading this article on the ethics of editing human genome and I realized there’s a missing point in there. CRISPR in short is a technology that allows us to edit our own genome. Of course it has countless number of useful applications as it’s very simply ...">
 
-        <title>How to Synthesize Data Perfectly Suited for Gradient Boosting Classifier  · Adrin Jalali
+        <title>On the ethics of CRISPR  · Adrin Jalali
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -84,7 +84,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://adrin.info/drafts/how-to-synthesize-data-perfectly-suited-for-gradient-boosting-classifier.html"> How to Synthesize Data Perfectly Suited for Gradient Boosting&nbsp;Classifier  </a></h1>
+    <h1><a href="http://adrin.info/on-the-ethics-of-crispr.html"> On the ethics of <span class="caps">CRISPR</span>  </a></h1>
     </header>
 </div>
 
@@ -92,39 +92,64 @@
         <div class="span8 offset2 article-content">
 
             
-            <h3 id="background">Background</h3>
-<p>In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date, there is no reliable computational method for many hard sub-classes. Some difficulties on the way to solve this problem&nbsp;are:</p>
-<ul>
-<li>Biological processes inside cells are not deterministic and are rather&nbsp;stochastic.</li>
-<li>The number of parameters to the problem are way more than the number of sample points at hand. If you consider genes as parameters and patients as sample points from the process, the corresponding number will be 20k+ vs a few hundreds or usually even&nbsp;less.</li>
-<li>Measurements are noisy and in virtually all cases they suffer from batch effects, which is understandable considering complications of library preparation and instrument&nbsp;calibration.</li>
-</ul>
-<p>To see why these characteristics of the data makes the problem hard, it is enough to generate a large number of purely random features for small enough number of samples, and randomly label them with two classes. Then take half of the samples, train classifier models on them, and check how they perform on the unseen test data. You will see that they can easily perform with 100% accuracy on the train set, but purely random on the test&nbsp;samples.</p>
-<p>These facts all together make it almost impossible to apply methods trained on some data sets to a data set measured at a different time/place, which makes them&nbsp;unreliable.</p>
-<h4 id="data-synthesis">Data&nbsp;Synthesis</h4>
-<p>Here I will present a method to synthesize data in a binary classification scenario, and I will show how some different methods perform on the synthesized&nbsp;data. </p>
-<p>The data synthesis is based on the assumption that genes work in a network, but for simplicity we assume they work on disjoint sets of networks. We also assume the network works differently in different conditions, i.e. different cancer sub-types in this case. Then we try to find those subsets and infer corresponding Bayesian process from our data. The data synthesis can be summarized as&nbsp;bellow:</p>
-<p>=== Infer Bayesian Networks from Data ===
- - Take an arbitrary data set, in this case breast cancer from <span class="caps">TCGA</span> database;
- - Cluster features into arbitrary number of clusters;
- - Take some of these clusters, for each cluster <code>c</code>:
-   * infer a Bayesian network and its parameters from samples of the two classes (our problem is a binary classification), hence having two sets of Bayesian networks for each cluster, i.e. one set for class A and one set for class B. For each Bayesian network in class A, there is a corresponding network in class B having identical set of nodes, but different edges and&nbsp;parameters.</p>
-<p>=== Generate Random Samples ===
- - Samples include &#8220;discriminating&#8221; and &#8220;non-discriminating&#8221; features. To take a sample from class A (or B), we take a sample from Bayesian networks inferred from class A (or B), and put them together in a vector. For non-discriminating features we simply take a sample from a Gaussian distribution regardless of the class of the sample.
- - Add noise to samples:
-   * Randomly choose some of the Bayesian networks and replace their corresponding features with samples from a Gaussian regardless of the class to which the sample belongs, i.e. shutting off a whole network.
-   * Randomly choose some of the discriminating features and replace them with a sample from a Gaussian distribution regardless of the class to which the sample belongs, i.e. shutting off parts of the&nbsp;networks.</p>
-<h4 id="results">Results</h4>
+            <p><img alt="Taken from http://www.economist.com/news/leaders/21661651-new-technique-manipulating-genes-holds-great-promisebut-rules-are-needed-govern-its" src="/files/img/economist-editing-humanity.jpg" title="Credits: Economist" /></p>
+<p>I was reading <a href="http://www.economist.com/news/leaders/21661651-new-technique-manipulating-genes-holds-great-promisebut-rules-are-needed-govern-its">this article</a> on the ethics of editing human genome and I realized there&#8217;s a missing point in&nbsp;there.</p>
+<p><a href="https://en.wikipedia.org/wiki/CRISPR"><span class="caps">CRISPR</span></a> in short is a technology that allows us to edit our own genome. Of course it has countless number of useful applications as it&#8217;s very simply depicted in the above picture. But recently Chinese scientists have genetically modified human embryos (<a href="http://www.nature.com/news/chinese-scientists-genetically-modify-human-embryos-1.17378">link</a>). Fortunately there&#8217;s been some discussion going on in the community about the ethics of editing human embryo&#8217;s genome, or in general human&nbsp;genome.</p>
+<p>The question I want people to think about is: who should/will have access to this technology? Obviously this technology will be very expensive when it reaches the market. Does it mean only rich people will be able to use it? And I&#8217;m not talking about the applications which concern diseases; I&#8217;m rather talking about editing your child&#8217;s genome, to make it smarter, or stronger, or whatever you feel like&nbsp;it.</p>
+<p>We already have too much of a difference between classes in our society. This difference has been empowered partially, if not mostly, by the fact that people have been able to accumulate wealth through time and even generations. If we allow them to be the ones benefiting a technology like <span class="caps">CRISPR</span>, we will give them the power to annihilate the lower classes through&nbsp;time.</p>
+<p>One piece of good news is that some people are talking about how to regulate this sort of technology (<a href="http://www.nature.com/news/regulate-gene-editing-in-wild-animals-1.17523">link</a>). I believe we should start a conversation about who should have access to the technology. This concern is regardless of how and what we decide about ethics of the method for different applications. If we, as human species, decide not to use it at all, then nobody has access to it. But if we give it a go, then we should make sure all classes of the society have equal access to it. The least and the last we need it to have a rich sub-population with higher physical and mental&nbsp;capabilities.</p>
             
-            
+            <section>
+<div class="accordion" id="accordion2">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
+                href="http://adrin.info/on-the-ethics-of-crispr.html#disqus_thread">
+                Comments
+            </a>
+        </div>
+        <div id="disqus_thread" class="accordion-body collapse">
+            <div class="accordion-inner">
+                <div class="comments">
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'adrin';
+        var disqus_identifier = 'http://adrin.info/on-the-ethics-of-crispr.html';
+    var disqus_url = 'http://adrin.info/on-the-ethics-of-crispr.html';
+
+    (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
             <hr/>
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2014-11-13T00:00:00+01:00">Nov 13, 2014</time>
+            <time pubdate="pubdate" datetime="2015-09-01T00:00:00+02:00">Sep 1, 2015</time>
             <h4>Category</h4>
-            <a class="category-link" href="http://adrin.info/categories.html#misc-ref">misc</a>
+            <a class="category-link" href="http://adrin.info/categories.html#ethics-ref">ethics</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="http://adrin.info/tags.html#ethics-ref">ethics
+                    <span>1</span>
+</a></li>
+                <li><a href="http://adrin.info/tags.html#genome-ref">genome
+                    <span>1</span>
+</a></li>
+            </ul>
 <h4>Contact</h4>
     <a href="mailto:adrin.jalali@gmail.com" title="My email Address" class="sidebar-social-links" target="_blank">
     <i class="fa fa-envelope sidebar-social-links"></i></a>
@@ -202,7 +227,45 @@
             }
         </script>
 
-    
+            <script type="text/javascript">
+var disqus_shortname = 'adrin';
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<script  language="javascript" type="text/javascript">
+function uncollapse() {
+    if (window.location.hash.match(/^#comment-\d+$/)) {
+        $('#disqus_thread').collapse('show');
+    }
+}
+</script>
+<script type="text/javascript" language="JavaScript">
+uncollapse();
+window.onhashchange=function(){
+    if (window.location.hash.match(/^#comment-\d+$/))
+        window.location.reload(true);
+}
+</script>
+<script>
+$('#disqus_thread').on('shown', function () {
+    var link = document.getElementsByClassName('accordion-toggle');
+    var old_innerHTML = link[0].innerHTML;
+    $(link[0]).fadeOut(500, function() {
+        $(this).text('Click here to hide comments').fadeIn(500);
+    });
+    $('#disqus_thread').on('hidden', function () {
+        $(link[0]).fadeOut(500, function() {
+            $(this).text(old_innerHTML).fadeIn(500);
+        });
+    })
+})
+</script>
+
+
     </body>
     <!-- Theme: Elegant built for Pelican
     License : http://oncrashreboot.com/pelican-elegant -->

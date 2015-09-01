@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://adrin.info/index.html</loc>
-<lastmod>2015-08-07T18:19:02-00:00</lastmod>
+<lastmod>2015-09-01T14:44:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://adrin.info/archives.html</loc>
-<lastmod>2015-08-07T18:19:02-00:00</lastmod>
+<lastmod>2015-09-01T14:44:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://adrin.info/tags.html</loc>
-<lastmod>2015-08-07T18:19:02-00:00</lastmod>
+<lastmod>2015-09-01T14:44:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://adrin.info/categories.html</loc>
-<lastmod>2015-08-07T18:19:02-00:00</lastmod>
+<lastmod>2015-09-01T14:44:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -47,7 +47,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://adrin.info/</loc>
-<lastmod>2015-08-07T18:19:02-00:00</lastmod>
+<lastmod>2015-09-01T14:44:49-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://adrin.info/on-the-ethics-of-crispr.html</loc>
+<lastmod>2015-09-01T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

@@ -94,13 +94,13 @@
             
             <p>After quite a few days struggling to configure a Zimbra server so that it automatically fetches users from our freeIPA (<span class="caps">LDAP</span>) server, I finally managed to have a configuration which works. I got help from a bunch of pages like <a href="http://imanudin.net/2014/12/09/zimbra-external-ad-automatically-create-mailboxes-zimbra-with-lazy-mode-auto-provisioning/">this</a> and <a href="https://www.zimbra.com/docs/ne/8.0.2/administration_guide/wwhelp/wwhimpl/js/html/wwhelp.htm#href=ZCS_8_0_2_Admin_Guide.Auto_Provisioning_New_Accounts_from_External_LDAP.html">this</a> one. This comes after you fix the external <span class="caps">LDAP</span> authentication and probably also external <span class="caps">GAL</span> configuration on your Zimbra&nbsp;server.</p>
 <p><code>zmprov</code> gives you a nice terminal to configure the&nbsp;server:</p>
-<div class="highlight"><pre><span class="nv">$ </span>su - zimbra
-<span class="nv">$ </span>zmprov
+<div class="highlight"><pre><span></span>$ su - zimbra
+$ zmprov
 </pre></div>
 
 
 <p>This is the set of commands I used to set it&nbsp;up:</p>
-<div class="highlight"><pre>prov&gt; md mysampledomain.net zimbraAutoProvAccountNameMap &quot;uid&quot;
+<div class="highlight"><pre><span></span>prov&gt; md mysampledomain.net zimbraAutoProvAccountNameMap &quot;uid&quot;
 prov&gt; md mysampledomain.net zimbraAutoProvAttrMap &quot;givenName=givenName&quot;
 prov&gt; md mysampledomain.net +zimbraAutoProvAttrMap &quot;sn=sn&quot;
 prov&gt; md mysampledomain.net zimbraAutoProvBatchSize 80

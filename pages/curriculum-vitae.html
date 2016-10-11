@@ -120,7 +120,7 @@ function renderPDF(url, canvasContainer, options) {
         for(var num = 1; num <= pdfDoc.numPages; num++)
             pdfDoc.getPage(num).then(renderPage);
     }
-    PDFJS.disableWorker = true;
+    PDFJS.disableWorker = false;
     PDFJS.getDocument(url).then(renderPages);
 }   
 </script>

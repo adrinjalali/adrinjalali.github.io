@@ -131,7 +131,20 @@
 <p>Given a predicted normal distribution, the further the observed value is from the expected mean, the less expected it is. In other words, the larger the blue area shown in Fig. 4, the more probable it&#8217;s an&nbsp;outlier.</p>
 <p><img alt="Normal Distribution" src="/files/img/20161006-normal.png" width="40%" /></p>
 <p><em>Fig. 4: Normal distribution and three different observed values - credit:&nbsp;thefemalecelebrity.com</em></p>
-<p>The blue area shown in Fig. 4 is between 0 and 1. It is 0 if the expected value is the same as our observed value, and is close to 1 if it is the two observed and expected mean are far from each other. Let&#8217;s call this value <em>score(x)</em>.</p>
+<p>The area under the curve marked by the blue areas shown in Fig. 4 is between 0 and 1. It is 0 if the expected value is the same as our observed value, and is close to 1 if it is the two observed and expected mean are far from each other. Hereafter <em>score(x)</em> represents this area under the curve. The piece of code bellow shows how this is calculated in&nbsp;python:</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">scipy</span>
+
+<span class="k">def</span> <span class="nf">phi</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mf">0.5</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">scipy</span><span class="o">.</span><span class="n">special</span><span class="o">.</span><span class="n">erf</span><span class="p">(</span><span class="n">x</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="nb">abs</span><span class="p">(</span><span class="n">phi</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">phi</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="p">))</span>
+
+<span class="n">x_score</span> <span class="o">=</span> <span class="n">score</span><span class="p">((</span><span class="n">x</span> <span class="o">-</span> <span class="n">expected_mean</span><span class="p">)</span> <span class="o">/</span> <span class="n">expected_std</span><span class="p">)</span>
+</pre></div>
+
+
 <p>Now for a moment, assume we know a given data point (number of sessions) is influenced by a <span class="caps">TV</span>-ad. Still not all those sessions are because of the event. Some of them would have been there even with no <span class="caps">TV</span>-ad event. We take the predicted mean as the background session count, and the rest as <span class="caps">TV</span>-ad influenced sessions. Therefore, if <em>x</em> is observed value, and <em>x&#8217;</em> is predicted value, <em>(x - x&#8217;) / x</em> is the portion of sessions attributed to a <span class="caps">TV</span>-ad&nbsp;event.</p>
 <p>At the end, we take <em>score(x) * (x - x&#8217;) / x</em> as the likelihood of each session being attributed to a <span class="caps">TV</span>-ad.</p>
 <h3 id="implementation-and-results">Implementation and&nbsp;Results</h3>

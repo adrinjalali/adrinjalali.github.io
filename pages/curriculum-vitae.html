@@ -7,7 +7,7 @@
         <meta name="author" content="adrin" />
         <meta name="copyright" content="adrin" />
 
-        <meta name="description" content="CV Contact Information Max-Plank Institute for Computer Science Campus E1 4 66123, Saarbrücken, Germany E-Mail: ajalali ^as-usual^ mpi-inf.mpg.de Research Interests Computational Biology, Machine Learning, Data Mining, Optimization, Graph Theory, Combinatorics, Algorithm Design. Education Max-Plank Institute for Computer Science, Saarbrücken, Germany Ph.D., Computational Biology and Applied Algorithmics, Dec ...
+        <meta name="description" content="function renderPDF(url, canvasContainer, options) { var options = options || { scale: 1 }; function renderPage(page) { var viewport = page.getViewport(options.scale); var canvas = document.createElement(&#39;canvas&#39;); var ctx = canvas.getContext(&#39;2d&#39;); var renderContext = { canvasContext: ctx, viewport: viewport }; canvas.height = viewport.height; canvas.width = viewport.width; canvasContainer.appendChild(canvas); page.render(renderContext); } function ...
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
@@ -15,12 +15,12 @@
 
 <meta property="og:title" content="Curriculum Vitae "/>
 <meta property="og:url" content="http://adrin.info/pages/curriculum-vitae.html" />
-<meta property="og:description" content="CV Contact Information Max-Plank Institute for Computer Science Campus E1 4 66123, Saarbrücken, Germany E-Mail: ajalali ^as-usual^ mpi-inf.mpg.de Research Interests Computational Biology, Machine Learning, Data Mining, Optimization, Graph Theory, Combinatorics, Algorithm Design. Education Max-Plank Institute for Computer Science, Saarbrücken, Germany Ph.D., Computational Biology and Applied Algorithmics, Dec ..." />
+<meta property="og:description" content="function renderPDF(url, canvasContainer, options) { var options = options || { scale: 1 }; function renderPage(page) { var viewport = page.getViewport(options.scale); var canvas = document.createElement(&#39;canvas&#39;); var ctx = canvas.getContext(&#39;2d&#39;); var renderContext = { canvasContext: ctx, viewport: viewport }; canvas.height = viewport.height; canvas.width = viewport.width; canvasContainer.appendChild(canvas); page.render(renderContext); } function ..." />
 <meta property="og:site_name" content="Adrin Jalali" />
 <meta property="og:article:author" content="adrin" />
 <meta property="og:article:published_time" content="2014-01-12T13:00:00+01:00" />
 <meta name="twitter:title" content="Curriculum Vitae ">
-<meta name="twitter:description" content="CV Contact Information Max-Plank Institute for Computer Science Campus E1 4 66123, Saarbrücken, Germany E-Mail: ajalali ^as-usual^ mpi-inf.mpg.de Research Interests Computational Biology, Machine Learning, Data Mining, Optimization, Graph Theory, Combinatorics, Algorithm Design. Education Max-Plank Institute for Computer Science, Saarbrücken, Germany Ph.D., Computational Biology and Applied Algorithmics, Dec ...">
+<meta name="twitter:description" content="function renderPDF(url, canvasContainer, options) { var options = options || { scale: 1 }; function renderPage(page) { var viewport = page.getViewport(options.scale); var canvas = document.createElement(&#39;canvas&#39;); var ctx = canvas.getContext(&#39;2d&#39;); var renderContext = { canvasContext: ctx, viewport: viewport }; canvas.height = viewport.height; canvas.width = viewport.width; canvasContainer.appendChild(canvas); page.render(renderContext); } function ...">
 
         <title>Curriculum Vitae  · Adrin Jalali
 </title>
@@ -90,7 +90,50 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
 
-            <p><a href="/files/lymphoma_poster.pdf"><span class="caps">CV</span></a></p>
+            <p><html>
+<body></p>
+<!-- really dirty! this is just a test drive ;) -->
+
+<script type="text/javascript" src="https://raw.github.com/mozilla/pdf.js/gh-pages/build/pdf.js"></script>
+
+<script type="text/javascript">
+function renderPDF(url, canvasContainer, options) {
+    var options = options || { scale: 1 };
+
+    function renderPage(page) {
+        var viewport = page.getViewport(options.scale);
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        canvasContainer.appendChild(canvas);
+
+        page.render(renderContext);
+    }
+
+    function renderPages(pdfDoc) {
+        for(var num = 1; num <= pdfDoc.numPages; num++)
+            pdfDoc.getPage(num).then(renderPage);
+    }
+    PDFJS.disableWorker = true;
+    PDFJS.getDocument(url).then(renderPages);
+}   
+</script>
+
+<div id="holder"></div>
+
+<script type="text/javascript">
+renderPDF('/files/lymphoma_poster.pdf', document.getElementById('holder'));
+</script>
+
+<p></body>
+</html></p>
+<p><a href="/files/lymphoma_poster.pdf"><span class="caps">CV</span></a></p>
 <h2 id="contact-information">Contact&nbsp;Information</h2>
 <p><a href="http://www.mpi-inf.mpg.de/">Max-Plank Institute for Computer Science</a><br>
 Campus E1 4<br>
@@ -121,13 +164,13 @@ E-Mail: ajalali ^as-usual^&nbsp;mpi-inf.mpg.de</p>
 </ul>
 <h2 id="publications">Publications</h2>
 <ul>
-<li>O&#8217;Neill K.†, Jalali A.†, Aghaeepour N.†, Hoos H. H., and Brinkman R. R., &#8220;<em>Enhanced flowType/RchyOptimyx: A Bioconductor pipeline for discovery in high-dimensional cytometry data.</em>&#8221; Bioinformatics (2014), doi:&nbsp;10.1093/bioinformatics/btt770</li>
-<li>Aghaeepour N.†, Jalali A.†, O&#8217;Neill K., Chattopadhyay P. K., Roederer M., Hoos H. H., and Brinkman R. R., &#8220;<em>RchyOptimyx: Cellular hierarchy optimization for flow cytometry.</em>&#8221; Cytometry Part A 81, no. 12 (2012): 1022-1030, doi:&nbsp;10.1002/cyto.a.22209</li>
-<li>Aghaeepour N., Chattopadhyay P. K., Ganesan A., O&#8217;Neill K., Zare H., Jalali A., Hoos H. H., Roederer M., and Brinkman R. R., &#8220;<em>Early immunologic correlates of <span class="caps">HIV</span> protection can be identified from computational analysis of complex multivariate T-cell flow cytometry assays.</em>&#8221; Bioinformatics 28, no. 7 (2012): 1009-1016, doi:&nbsp;10.1093/bioinformatics/bts082</li>
-<li>Rezaei Farzaneh†, Jalali Adrin†, and Memarian H, &#8220;<em>Estimation of Compressional and Shear Wave Velocities using Adaptive Neuro-Fuzzy Inference System, in some of dam sites in south west of Iran</em>&#8220;,  Journal of the Earth, Tehran, Iran,&nbsp;2009.</li>
-<li>Behsaz B., Jalali A., Janzadeh H, Jouyandeh <span class="caps">MR</span>., Molazem F., Rahimi A., Salehi A., and Tavakoli Ghinani M, &#8220;<em>Team Description of <span class="caps">S.O.S.</span> 2005</em>&#8220;, In Proceedings <span class="caps">CD</span> RoboCup 2005, Osaka, Japan,&nbsp;2005. </li>
-<li>Tashakori M., Jalali A., Jooyandeh <span class="caps">MR</span>., Gholami A., Behzadian A., Ghasemloo K., and Esfahbod B., &#8220;<em>Rayan Team Strategy Description</em>&#8220;, In Proceedings <span class="caps">CD</span> RoboCup 2004, Lisboa, Portugal,&nbsp;2004.</li>
-<li>Shiri <span class="caps">ME</span>., Jalali A., Jooyandeh <span class="caps">MR</span>., Roshandel Tavana R, and Behzadi M., &#8220;<em>AUTRescue Team Strategy Description</em>&#8220;, In Proceedings <span class="caps">CD</span> RoboCup 2003, Springer-Verlag, Padova, Italy,&nbsp;2003. </li>
+<li>O'Neill K.†, Jalali A.†, Aghaeepour N.†, Hoos H. H., and Brinkman R. R., "<em>Enhanced flowType/RchyOptimyx: A Bioconductor pipeline for discovery in high-dimensional cytometry data.</em>" Bioinformatics (2014), doi:&nbsp;10.1093/bioinformatics/btt770</li>
+<li>Aghaeepour N.†, Jalali A.†, O'Neill K., Chattopadhyay P. K., Roederer M., Hoos H. H., and Brinkman R. R., "<em>RchyOptimyx: Cellular hierarchy optimization for flow cytometry.</em>" Cytometry Part A 81, no. 12 (2012): 1022-1030, doi:&nbsp;10.1002/cyto.a.22209</li>
+<li>Aghaeepour N., Chattopadhyay P. K., Ganesan A., O'Neill K., Zare H., Jalali A., Hoos H. H., Roederer M., and Brinkman R. R., "<em>Early immunologic correlates of <span class="caps">HIV</span> protection can be identified from computational analysis of complex multivariate T-cell flow cytometry assays.</em>" Bioinformatics 28, no. 7 (2012): 1009-1016, doi:&nbsp;10.1093/bioinformatics/bts082</li>
+<li>Rezaei Farzaneh†, Jalali Adrin†, and Memarian H, "<em>Estimation of Compressional and Shear Wave Velocities using Adaptive Neuro-Fuzzy Inference System, in some of dam sites in south west of Iran</em>",  Journal of the Earth, Tehran, Iran,&nbsp;2009.</li>
+<li>Behsaz B., Jalali A., Janzadeh H, Jouyandeh <span class="caps">MR</span>., Molazem F., Rahimi A., Salehi A., and Tavakoli Ghinani M, "<em>Team Description of <span class="caps">S.O.S.</span> 2005</em>", In Proceedings <span class="caps">CD</span> RoboCup 2005, Osaka, Japan,&nbsp;2005. </li>
+<li>Tashakori M., Jalali A., Jooyandeh <span class="caps">MR</span>., Gholami A., Behzadian A., Ghasemloo K., and Esfahbod B., "<em>Rayan Team Strategy Description</em>", In Proceedings <span class="caps">CD</span> RoboCup 2004, Lisboa, Portugal,&nbsp;2004.</li>
+<li>Shiri <span class="caps">ME</span>., Jalali A., Jooyandeh <span class="caps">MR</span>., Roshandel Tavana R, and Behzadi M., "<em>AUTRescue Team Strategy Description</em>", In Proceedings <span class="caps">CD</span> RoboCup 2003, Springer-Verlag, Padova, Italy,&nbsp;2003. </li>
 </ul>
 <p>†: equal&nbsp;contribution</p>
 <h2 id="researchprofessional-experience">Research/Professional&nbsp;Experience</h2>
@@ -159,7 +202,7 @@ and important cell populations in differentiating those clusters are&nbsp;identi
 </ul>
 </li>
 <li>Operational intelligence - Project Manager<ul>
-<li>Predict terminal type of next user&#8217;s transaction using transaction history of the&nbsp;user.</li>
+<li>Predict terminal type of next user's transaction using transaction history of the&nbsp;user.</li>
 <li>Soft cluster users according to their fuzzified action times and detect abnormal changes in cluster membership&nbsp;values.</li>
 <li>Build a graph model to predict geographical position of terminals using transaction&nbsp;history.</li>
 </ul>

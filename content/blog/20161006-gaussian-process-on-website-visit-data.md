@@ -1,9 +1,7 @@
-Title: A Gaussian Process Model on Website Visit Data
+Title: TV-ad Attribution, Gaussian Processes
 Date: 2016-10-06
-Status: draft
-
-%Tags: gaussian-processes, anomaly-detection
-%Category: machine-learning
+Tags: gaussian-processes, attribution
+Category: machine-learning
 
 
 ### Problem description:
@@ -57,7 +55,20 @@ Given a predicted normal distribution, the further the observed value is from th
 
 *Fig. 4: Normal distribution and three different observed values - credit: thefemalecelebrity.com*
 
-The blue area shown in Fig. 4 is between 0 and 1. It is 0 if the expected value is the same as our observed value, and is close to 1 if it is the two observed and expected mean are far from each other. Let's call this value *score(x)*.
+The area under the curve marked by the blue areas shown in Fig. 4 is between 0 and 1. It is 0 if the expected value is the same as our observed value, and is close to 1 if it is the two observed and expected mean are far from each other. Hereafter *score(x)* represents this area under the curve. The piece of code bellow shows how this is calculated in python:
+
+```
+import math
+import scipy
+
+def phi(x):
+    return 0.5 + 0.5 * scipy.special.erf(x / math.sqrt(2))
+
+def score(x):
+    return 1 - abs(phi(x) - phi(-x))
+
+x_score = score((x - expected_mean) / expected_std)
+```
 
 Now for a moment, assume we know a given data point (number of sessions) is influenced by a TV-ad. Still not all those sessions are because of the event. Some of them would have been there even with no TV-ad event. We take the predicted mean as the background session count, and the rest as TV-ad influenced sessions. Therefore, if *x* is observed value, and *x'* is predicted value, *(x - x') / x* is the portion of sessions attributed to a TV-ad event.
 

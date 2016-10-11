@@ -3,12 +3,8 @@ URL:
 save_as: index.html
 
 #### Who
-You are surfing _Adrin Jalali_'s page, who is currently doing research in the field of 
-computational biology, with the aim of hopefully getting a PhD.
-
-#### Where
-Since December 2012, I live in Saarbrücken, Germany, employed by [Max-Planck Institute for Computer Science](http://www.mpi-inf.mpg.de/)
-in [Prof. Dr. Dr. Thomas Lengauer's group](http://www.mpi-inf.mpg.de/departments/d3/index.html).
+You are surfing _Adrin Jalali_'s page, who works as a data scientist/engineer
+and has spent his PhD (not finished yet) doing research in the field of Computational Biology.
 
 #### Area of research
 I use/design machine learning tools to classify samples. The datasets I work on vary from
@@ -19,6 +15,7 @@ directly uses or is inspired by the biological networks, classifies my samples, 
 can be interpreted on the biological level.
 
 + \[[__Poster__](files/svm_nick_poster.pdf)\] Adrin Jalali, Nico Pfeifer, "_Analyzing How Protein Interaction Networks Improve Classification Performance in Gene Expression Data Analysis_", ISMB/ECCB 2013, Berlin, Germany.
++ Jalali A., and Pfeifer N., "_Interpretable per Case Weighted Ensemble Method for Cancer Associations_", BMC Genomics, volume 17, no. 1, 2016.
 
 
 I also worked on flow-cytometry data which is a single cell level data. I did it mostly

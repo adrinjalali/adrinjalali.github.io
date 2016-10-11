@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="http://adrin.info/" rel="alternate"></link><link href="http://adrin.info/feeds/misc.atom.xml" rel="self"></link><id>http://adrin.info/</id><updated>2016-10-06T00:00:00+02:00</updated><entry><title>TV-ad Attribution, Gaussian Processes</title><link href="http://adrin.info/tv-ad-attribution-gaussian-processes.html" rel="alternate"></link><published>2016-10-06T00:00:00+02:00</published><updated>2016-10-06T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2016-10-06:tv-ad-attribution-gaussian-processes.html</id><summary type="html">&lt;p&gt;%Status: draft
-Tags: gaussian-processes, attribution
-Category:&amp;nbsp;machine-learning&lt;/p&gt;
-&lt;h3 id="problem-description"&gt;Problem&amp;nbsp;description:&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="http://adrin.info/" rel="alternate"></link><link href="http://adrin.info/feeds/machine-learning.atom.xml" rel="self"></link><id>http://adrin.info/</id><updated>2016-10-06T00:00:00+02:00</updated><entry><title>TV-ad Attribution, Gaussian Processes</title><link href="http://adrin.info/tv-ad-attribution-gaussian-processes.html" rel="alternate"></link><published>2016-10-06T00:00:00+02:00</published><updated>2016-10-06T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2016-10-06:tv-ad-attribution-gaussian-processes.html</id><summary type="html">&lt;h3 id="problem-description"&gt;Problem&amp;nbsp;description:&lt;/h3&gt;
 &lt;p&gt;This work was done in &lt;a href="https://corporate.misterspex.com/en/"&gt;Mister Spex GmbH&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about &lt;span class="caps"&gt;TV&lt;/span&gt;-ads shown to the public requested by the company. The question is, which of those sessions on the website are there because of the &lt;span class="caps"&gt;TV&lt;/span&gt;-ads.&lt;/p&gt;
 &lt;p&gt;There are some obstacles to answer the above&amp;nbsp;question:&lt;/p&gt;
@@ -1453,4 +1450,4 @@ m.optimize()
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;em&gt;Table 1: A piece of output of the&amp;nbsp;method&lt;/em&gt;&lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;&lt;em&gt;Table 1: A piece of output of the&amp;nbsp;method&lt;/em&gt;&lt;/p&gt;</summary><category term="gaussian-processes"></category><category term="attribution"></category></entry></feed>

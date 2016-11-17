@@ -5,7 +5,7 @@ Category: machine-learning
 
 
 ### Problem description:
-This work was done in [Mister Spex GmbH](https://corporate.misterspex.com/en/).
+This work was done in [Mister Spex GmbH](https://corporate.misterspex.com/en/), and slides of a presentation I gave at [PyData meetup](https://www.meetup.com/PyData-Berlin/events/235347104/) are available now [here](/files/tv-gp-pydata-presentation.pdf).
 
 There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about TV-ads shown to the public requested by the company. The question is, which of those sessions on the website are there because of the TV-ads.
 

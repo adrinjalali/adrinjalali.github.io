@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>Adrin Jalali</title><link>http://adrin.info/</link><description></description><lastBuildDate>Thu, 06 Oct 2016 00:00:00 +0200</lastBuildDate><item><title>TV-ad Attribution, Gaussian Processes</title><link>http://adrin.info/tv-ad-attribution-gaussian-processes.html</link><description>&lt;h3 id="problem-description"&gt;Problem&amp;nbsp;description:&lt;/h3&gt;
-&lt;p&gt;This work was done in &lt;a href="https://corporate.misterspex.com/en/"&gt;Mister Spex GmbH&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This work was done in &lt;a href="https://corporate.misterspex.com/en/"&gt;Mister Spex GmbH&lt;/a&gt;, and slides of a presentation I gave at &lt;a href="https://www.meetup.com/PyData-Berlin/events/235347104/"&gt;PyData meetup&lt;/a&gt; are available now &lt;a href="/files/tv-gp-pydata-presentation.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about &lt;span class="caps"&gt;TV&lt;/span&gt;-ads shown to the public requested by the company. The question is, which of those sessions on the website are there because of the &lt;span class="caps"&gt;TV&lt;/span&gt;-ads.&lt;/p&gt;
 &lt;p&gt;There are some obstacles to answer the above&amp;nbsp;question:&lt;/p&gt;
 &lt;ul&gt;

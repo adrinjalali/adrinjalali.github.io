@@ -7,7 +7,7 @@
         <meta name="author" content="adrin" />
         <meta name="copyright" content="adrin" />
 
-        <meta name="description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date ...
+        <meta name="description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date …
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
@@ -16,12 +16,12 @@
 
 <meta property="og:title" content="How to Synthesize Data Perfectly Suited for Gradient Boosting Classifier "/>
 <meta property="og:url" content="http://adrin.info/drafts/how-to-synthesize-data-perfectly-suited-for-gradient-boosting-classifier.html" />
-<meta property="og:description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date ..." />
+<meta property="og:description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date …" />
 <meta property="og:site_name" content="Adrin Jalali" />
 <meta property="og:article:author" content="adrin" />
 <meta property="og:article:published_time" content="2014-11-13T00:00:00+01:00" />
 <meta name="twitter:title" content="How to Synthesize Data Perfectly Suited for Gradient Boosting Classifier ">
-<meta name="twitter:description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date ...">
+<meta name="twitter:description" content="Background In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date …">
 
         <title>How to Synthesize Data Perfectly Suited for Gradient Boosting Classifier  · Adrin Jalali
 </title>
@@ -92,7 +92,7 @@
         <div class="span8 offset2 article-content">
 
             
-            <h3 id="background">Background</h3>
+            <h3>Background</h3>
 <p>In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date, there is no reliable computational method for many hard sub-classes. Some difficulties on the way to solve this problem&nbsp;are:</p>
 <ul>
 <li>Biological processes inside cells are not deterministic and are rather&nbsp;stochastic.</li>
@@ -101,7 +101,7 @@
 </ul>
 <p>To see why these characteristics of the data makes the problem hard, it is enough to generate a large number of purely random features for small enough number of samples, and randomly label them with two classes. Then take half of the samples, train classifier models on them, and check how they perform on the unseen test data. You will see that they can easily perform with 100% accuracy on the train set, but purely random on the test&nbsp;samples.</p>
 <p>These facts all together make it almost impossible to apply methods trained on some data sets to a data set measured at a different time/place, which makes them&nbsp;unreliable.</p>
-<h4 id="data-synthesis">Data&nbsp;Synthesis</h4>
+<h4>Data&nbsp;Synthesis</h4>
 <p>Here I will present a method to synthesize data in a binary classification scenario, and I will show how some different methods perform on the synthesized&nbsp;data. </p>
 <p>The data synthesis is based on the assumption that genes work in a network, but for simplicity we assume they work on disjoint sets of networks. We also assume the network works differently in different conditions, i.e. different cancer sub-types in this case. Then we try to find those subsets and infer corresponding Bayesian process from our data. The data synthesis can be summarized as&nbsp;bellow:</p>
 <p>=== Infer Bayesian Networks from Data ===
@@ -114,7 +114,7 @@
  - Add noise to samples:
    * Randomly choose some of the Bayesian networks and replace their corresponding features with samples from a Gaussian regardless of the class to which the sample belongs, i.e. shutting off a whole network.
    * Randomly choose some of the discriminating features and replace them with a sample from a Gaussian distribution regardless of the class to which the sample belongs, i.e. shutting off parts of the&nbsp;networks.</p>
-<h4 id="results">Results</h4>
+<h4>Results</h4>
             
             
             <hr/>
@@ -136,6 +136,16 @@
     <i class="fa fa-linkedin sidebar-social-links"></i></a>
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="http://adrin.info/archives.html">all posts</a></h4>
         <div class="recent-posts">
+            <article>
+                <a href="http://adrin.info/clue-wattx-hackathon.html">Clue-WATTx&nbsp;Hackathon  </a>
+                <section>
+                    posted in
+                <a href="http://adrin.info/categories.html#machine-learning-ref">machine-learning</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2017-04-02T00:00:00+02:00">Sun 02 April 2017</time>
+                </div>
+                </section>
+            </article>
             <article>
                 <a href="http://adrin.info/tv-ad-attribution-gaussian-processes.html"><span class="caps">TV</span>-ad Attribution, Gaussian&nbsp;Processes  </a>
                 <section>

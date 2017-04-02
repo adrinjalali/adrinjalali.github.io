@@ -7,7 +7,7 @@
         <meta name="author" content="adrin" />
         <meta name="copyright" content="adrin" />
 
-        <meta name="description" content="Problem description: This work was done in Mister Spex GmbH, and slides of a presentation I gave at PyData meetup are available now here. There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about TV-ads ...
+        <meta name="description" content="Problem description: This work was done in Mister Spex GmbH, and slides of a presentation I gave at PyData meetup are available now here. There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about TV-ads …
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
@@ -16,12 +16,12 @@
 
 <meta property="og:title" content="TV-ad Attribution, Gaussian Processes "/>
 <meta property="og:url" content="http://adrin.info/tv-ad-attribution-gaussian-processes.html" />
-<meta property="og:description" content="Problem description: This work was done in Mister Spex GmbH, and slides of a presentation I gave at PyData meetup are available now here. There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about TV-ads ..." />
+<meta property="og:description" content="Problem description: This work was done in Mister Spex GmbH, and slides of a presentation I gave at PyData meetup are available now here. There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about TV-ads …" />
 <meta property="og:site_name" content="Adrin Jalali" />
 <meta property="og:article:author" content="adrin" />
 <meta property="og:article:published_time" content="2016-10-06T00:00:00+02:00" />
 <meta name="twitter:title" content="TV-ad Attribution, Gaussian Processes ">
-<meta name="twitter:description" content="Problem description: This work was done in Mister Spex GmbH, and slides of a presentation I gave at PyData meetup are available now here. There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about TV-ads ...">
+<meta name="twitter:description" content="Problem description: This work was done in Mister Spex GmbH, and slides of a presentation I gave at PyData meetup are available now here. There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about TV-ads …">
 
         <title>TV-ad Attribution, Gaussian Processes  · Adrin Jalali
 </title>
@@ -92,7 +92,7 @@
         <div class="span8 offset2 article-content">
 
             
-            <h3 id="problem-description">Problem&nbsp;description:</h3>
+            <h3>Problem&nbsp;description:</h3>
 <p>This work was done in <a href="https://corporate.misterspex.com/en/">Mister Spex GmbH</a>, and slides of a presentation I gave at <a href="https://www.meetup.com/PyData-Berlin/events/235347104/">PyData meetup</a> are available now <a href="/files/tv-gp-pydata-presentation.pdf">here</a>.</p>
 <p>There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about <span class="caps">TV</span>-ads shown to the public requested by the company. The question is, which of those sessions on the website are there because of the <span class="caps">TV</span>-ads.</p>
 <p>There are some obstacles to answer the above&nbsp;question:</p>
@@ -112,22 +112,22 @@
 </ul>
 </li>
 </ul>
-<h3 id="prepare-the-data">Prepare the&nbsp;data</h3>
+<h3>Prepare the&nbsp;data</h3>
 <p>We reduce the granularity of the data and aggregate it by minute. As a result, we have session count per minute, and the time of (<span class="caps">TV</span>-ad) events by minute. This results in a time series data having some points on it labeled by our&nbsp;events.</p>
 <p>One way to see if the events have had an influence on our traffic, is to forget about those events, detect anomalies on our time series data, and see if they&#8217;ve happened around those events. I&#8217;ve used some of those methods in other projects, and they don&#8217;t make me happy on this data. They either detect wrong signals as anomalies, or miss some not so obvious&nbsp;signals.</p>
 <p>Before going further, let&#8217;s look at the data. Fig. 1 illustrates a week worth of data. The <em>X</em> axis represents time (1 for each minute), and the <em>Y</em> axis shows the normalized session count. The data is normalized as <em>X / median(X)</em> simply to anonymize the actual session counts, since the actual numbers are irrelevant to this&nbsp;article.</p>
-<p><img alt="A week" src="/files/img/20161006-week.png" title="A week" /></p>
+<p><img alt="A week" src="/files/img/20161006-week.png" title="A week"></p>
 <p><em>Fig. 1: Normalized session count for a&nbsp;week</em></p>
 <p>Some of those sharp peaks are right after a <span class="caps">TV</span>-ad event. Field knowledge says most of the traffic caused by a <span class="caps">TV</span>-ad comes up to 8 minutes after the event. I take precaution, and assume some error in reported time of the event. Now let&#8217;s remove any reported session from 2 minutes before the event, to 20 minutes after the event. Fig. 2 and 3 show one day of the data, before and after removing data around reported&nbsp;events.</p>
-<p><img alt="A week" src="/files/img/20161006-day.png" title="A day" /></p>
+<p><img alt="A week" src="/files/img/20161006-day.png" title="A day"></p>
 <p><em>Fig. 2: Normalized session count for a&nbsp;day</em></p>
-<p><img alt="A week" src="/files/img/20161006-day-afterremoval.png" title="A week" /></p>
+<p><img alt="A week" src="/files/img/20161006-day-afterremoval.png" title="A week"></p>
 <p><em>Fig. 3: Normalized session count for a day, after removing data around reported&nbsp;events</em></p>
-<h3 id="method">Method</h3>
+<h3>Method</h3>
 <p>Intuitively speaking, I would like to remove the parts of the data close to the given events, fit a model to the remaining data, and then see how close the observed data is to the model&#8217;s predictions. If the observed values are significantly higher than the predicted values, most probably some of those sessions are because of the&nbsp;event.</p>
 <p>Given an observed and predicted values, deciding whether or not the observed value is <em>significantly</em> larger, can be tricky, and in some cases very arbitrary. Using a method which gives you the probability of an observed value at a given input would make the process much easier. One way of achieving such a goal is to have a method which, intuitively speaking, tells you what it thinks the predicted value is, and also how confident it is. A Gaussian Process (<span class="caps">GP</span>) is such a model, in a way that it gives a normal distribution at a given input point as the output. This predicted output has a mean and a variance, which we use to see how probable a given observation is, under the assumption that the model correctly describes the&nbsp;data.</p>
 <p>Given a predicted normal distribution, the further the observed value is from the expected mean, the less expected it is. In other words, the larger the blue area shown in Fig. 4, the more probable it&#8217;s an&nbsp;outlier.</p>
-<p><img alt="Normal Distribution" src="/files/img/20161006-normal.png" width="40%" /></p>
+<p><img alt="Normal Distribution" src="/files/img/20161006-normal.png" width="40%"></p>
 <p><em>Fig. 4: Normal distribution and three different observed values - credit:&nbsp;thefemalecelebrity.com</em></p>
 <p>The area under the curve marked by the blue areas shown in Fig. 4 is between 0 and 1. It is 0 if the expected value is the same as our observed value, and is close to 1 if it is the two observed and expected mean are far from each other. Hereafter <em>score(x)</em> represents this area under the curve. The piece of code bellow shows how this is calculated in&nbsp;python:</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -145,7 +145,7 @@
 
 <p>Now for a moment, assume we know a given data point (number of sessions) is influenced by a <span class="caps">TV</span>-ad. Still not all those sessions are because of the event. Some of them would have been there even with no <span class="caps">TV</span>-ad event. We take the predicted mean as the background session count, and the rest as <span class="caps">TV</span>-ad influenced sessions. Therefore, if <em>x</em> is observed value, and <em>x&#8217;</em> is predicted value, <em>(x - x&#8217;) / x</em> is the portion of sessions attributed to a <span class="caps">TV</span>-ad&nbsp;event.</p>
 <p>At the end, we take <em>score(x) * (x - x&#8217;) / x</em> as the likelihood of each session being attributed to a <span class="caps">TV</span>-ad.</p>
-<h3 id="implementation-and-results">Implementation and&nbsp;Results</h3>
+<h3>Implementation and&nbsp;Results</h3>
 <p>I used <em>Python3</em>, <em>matplotlib</em> to generate the plots, and <em>GPy</em> to train the Gaussian Process&nbsp;model.</p>
 <p>There are at least two ways of fitting and using GPs in our setting. One is to train a really nice model using the historical data, and use the saved trained model to get predictions for future data.
 By looking at the data, I would sum these three kernels and optimize on the&nbsp;data:</p>
@@ -174,7 +174,7 @@ m.optimize()
 
 
 <p>In the above code, <code>Xtr</code> and <code>ytr</code> are the input/output vectors respectively. The <code>Xtr</code> is a sequence of integers representing the minute distance from where the data started, and <code>ytr</code> is the normalized number of sessions for that minute. This results in a model depicted in Fig. 5. The blue gradient represents the variance of the expected output, showing the expected value should be somewhere in the blue region. Please note that we&#8217;re only interested in the regions inside the data, and not the region outside the data&nbsp;range.</p>
-<p><img alt="Trained GP" src="/files/img/20161006-GP.png" title="Trained Gaussian Process Model" /></p>
+<p><img alt="Trained GP" src="/files/img/20161006-GP.png" title="Trained Gaussian Process Model"></p>
 <p><em>Fig. 5: The trained Gaussian Process model on the 44h of&nbsp;data.</em></p>
 <p>Table 1 shows calculated scores and likelihoods of each session in each minute to be influenced by a <span class="caps">TV</span>-ad. A negative portion and likelihood simply mean the expected value is larger that the observed, and can safely be ignored. The <em>Is Significant</em> column simply flags if the score is over <em>0.9</em>. I would personally attribute only sessions of those minutes to a <span class="caps">TV</span>-ad. Also, as expected, not all <span class="caps">TV</span>-ad events result in significant rise in the traffic, and some clearly result in more traffic than&nbsp;others.</p>
 <table>
@@ -1607,6 +1607,16 @@ m.optimize()
     <i class="fa fa-linkedin sidebar-social-links"></i></a>
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="http://adrin.info/archives.html">all posts</a></h4>
         <div class="recent-posts">
+            <article>
+                <a href="http://adrin.info/clue-wattx-hackathon.html">Clue-WATTx&nbsp;Hackathon  </a>
+                <section>
+                    posted in
+                <a href="http://adrin.info/categories.html#machine-learning-ref">machine-learning</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2017-04-02T00:00:00+02:00">Sun 02 April 2017</time>
+                </div>
+                </section>
+            </article>
             <article>
                 <a href="http://adrin.info/tv-ad-attribution-gaussian-processes.html"><span class="caps">TV</span>-ad Attribution, Gaussian&nbsp;Processes  </a>
                 <section>

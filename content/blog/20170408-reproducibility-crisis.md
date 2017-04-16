@@ -1,0 +1,47 @@
+Title: An Essay on the Reproducibility Crisis
+Date: 2017-04-16
+Tags: reproducibility-crisis
+Category: science
+
+### Reproducibility (in science)
+It's almost not a word, to the extent that as far as I know it's only used in the context of science, and it has its own [Wikipedia page](https://en.wikipedia.org/wiki/Reproducibility). In simple terms, a scientific research's results are reproducible if you can take its report, follow the instructions, and get the same or similar results.
+
+### Reproducibility Crisis
+Most research cannot be reproduced, see [this video](https://www.scientificamerican.com/video/is-there-a-reproducibility-crisis-in-science/), or articles like [this one](http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970), [this other one](https://phys.org/news/2016-12-crisis-timelinemilestones-tackling-reliability.html), or [this](https://www.forbes.com/sites/stevenbertoni/2017/04/11/box-ceo-aaron-levie-talks-trump-tech-and-how-to-stay-nimble-as-a-public-software-company/#27af468342b7). It wouldn't be a crisis if it weren't a systematic and widespread phenomenon. It is understandable if every now and then a researcher comes into a conclusion, or finds some results, attributing the results to what they think is the cause of what they've observed, and be wrong. But these kinds of _mistakes_ are not why we see an abondant irreproducible set of publications. 
+
+### Why? How?
+Let's start with a simple example. Let say we want to study the influence of substance X (maybe a potential drug) on mice having disease Y. We take a group of mice, we make sure they have the disease, and then we give that substance to half of them, and see what happens. Now imagine we repeat the same _study_ 10 times, and in 3 out of 10 times we repeat the same procedure, mice show some improvement in their condition when they are given substance X, and the other 7 times, we see no improvement, or even worse, we observe they die sooner compared to the mice given nothing other than their normal food. Now, having all the information, you might say okay, it seams the substance isn't really working. But if we only take the 3 replications of the same study in which we saw an improvement in the mice, then your information would be: "we tried substance X for disease Y in several mice, and repeated the study 3 times, and in all those studies substance X helped mice dealing with disease Y". Now you see a study which even has replicated the experiment 3 times, and in all of them substance X seems to be working. If someone in another lab sees this article, would think it works, and may try to replicate it. But we know there's 70% chance they won't see any improvement using X. This is an example of a study which cannot be reproduced with the claimed results.
+
+For the next example we need a bit of background. 
+
+ - We, humans, have over 20,000 genes in our DNA, and we have the technology to take a sample from a part of our body, i.e. to biopsy, and measure the activity levels of all those individual genes in the given sample, hence having over 20K measurements for each given biopsy, usually referred to as gene expression data.
+ - Genetic abnormalities are observed in cancer.
+ - Cancer types and subtypes vary in those abnormalities, i.e. there is difference in different cancer types in terms of their genetic background.
+
+In order to study the genetic background of cancer, biopsies are taken from cancer patients, and their gene expressions are measured. But the data coming from this process is not perfect:
+
+ - Inter-cellular processes are stochastic, meaning they don't follow a deterministic pattern. You might take two biopsies from a tissue of a healthy person, and for many reasons observe different expression levels between the two. 
+ - The process measuring the gene expression levels for many reasons adds noise to the data, which means if you repeat the process of measuring the expression levels twice from the same given biopsy, you might observe different values. 
+ - The measurement process is also prune to batch effects, which means you might observe consistently different values comparing measurements taken in two different labs across the town.
+
+All the above reasons, plus the fact that most datasets include only a few hundred patients, i.e. rows in the data matrix, whereas we get +20K features, i.e. columns in the data matrix, for each patient, make it a hard problem to solve, and also hard to reproduce.
+
+Now assume you want to take a published computational model, which is basically an algorithm, and apply that to some dataset you have at hand. In many cases that publication does not include enough details about how to preprocess your data. This is the part that tells you how and if you need to transform your input, keep some and ignore others, and maybe combine some of those input features together in some way. Then there is the main part, which if you're lucky, you can implement. This means if there is enough detailed explanation in the publication, you can reproduce the results given the data used in the publication, which itself is not trivial, since many publications don't publish the whole data used in their analysis.
+
+There have been efforts by the community and journals to encourage and maybe enforce reproducibility ([example](http://www.nature.com/news/reproducibility-1.17552)). For instance, some journals require you to have the code available upon request. But in practice, that code is mostly only available while the paper is under the peer review process and it's lost afterwards. Even then, it's not always easy to re-run that code anyway; they might be tuned to the hardware infrastructure available to the researcher, and in some cases even links to some data files which were available on the researcher's computer and not released.
+
+Now let say, the publication uses only open datasets which you can easily download. And the code is available on some open repository, in such a way that you can reproduce the results of the publication on those datasets. For the reasons explained above, such as noise and batch effects, you might try the same algorithm on a different dataset of the same kind, i.e. same measurement tools and same cancer types, but achieve very different results than the one reported in the publication. In some other cases, the publication includes some claims and analysis across different cancer types, and applies the method on let say, 3 datasets of different cancer types. You might try the same method on 3 other datasets of other cancer types, and observe results which are nowhere close to the ones reported and claimed.
+
+Unfortunately the complexity and the nature of the problem is not the only factor in having irreproducible publications. Very often it is the case that journals and peer reviewers don't actually try to reproduce the results, since it takes time and the community won't value the time a researcher would spend on those tasks. In many other cases researchers try their methods on many datasets, and choose the ones that works best for them to report. These are publications that are in best case reproducible on the datasets they mention, but as a scientific method, they are not necessarily reproducible in an independent lab, or using other datasets.
+
+__ Negative result__: Imagine you have an idea, like an algorithm, which you think might predict how well a certain drug will perform. If you try the method and it does not deliver the performance you thought it would, or it performs worse that existing methods and algorithms, then you have a negative result at hand.
+
+Some factors that contribute to this phenomenon are (add a sarcastic tone to most of what you read in this section):
+
+ - Publishing negative results gets you nowhere in the scientific community. You won't get grants publishing them, even if you can do so. Most journals don't accept your article if it's mostly about negative results anyway.
+ - Reproducing other people's work is not valued. You won't be a respected researcher if you spend a lot of time trying to reproduce other people's work. You are supposed to be independent and innovative, constantly producing new results and methods.
+ - A method working half the time is not impressive enough. That's why if your method is working on 4 datasets out of 9, you might just not report the 5 it didn't work on. Or if you want to look honest, you might only report one or two, and claim your method works most of the time.
+ - Interpreting the results in a positive way. In many cases, you might read the publication and think it's very impressive, but if you only look at the charts, numbers, and performance measures, you wouldn't think it's particularly a better method than others.
+ - Politics in science and peer review process discourages criticizing other people's work. Once you're at the bleeding edge of science, not many people in the world are working on what you work on. This means when you submit a paper for a peer reviewed journal, chances are your article gets reviewed by those people who you know. Although they won't see the names of the authors of the article, but they can easily guess. That's why when you encounter a paper which you cannot reproduce, you don't want to openly criticize it. After all, who needs more enemies.
+
+Yeah it's really sad and gloomy, but people are working on it, and we need much more to be done.

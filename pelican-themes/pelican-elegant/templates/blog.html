@@ -28,7 +28,9 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 {% block content %}
 
 <div class="row-fluid">
-  <div class="span10">
+    <div class="span2">
+    </div>
+  <div class="span8">
     {% for article in dates %}
         <div class="post-preview">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">

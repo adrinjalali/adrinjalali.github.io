@@ -7,21 +7,21 @@
         <meta name="author" content="adrin" />
         <meta name="copyright" content="adrin" />
 
-        <meta name="description" content="Motivation Reproducibility crisis Re-inventing the wheel (many times) Gap between research and clinics Solution The idea is to have a place facilitating method development as well as their usage. To understand the proposed system, we can consider three players or stakeholders in the game. One is the programmer, or the …
+        <meta name="description" content="Although the context of this post is bioinformatics and cancer, it applies to many other fields as well. I’ve had this idea for a while, and this an effort to make it more concrete. In this post, a method refers to a computational model or an algorithm, from the …
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content=", misc, " />
+<meta name="keywords" content="reproducibility-crisis, ideas, cancer, bioinformatics, science, " />
 
 <meta property="og:title" content="A Central Cancer Diagnostics Hub "/>
 <meta property="og:url" content="http://adrin.info/drafts/a-central-cancer-diagnostics-hub.html" />
-<meta property="og:description" content="Motivation Reproducibility crisis Re-inventing the wheel (many times) Gap between research and clinics Solution The idea is to have a place facilitating method development as well as their usage. To understand the proposed system, we can consider three players or stakeholders in the game. One is the programmer, or the …" />
+<meta property="og:description" content="Although the context of this post is bioinformatics and cancer, it applies to many other fields as well. I’ve had this idea for a while, and this an effort to make it more concrete. In this post, a method refers to a computational model or an algorithm, from the …" />
 <meta property="og:site_name" content="Adrin Jalali" />
 <meta property="og:article:author" content="adrin" />
 <meta property="og:article:published_time" content="2017-02-28T00:00:00+01:00" />
 <meta name="twitter:title" content="A Central Cancer Diagnostics Hub ">
-<meta name="twitter:description" content="Motivation Reproducibility crisis Re-inventing the wheel (many times) Gap between research and clinics Solution The idea is to have a place facilitating method development as well as their usage. To understand the proposed system, we can consider three players or stakeholders in the game. One is the programmer, or the …">
+<meta name="twitter:description" content="Although the context of this post is bioinformatics and cancer, it applies to many other fields as well. I’ve had this idea for a while, and this an effort to make it more concrete. In this post, a method refers to a computational model or an algorithm, from the …">
 
         <title>A Central Cancer Diagnostics Hub  · Adrin Jalali
 </title>
@@ -32,6 +32,14 @@
         <link rel="stylesheet" type="text/css" href="http://adrin.info/theme/css/elegant.css" media="screen">
         <link rel="stylesheet" type="text/css" href="http://adrin.info/theme/css/custom.css" media="screen">
         <link href="http://adrin.info/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Adrin Jalali - Full Atom Feed" />
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-47061918-1 ', 'auto');
+    ga('send', 'pageview');
+</script>
 
   <header><hgroup>
         <div class="container-fluid">
@@ -65,12 +73,13 @@
                     <!-- <a class="brand" href="http://adrin.info/"><span class=site-name>Adrin Jalali</span></a> -->
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right top-menu">
-                            <li ><a href="http://adrin.info">Home</a></li>
+                            <li ><a href="http://adrin.info/blog.html">Blog</a></li>
+                            <li ><a href="http://adrin.info">About</a></li>
                             <li ><a href="http://adrin.info//pages/get-in-touch">Get in Touch</a></li>
                             <li ><a href="http://adrin.info//pages/curriculum-vitae">Curriculum Vitae</a></li>
                             <li ><a href="http://adrin.info/categories.html">Categories</a></li>
                             <li ><a href="http://adrin.info/tags.html">Tags</a></li>
-                            <li ><a href="http://adrin.info/archives.html">Archives</a></li>
+                            <!-- <li ><a href="http://adrin.info/archives.html">Archives</a></li> -->
                             <li><form class="navbar-search" action="http://adrin.info/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                         </ul>
                     </div>
@@ -92,17 +101,22 @@
         <div class="span8 offset2 article-content">
 
             
-            <h3>Motivation</h3>
+            <p>Although the context of this post is bioinformatics and cancer, it applies to many other fields as well. I&#8217;ve had this idea for a while, and this an effort to make it more concrete. In this post, a method refers to a computational model or an algorithm, from the preprocessing phase to the final&nbsp;result.</p>
+<h3>Motivation</h3>
+<p>The idea is motivated by my experience in bioinformatics, dealing with cancer data and cancer related questions such as cancer diagnostics. It tries to help the following&nbsp;challenges:</p>
 <ul>
-<li>Reproducibility&nbsp;crisis</li>
-<li>Re-inventing the wheel (many&nbsp;times)</li>
-<li>Gap between research and&nbsp;clinics</li>
+<li>Reproducibility crisis, which I talked about in more detail <a href="http://adrin.info/an-essay-on-the-reproducibility-crisis.html">here</a></li>
+<li>Reinventing the wheel (over and over again). In science to show the merits of your work, you most probably need to compare it with other methods. Since most methods are not open source, and even when they are, it&#8217;s not a trivial task to use them on your data. Hence you end up at least partially re-implementing those methods&nbsp;yourself. </li>
+<li>The gap between research and clinics. Again, since it&#8217;s not easy to use most published methods on your data, it&#8217;s not easy for clinics to take a publication and use that method on patients&#8217;&nbsp;data.</li>
 </ul>
-<h3>Solution</h3>
-<p>The idea is to have a place facilitating method development as well as their usage. To understand the proposed system, we can consider three players or stakeholders in the&nbsp;game.</p>
-<p>One is the programmer, or the bioinformatician. As a programmer, you can use certain simple APIs in several programming languages, to deliver tasks related to cancer diagnostics. These tasks are steps along the way of the analysis. Pre-processing of the data is one step. So is predicting the sub-class of the cancer for instance. Once the programmer uploads their method, it is automatically run against all the available data-sets in the&nbsp;system.</p>
-<p>Another player in the game is an oncologist, or whoever in the need for a suggestion of a diagnosis for a given sample. Hospitals and clinics for instance, can use the system to run different trained methods against the data taken from their individual sample. This can improve and help diagnosis through&nbsp;time.</p>
-<p>And the last player, but not the least, is the lab producing data. The data can be added to the system, to have the back-end run different existing algorithms against the newly acquired&nbsp;data-set.</p>
+<h3>Proposed&nbsp;solution</h3>
+<p>We could, ideally, have a place facilitating method development as well as their usage. To understand the proposed system, consider the problem of predicting the subclass of different cancer types, and the following three players or&nbsp;stakeholders.</p>
+<h4>The programmer, or the&nbsp;bioinformatician</h4>
+<p>The system provides certain APIs for programmers to deliver tasks related to cancer diagnostics. These tasks are steps along the way of the analysis. Preprocessing of the data is one step, so is predicting the sub-class of a cancer for instance. Programmers don&#8217;t have to implement the whole pipeline; they can focus on a method, for example, which relies on a certain preprocessing model which has already been implemented on the datasets. Or in contrast, a researcher can implement a preprocessing technique and test it in combination with different methods available in the repository of the&nbsp;system.</p>
+<h4>The oncologist, or a&nbsp;clinic</h4>
+<p>Once a method is uploaded in the system, it can be trained on different cancer types, and then a clinic or a hospital can use the system to get suggestions on the subclass of the cancer of a newly acquired sample from a patient. They can also check if different methods agree with each other on the predicted&nbsp;subclass.</p>
+<h4>The lab/person producing&nbsp;data</h4>
+<p>The data can be added to the system, to have the back-end run different existing algorithms against the newly acquired&nbsp;dataset.</p>
 <h3>Practicalities</h3>
             
             
@@ -113,16 +127,46 @@
             <h4>Published</h4>
             <time pubdate="pubdate" datetime="2017-02-28T00:00:00+01:00">Feb 28, 2017</time>
             <h4>Category</h4>
-            <a class="category-link" href="http://adrin.info/categories.html#misc-ref">misc</a>
+            <a class="category-link" href="http://adrin.info/categories.html#science-ref">science</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="http://adrin.info/tags.html#bioinformatics-ref">bioinformatics
+</a></li>
+                <li><a href="http://adrin.info/tags.html#cancer-ref">cancer
+</a></li>
+                <li><a href="http://adrin.info/tags.html#ideas-ref">ideas
+</a></li>
+                <li><a href="http://adrin.info/tags.html#reproducibility-crisis-ref">reproducibility-crisis
+                    <span>1</span>
+</a></li>
+            </ul>
 <h4>Contact</h4>
-    <a href="mailto:adrin.jalali@gmail.com" title="My email Address" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-envelope sidebar-social-links"></i></a>
-    <a href="https://github.com/adrinjalali" title="My github Profile" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-github sidebar-social-links"></i></a>
-    <a href="http://stackoverflow.com/users/2536294/adrin" title="My stack-overflow Profile" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-stack-overflow sidebar-social-links"></i></a>
-    <a href="de.linkedin.com/in/adrinjalali" title="My linkedin Profile" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-linkedin sidebar-social-links"></i></a>
+<ul class="menu-list">
+    <li><a href="mailto:adrin.jalali@gmail.com">
+      <span class="icon is-small">
+          <i class="fa fa-globe fa-fw"></i>
+      </span>
+      <span class="link-text">email</span>
+    </a></li>
+    <li><a href="https://github.com/adrinjalali">
+      <span class="icon is-small">
+          <i class="fa fa-github fa-fw"></i>
+      </span>
+      <span class="link-text">github</span>
+    </a></li>
+    <li><a href="https://stackoverflow.com/users/2536294/adrin">
+      <span class="icon is-small">
+          <i class="fa fa-globe fa-fw"></i>
+      </span>
+      <span class="link-text">stack-overflow</span>
+    </a></li>
+    <li><a href="https://de.linkedin.com/in/adrinjalali">
+      <span class="icon is-small">
+          <i class="fa fa-linkedin fa-fw"></i>
+      </span>
+      <span class="link-text">linkedin</span>
+    </a></li>
+</ul>
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="http://adrin.info/archives.html">all posts</a></h4>
         <div class="recent-posts">
             <article>
@@ -176,15 +220,6 @@
                 </section>
             </article>
         </div>
-<!-- Begin MailChimp Signup Form -->
-<div id="mc-embed-signup">
-<form action="True" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-<h4>Email Newsletter</h4>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email..." required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-</form>
-</div>
-<!--End mc_embed_signup-->
         </div>
         </section>
 </div>

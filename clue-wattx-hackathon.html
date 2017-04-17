@@ -32,6 +32,14 @@
         <link rel="stylesheet" type="text/css" href="http://adrin.info/theme/css/elegant.css" media="screen">
         <link rel="stylesheet" type="text/css" href="http://adrin.info/theme/css/custom.css" media="screen">
         <link href="http://adrin.info/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Adrin Jalali - Full Atom Feed" />
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-47061918-1 ', 'auto');
+    ga('send', 'pageview');
+</script>
 
   <header><hgroup>
         <div class="container-fluid">
@@ -65,12 +73,13 @@
                     <!-- <a class="brand" href="http://adrin.info/"><span class=site-name>Adrin Jalali</span></a> -->
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right top-menu">
-                            <li ><a href="http://adrin.info">Home</a></li>
+                            <li ><a href="http://adrin.info/blog.html">Blog</a></li>
+                            <li ><a href="http://adrin.info">About</a></li>
                             <li ><a href="http://adrin.info//pages/get-in-touch">Get in Touch</a></li>
                             <li ><a href="http://adrin.info//pages/curriculum-vitae">Curriculum Vitae</a></li>
                             <li ><a href="http://adrin.info/categories.html">Categories</a></li>
                             <li ><a href="http://adrin.info/tags.html">Tags</a></li>
-                            <li ><a href="http://adrin.info/archives.html">Archives</a></li>
+                            <!-- <li ><a href="http://adrin.info/archives.html">Archives</a></li> -->
                             <li><form class="navbar-search" action="http://adrin.info/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                         </ul>
                     </div>
@@ -92,23 +101,23 @@
         <div class="span8 offset2 article-content">
 
             
-            <h2><a href="http://cluehackathon.wattx.io/">Hackathon</a></h2>
+            <h3><a href="http://cluehackathon.wattx.io/">Hackathon</a></h3>
 <p>To me, a hackathon is when a group of people gather for a day or two, working for a somewhat common goal, develop, have fun, meet new people, and to home. Unfortunately for whatever reason, most hackathons have become a competition, with a set prize, organized by some company. The good part is that some attendees might get some money out of the hackathon, but the down side is that it usually becomes a competition and people stop collaborating. I was very happy to see that was not very the case in this hackathon, and we had mostly a really nice atmosphere for the whole weekend. It was a pleasurable experience working and chatting with Clue and WATTx people as well as the&nbsp;attendees.</p>
-<h2><a href="https://www.helloclue.com/">Clue</a></h2>
+<h3><a href="https://www.helloclue.com/">Clue</a></h3>
 <p>Clue is for people who experience menstruation cycles, or periods, to record their cycle, and related symptoms. These symptoms include bleeding, pain, skin condition, premenstrual syndrome (<span class="caps">PMS</span>), among others. The app in return, gives you predictions regarding your period, ovulation, and <span class="caps">PMS</span>. The app looks like&nbsp;this:</p>
 <p><img alt="Clue app" src="files/img/Clue-screenshot-500x253.png" title="Credit: http://tech.eu/features/2607/clue-app-profile-ida-tin/"></p>
 <p>Using the app you can easily see if there are any irregularities in your cycle, and/or see when you should be expecting phases such as ovulation, period, or <span class="caps">PMS</span>, and read about menstruation cycle in general if you&#8217;re interested. Some symptoms can be recorded and predicted directly, such as bleeding, others are less directly observed such as ovulation. The app uses observations from other related symptoms to predict these&nbsp;phases.</p>
 <p>The data that the app collects is invaluable to a better understanding of the menstruation cycle, related diseases, and even (birth control) pills. I hope the data helps our society to understand cycles better, and potentially improve half of the population&#8217;s&nbsp;lives.</p>
-<h2><a href="http://statice.wattx.io/">Statice by&nbsp;WATTx</a></h2>
+<h3><a href="http://statice.wattx.io/">Statice by&nbsp;WATTx</a></h3>
 <p>Fortunately, people at Clue value users&#8217; privacy a great deal. But that means they can&#8217;t have a hackathon and give people real users&#8217; data to work on. Here&#8217;s where the Statice platform designed by the nice folks at WATTx comes in. Their platform is still taking shape and this hackathon was also a test for them to see how the platform works. But in short, they take the real data, produce some data using the real one, which resembles the real data, but users&#8217; profiles from the real data are not revealed by looking at the synthesized data. Their synthesized data was what we worked on, and using that data we developed our method. Then to test the method against the real data, we would submit our method in the form of a docker container, and they would use that container to train our models on the real data, and then test it against the test set, again from the real data. And then, we would see the score of the method, or <em>failed</em> in case there was something wrong with the code or during the&nbsp;run.</p>
-<h2>Goal</h2>
+<h3>Goal</h3>
 <p>The goal of the hackathon was to analyze Clue users&#8217; data given users&#8217; history, and predict users&#8217; symptoms for their next cycle. We were supposed to predict the probability of a user tracking a symptom for each day of the next cycle. Out of total 80 symptoms for which we had data, we were to predict only 16, but we could use other symptoms&#8217; history and data for the&nbsp;prediction.</p>
-<h2>Method</h2>
+<h3>Method</h3>
 <p>The main part of the data was in the form of user interactions. Basically one row for each (user, symptom, date) tuple. We transformed the data into one row per user as our input, and a vector for each symptom as output, and then used a simple regularized linear model to predict the output, i.e. Lasso. A more detailed explanation of the method as well as the code itself are available on <strong><a href="https://github.com/adrinjalali/clue-hackathon">github</a></strong>.</p>
-<h2>Results</h2>
+<h3>Results</h3>
 <p>At the end of the two days, we all submitted our best models to test against a test dataset which was taken out from the data for this purpose, and our team managed to win the prize for the best performing&nbsp;method:</p>
 <p><img alt="Team Rabbit" src="/files/img/clue-wattx-hackathon.jpg"></p>
-<h2>Organizers&#8217;&nbsp;summary</h2>
+<h3>Organizers&#8217;&nbsp;summary</h3>
 <p>A nice summary of the event was written by Laure Sorba, WATTx <span class="caps">UX</span> strategist, available <a href="https://medium.com/wattx-stories/wattx-first-hackathon-to-advance-female-health-tech-a0677876d49e">here</a>. And here is the diagram showing her summary of the event, available on the same&nbsp;page:</p>
 <p><img alt="Summary" src="https://cdn-images-1.medium.com/max/800/1*j9JuxqbpcwGUdkD6P8I04Q.png" title="Credit: medium.com"></p>
             
@@ -161,14 +170,32 @@
 </a></li>
             </ul>
 <h4>Contact</h4>
-    <a href="mailto:adrin.jalali@gmail.com" title="My email Address" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-envelope sidebar-social-links"></i></a>
-    <a href="https://github.com/adrinjalali" title="My github Profile" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-github sidebar-social-links"></i></a>
-    <a href="http://stackoverflow.com/users/2536294/adrin" title="My stack-overflow Profile" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-stack-overflow sidebar-social-links"></i></a>
-    <a href="de.linkedin.com/in/adrinjalali" title="My linkedin Profile" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-linkedin sidebar-social-links"></i></a>
+<ul class="menu-list">
+    <li><a href="mailto:adrin.jalali@gmail.com">
+      <span class="icon is-small">
+          <i class="fa fa-globe fa-fw"></i>
+      </span>
+      <span class="link-text">email</span>
+    </a></li>
+    <li><a href="https://github.com/adrinjalali">
+      <span class="icon is-small">
+          <i class="fa fa-github fa-fw"></i>
+      </span>
+      <span class="link-text">github</span>
+    </a></li>
+    <li><a href="https://stackoverflow.com/users/2536294/adrin">
+      <span class="icon is-small">
+          <i class="fa fa-globe fa-fw"></i>
+      </span>
+      <span class="link-text">stack-overflow</span>
+    </a></li>
+    <li><a href="https://de.linkedin.com/in/adrinjalali">
+      <span class="icon is-small">
+          <i class="fa fa-linkedin fa-fw"></i>
+      </span>
+      <span class="link-text">linkedin</span>
+    </a></li>
+</ul>
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="http://adrin.info/archives.html">all posts</a></h4>
         <div class="recent-posts">
             <article>
@@ -222,15 +249,6 @@
                 </section>
             </article>
         </div>
-<!-- Begin MailChimp Signup Form -->
-<div id="mc-embed-signup">
-<form action="True" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-<h4>Email Newsletter</h4>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email..." required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-</form>
-</div>
-<!--End mc_embed_signup-->
         </div>
         </section>
 </div>

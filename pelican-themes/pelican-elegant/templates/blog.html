@@ -24,7 +24,11 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 {% endif %}
 {% endblock meta_tags_in_head %}
 
+
 {% block content %}
+
+<div class="row-fluid">
+  <div class="span10">
     {% for article in dates %}
         <div class="post-preview">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
@@ -36,8 +40,14 @@ Full archives of {{ SITENAME|striptags|e }} blog.
                 {{ article.content|truncate(1000) }}
             {% endif %}
         </div>
-        <hr>
     {% endfor %}
-
-    <hr>
+        </div>
+  </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            {% include '_includes/social_links.html' %}
+        </div>
+        </section>
+</div>
 {% endblock content %}
+

@@ -37,7 +37,7 @@
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-47061918-1 ', 'auto');
+    ga('create', 'UA-47061918-1', 'auto');
     ga('send', 'pageview');
 </script>
 
@@ -101,7 +101,7 @@
         <div class="span8 offset2 article-content">
 
             
-            <h3>Background</h3>
+            <h3 id="background">Background</h3>
 <p>In cancer therapy, classifying a patient into the right sub-class of the relevant cancer is crucial and in many cases it can be life saving/threatening. Bioinformaticians have been trying to tackle this problem for many years, and have some advances in some areas. But still to this date, there is no reliable computational method for many hard sub-classes. Some difficulties on the way to solve this problem&nbsp;are:</p>
 <ul>
 <li>Biological processes inside cells are not deterministic and are rather&nbsp;stochastic.</li>
@@ -110,7 +110,7 @@
 </ul>
 <p>To see why these characteristics of the data makes the problem hard, it is enough to generate a large number of purely random features for small enough number of samples, and randomly label them with two classes. Then take half of the samples, train classifier models on them, and check how they perform on the unseen test data. You will see that they can easily perform with 100% accuracy on the train set, but purely random on the test&nbsp;samples.</p>
 <p>These facts all together make it almost impossible to apply methods trained on some data sets to a data set measured at a different time/place, which makes them&nbsp;unreliable.</p>
-<h4>Data&nbsp;Synthesis</h4>
+<h4 id="data-synthesis">Data&nbsp;Synthesis</h4>
 <p>Here I will present a method to synthesize data in a binary classification scenario, and I will show how some different methods perform on the synthesized&nbsp;data. </p>
 <p>The data synthesis is based on the assumption that genes work in a network, but for simplicity we assume they work on disjoint sets of networks. We also assume the network works differently in different conditions, i.e. different cancer sub-types in this case. Then we try to find those subsets and infer corresponding Bayesian process from our data. The data synthesis can be summarized as&nbsp;bellow:</p>
 <p>=== Infer Bayesian Networks from Data ===
@@ -123,7 +123,7 @@
  - Add noise to samples:
    * Randomly choose some of the Bayesian networks and replace their corresponding features with samples from a Gaussian regardless of the class to which the sample belongs, i.e. shutting off a whole network.
    * Randomly choose some of the discriminating features and replace them with a sample from a Gaussian distribution regardless of the class to which the sample belongs, i.e. shutting off parts of the&nbsp;networks.</p>
-<h4>Results</h4>
+<h4 id="results">Results</h4>
             
             
             <hr/>
@@ -164,6 +164,16 @@
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="http://adrin.info/archives.html">all posts</a></h4>
         <div class="recent-posts">
             <article>
+                <a href="http://adrin.info/a-central-cancer-diagnostics-hub.html">A Central Cancer Diagnostics&nbsp;Hub  </a>
+                <section>
+                    posted in
+                <a href="http://adrin.info/categories.html#science-ref">science</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2017-04-18T00:00:00+02:00">Tue 18 April 2017</time>
+                </div>
+                </section>
+            </article>
+            <article>
                 <a href="http://adrin.info/an-essay-on-the-reproducibility-crisis.html">An Essay on the Reproducibility&nbsp;Crisis  </a>
                 <section>
                     posted in
@@ -200,16 +210,6 @@
                 <a href="http://adrin.info/categories.html#ethics-ref">ethics</a>
                 <div class="recent-posts-time">
                 <time pubdate="pubdate" datetime="2015-09-01T00:00:00+02:00">Tue 01 September 2015</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="http://adrin.info/zimbra-auto-provisioning-from-freeipa.html">Zimbra Auto Provisioning from&nbsp;FreeIPA  </a>
-                <section>
-                    posted in
-                <a href="http://adrin.info/categories.html#sysadmin-ref">sysadmin</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2015-08-07T00:00:00+02:00">Fri 07 August 2015</time>
                 </div>
                 </section>
             </article>

@@ -15,11 +15,11 @@
 <meta name="keywords" content="reproducibility-crisis, ideas, cancer, bioinformatics, science, " />
 
 <meta property="og:title" content="A Central Cancer Diagnostics Hub "/>
-<meta property="og:url" content="http://adrin.info/drafts/a-central-cancer-diagnostics-hub.html" />
+<meta property="og:url" content="http://adrin.info/a-central-cancer-diagnostics-hub.html" />
 <meta property="og:description" content="Although the context of this post is bioinformatics and cancer, it applies to many other fields as well. I’ve had this idea for a while, and this an effort to make it more concrete. In this post, a method refers to a computational model or an algorithm, from the …" />
 <meta property="og:site_name" content="Adrin Jalali" />
 <meta property="og:article:author" content="adrin" />
-<meta property="og:article:published_time" content="2017-02-28T00:00:00+01:00" />
+<meta property="og:article:published_time" content="2017-04-18T00:00:00+02:00" />
 <meta name="twitter:title" content="A Central Cancer Diagnostics Hub ">
 <meta name="twitter:description" content="Although the context of this post is bioinformatics and cancer, it applies to many other fields as well. I’ve had this idea for a while, and this an effort to make it more concrete. In this post, a method refers to a computational model or an algorithm, from the …">
 
@@ -37,7 +37,7 @@
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-47061918-1 ', 'auto');
+    ga('create', 'UA-47061918-1', 'auto');
     ga('send', 'pageview');
 </script>
 
@@ -93,7 +93,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://adrin.info/drafts/a-central-cancer-diagnostics-hub.html"> A Central Cancer Diagnostics&nbsp;Hub  </a></h1>
+    <h1><a href="http://adrin.info/a-central-cancer-diagnostics-hub.html"> A Central Cancer Diagnostics&nbsp;Hub  </a></h1>
     </header>
 </div>
 
@@ -102,42 +102,82 @@
 
             
             <p>Although the context of this post is bioinformatics and cancer, it applies to many other fields as well. I&#8217;ve had this idea for a while, and this an effort to make it more concrete. In this post, a method refers to a computational model or an algorithm, from the preprocessing phase to the final&nbsp;result.</p>
-<h3>Motivation</h3>
+<h3 id="motivation">Motivation</h3>
 <p>The idea is motivated by my experience in bioinformatics, dealing with cancer data and cancer related questions such as cancer diagnostics. It tries to help the following&nbsp;challenges:</p>
 <ul>
 <li>Reproducibility crisis, which I talked about in more detail <a href="http://adrin.info/an-essay-on-the-reproducibility-crisis.html">here</a></li>
 <li>Reinventing the wheel (over and over again). In science to show the merits of your work, you most probably need to compare it with other methods. Since most methods are not open source, and even when they are, it&#8217;s not a trivial task to use them on your data. Hence you end up at least partially re-implementing those methods&nbsp;yourself. </li>
 <li>The gap between research and clinics. Again, since it&#8217;s not easy to use most published methods on your data, it&#8217;s not easy for clinics to take a publication and use that method on patients&#8217;&nbsp;data.</li>
 </ul>
-<h3>Proposed&nbsp;solution</h3>
+<h3 id="players">Players</h3>
 <p>We could, ideally, have a place facilitating method development as well as their usage. To understand the proposed system, consider the problem of predicting the subclass of different cancer types, and the following three players or&nbsp;stakeholders.</p>
-<h4>The programmer, or the&nbsp;bioinformatician</h4>
+<h4 id="the-programmer-or-the-bioinformatician">The programmer, or the&nbsp;bioinformatician</h4>
 <p>The system provides certain APIs for programmers to deliver tasks related to cancer diagnostics. These tasks are steps along the way of the analysis. Preprocessing of the data is one step, so is predicting the sub-class of a cancer for instance. Programmers don&#8217;t have to implement the whole pipeline; they can focus on a method, for example, which relies on a certain preprocessing model which has already been implemented on the datasets. Or in contrast, a researcher can implement a preprocessing technique and test it in combination with different methods available in the repository of the&nbsp;system.</p>
-<h4>The oncologist, or a&nbsp;clinic</h4>
-<p>Once a method is uploaded in the system, it can be trained on different cancer types, and then a clinic or a hospital can use the system to get suggestions on the subclass of the cancer of a newly acquired sample from a patient. They can also check if different methods agree with each other on the predicted&nbsp;subclass.</p>
-<h4>The lab/person producing&nbsp;data</h4>
-<p>The data can be added to the system, to have the back-end run different existing algorithms against the newly acquired&nbsp;dataset.</p>
-<h3>Practicalities</h3>
+<h4 id="the-oncologist-or-a-clinic">The oncologist, or a&nbsp;clinic</h4>
+<p>Once a method is uploaded in the system, it can be trained on different cancer types, and then a clinic or a hospital can use the system to get suggestions on the subclass of the cancer of a newly acquired sample for a patient. They can also check if different methods agree with each other on their&nbsp;prediction.</p>
+<h4 id="the-labperson-producing-data">The lab/person producing&nbsp;data</h4>
+<p>When a lab produces a new dataset, they usually need to analyze the data and explain how their dataset can be used and where its values are. They could upload the dataset to this system and have different methods run against it, and analyze their&nbsp;outcome.</p>
+<h3 id="related-and-existing-work">Related and existing&nbsp;work</h3>
+<p>There are many open datasets out there, but they are not necessarily nicely formatted and they don&#8217;t follow the same guidelines to store the data. There are however, at least two efforts to tackle this problem, one is <a href="https://icgc.org/"><span class="caps">ICGC</span></a> in Europe, and the other one is <a href="https://cancergenome.nih.gov/"><span class="caps">TCGA</span></a> in the <span class="caps">US</span>. These efforts store the data in a nicely formatted way, which makes it convenient to develop a method on one cancer type, and try it on the other ones. There are also places which have their own method run against different datasets, and you can browse their results and visualizations, or efforts and products enabling you to create your own platform and data storage. Some examples using the <span class="caps">TCGA</span> data are listed <a href="https://cancergenome.nih.gov/abouttcga/aboutdata/analyticaltools">here</a>, and <a href="https://www.dnanexus.com">DNAnexus</a> is an example of a company providing related&nbsp;services.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>We, as a society, need an open product and a team delivering such a service, which is easy to setup and use. I recently left academia, while still wrapping up my PhD thesis, and joined industry. I see very well where academia could use recent advancements in industry when it comes to big data and machine learning infrastructure, and also how clinics and the industry could benefit from a fast adaptation of recent academic&nbsp;advances.</p>
+<p><em>Note</em>: I&#8217;ll try to update this post as it&nbsp;develops.</p>
             
-            
+            <section>
+<div class="accordion" id="accordion2">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
+                href="http://adrin.info/a-central-cancer-diagnostics-hub.html#disqus_thread">
+                Comments
+            </a>
+        </div>
+        <div id="disqus_thread" class="accordion-body collapse">
+            <div class="accordion-inner">
+                <div class="comments">
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'adrin';
+        var disqus_identifier = 'http://adrin.info/a-central-cancer-diagnostics-hub.html';
+    var disqus_url = 'http://adrin.info/a-central-cancer-diagnostics-hub.html';
+
+    (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
             <hr/>
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2017-02-28T00:00:00+01:00">Feb 28, 2017</time>
+            <time pubdate="pubdate" datetime="2017-04-18T00:00:00+02:00">Apr 18, 2017</time>
             <h4>Category</h4>
             <a class="category-link" href="http://adrin.info/categories.html#science-ref">science</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="http://adrin.info/tags.html#bioinformatics-ref">bioinformatics
+                    <span>1</span>
 </a></li>
                 <li><a href="http://adrin.info/tags.html#cancer-ref">cancer
+                    <span>1</span>
 </a></li>
                 <li><a href="http://adrin.info/tags.html#ideas-ref">ideas
+                    <span>1</span>
 </a></li>
                 <li><a href="http://adrin.info/tags.html#reproducibility-crisis-ref">reproducibility-crisis
-                    <span>1</span>
+                    <span>2</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
@@ -169,6 +209,16 @@
 </ul>
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="http://adrin.info/archives.html">all posts</a></h4>
         <div class="recent-posts">
+            <article>
+                <a href="http://adrin.info/a-central-cancer-diagnostics-hub.html">A Central Cancer Diagnostics&nbsp;Hub  </a>
+                <section>
+                    posted in
+                <a href="http://adrin.info/categories.html#science-ref">science</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2017-04-18T00:00:00+02:00">Tue 18 April 2017</time>
+                </div>
+                </section>
+            </article>
             <article>
                 <a href="http://adrin.info/an-essay-on-the-reproducibility-crisis.html">An Essay on the Reproducibility&nbsp;Crisis  </a>
                 <section>
@@ -209,16 +259,6 @@
                 </div>
                 </section>
             </article>
-            <article>
-                <a href="http://adrin.info/zimbra-auto-provisioning-from-freeipa.html">Zimbra Auto Provisioning from&nbsp;FreeIPA  </a>
-                <section>
-                    posted in
-                <a href="http://adrin.info/categories.html#sysadmin-ref">sysadmin</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2015-08-07T00:00:00+02:00">Fri 07 August 2015</time>
-                </div>
-                </section>
-            </article>
         </div>
         </div>
         </section>
@@ -246,7 +286,45 @@
             }
         </script>
 
-    
+            <script type="text/javascript">
+var disqus_shortname = 'adrin';
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<script  language="javascript" type="text/javascript">
+function uncollapse() {
+    if (window.location.hash.match(/^#comment-\d+$/)) {
+        $('#disqus_thread').collapse('show');
+    }
+}
+</script>
+<script type="text/javascript" language="JavaScript">
+uncollapse();
+window.onhashchange=function(){
+    if (window.location.hash.match(/^#comment-\d+$/))
+        window.location.reload(true);
+}
+</script>
+<script>
+$('#disqus_thread').on('shown', function () {
+    var link = document.getElementsByClassName('accordion-toggle');
+    var old_innerHTML = link[0].innerHTML;
+    $(link[0]).fadeOut(500, function() {
+        $(this).text('Click here to hide comments').fadeIn(500);
+    });
+    $('#disqus_thread').on('hidden', function () {
+        $(link[0]).fadeOut(500, function() {
+            $(this).text(old_innerHTML).fadeIn(500);
+        });
+    })
+})
+</script>
+
+
     </body>
     <!-- Theme: Elegant built for Pelican
     License : http://oncrashreboot.com/pelican-elegant -->

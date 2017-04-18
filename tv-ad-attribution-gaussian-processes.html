@@ -37,7 +37,7 @@
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-47061918-1 ', 'auto');
+    ga('create', 'UA-47061918-1', 'auto');
     ga('send', 'pageview');
 </script>
 
@@ -101,7 +101,7 @@
         <div class="span8 offset2 article-content">
 
             
-            <h3>Problem&nbsp;description:</h3>
+            <h3 id="problem-description">Problem&nbsp;description:</h3>
 <p>This work was done in <a href="https://corporate.misterspex.com/en/">Mister Spex GmbH</a>, and slides of a presentation I gave at <a href="https://www.meetup.com/PyData-Berlin/events/235347104/">PyData meetup</a> are available now <a href="/files/tv-gp-pydata-presentation.pdf">here</a>.</p>
 <p>There is a website, in this case an e-shop, and we have information about user sessions on the website. We also have information about <span class="caps">TV</span>-ads shown to the public requested by the company. The question is, which of those sessions on the website are there because of the <span class="caps">TV</span>-ads.</p>
 <p>There are some obstacles to answer the above&nbsp;question:</p>
@@ -121,7 +121,7 @@
 </ul>
 </li>
 </ul>
-<h3>Prepare the&nbsp;data</h3>
+<h3 id="prepare-the-data">Prepare the&nbsp;data</h3>
 <p>We reduce the granularity of the data and aggregate it by minute. As a result, we have session count per minute, and the time of (<span class="caps">TV</span>-ad) events by minute. This results in a time series data having some points on it labeled by our&nbsp;events.</p>
 <p>One way to see if the events have had an influence on our traffic, is to forget about those events, detect anomalies on our time series data, and see if they&#8217;ve happened around those events. I&#8217;ve used some of those methods in other projects, and they don&#8217;t make me happy on this data. They either detect wrong signals as anomalies, or miss some not so obvious&nbsp;signals.</p>
 <p>Before going further, let&#8217;s look at the data. Fig. 1 illustrates a week worth of data. The <em>X</em> axis represents time (1 for each minute), and the <em>Y</em> axis shows the normalized session count. The data is normalized as <em>X / median(X)</em> simply to anonymize the actual session counts, since the actual numbers are irrelevant to this&nbsp;article.</p>
@@ -132,7 +132,7 @@
 <p><em>Fig. 2: Normalized session count for a&nbsp;day</em></p>
 <p><img alt="A week" src="/files/img/20161006-day-afterremoval.png" title="A week"></p>
 <p><em>Fig. 3: Normalized session count for a day, after removing data around reported&nbsp;events</em></p>
-<h3>Method</h3>
+<h3 id="method">Method</h3>
 <p>Intuitively speaking, I would like to remove the parts of the data close to the given events, fit a model to the remaining data, and then see how close the observed data is to the model&#8217;s predictions. If the observed values are significantly higher than the predicted values, most probably some of those sessions are because of the&nbsp;event.</p>
 <p>Given an observed and predicted values, deciding whether or not the observed value is <em>significantly</em> larger, can be tricky, and in some cases very arbitrary. Using a method which gives you the probability of an observed value at a given input would make the process much easier. One way of achieving such a goal is to have a method which, intuitively speaking, tells you what it thinks the predicted value is, and also how confident it is. A Gaussian Process (<span class="caps">GP</span>) is such a model, in a way that it gives a normal distribution at a given input point as the output. This predicted output has a mean and a variance, which we use to see how probable a given observation is, under the assumption that the model correctly describes the&nbsp;data.</p>
 <p>Given a predicted normal distribution, the further the observed value is from the expected mean, the less expected it is. In other words, the larger the blue area shown in Fig. 4, the more probable it&#8217;s an&nbsp;outlier.</p>
@@ -154,7 +154,7 @@
 
 <p>Now for a moment, assume we know a given data point (number of sessions) is influenced by a <span class="caps">TV</span>-ad. Still not all those sessions are because of the event. Some of them would have been there even with no <span class="caps">TV</span>-ad event. We take the predicted mean as the background session count, and the rest as <span class="caps">TV</span>-ad influenced sessions. Therefore, if <em>x</em> is observed value, and <em>x&#8217;</em> is predicted value, <em>(x - x&#8217;) / x</em> is the portion of sessions attributed to a <span class="caps">TV</span>-ad&nbsp;event.</p>
 <p>At the end, we take <em>score(x) * (x - x&#8217;) / x</em> as the likelihood of each session being attributed to a <span class="caps">TV</span>-ad.</p>
-<h3>Implementation and&nbsp;Results</h3>
+<h3 id="implementation-and-results">Implementation and&nbsp;Results</h3>
 <p>I used <em>Python3</em>, <em>matplotlib</em> to generate the plots, and <em>GPy</em> to train the Gaussian Process&nbsp;model.</p>
 <p>There are at least two ways of fitting and using GPs in our setting. One is to train a really nice model using the historical data, and use the saved trained model to get predictions for future data.
 By looking at the data, I would sum these three kernels and optimize on the&nbsp;data:</p>
@@ -1635,6 +1635,16 @@ m.optimize()
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="http://adrin.info/archives.html">all posts</a></h4>
         <div class="recent-posts">
             <article>
+                <a href="http://adrin.info/a-central-cancer-diagnostics-hub.html">A Central Cancer Diagnostics&nbsp;Hub  </a>
+                <section>
+                    posted in
+                <a href="http://adrin.info/categories.html#science-ref">science</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2017-04-18T00:00:00+02:00">Tue 18 April 2017</time>
+                </div>
+                </section>
+            </article>
+            <article>
                 <a href="http://adrin.info/an-essay-on-the-reproducibility-crisis.html">An Essay on the Reproducibility&nbsp;Crisis  </a>
                 <section>
                     posted in
@@ -1671,16 +1681,6 @@ m.optimize()
                 <a href="http://adrin.info/categories.html#ethics-ref">ethics</a>
                 <div class="recent-posts-time">
                 <time pubdate="pubdate" datetime="2015-09-01T00:00:00+02:00">Tue 01 September 2015</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="http://adrin.info/zimbra-auto-provisioning-from-freeipa.html">Zimbra Auto Provisioning from&nbsp;FreeIPA  </a>
-                <section>
-                    posted in
-                <a href="http://adrin.info/categories.html#sysadmin-ref">sysadmin</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2015-08-07T00:00:00+02:00">Fri 07 August 2015</time>
                 </div>
                 </section>
             </article>

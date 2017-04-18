@@ -26,13 +26,13 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
 # Social widget
 SOCIAL = (('email', 'mailto:adrin.jalali@gmail.com'),
           ('github', 'https://github.com/adrinjalali'),
-          ('stack-overflow', 'http://stackoverflow.com/users/2536294/adrin'),
-          ('linkedin', 'de.linkedin.com/in/adrinjalali'),)
+          ('stack-overflow', 'https://stackoverflow.com/users/2536294/adrin'),
+          ('linkedin', 'https://de.linkedin.com/in/adrinjalali'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 STATIC_PATHS=['files']
 OUTPUT_RETENTION = (".git")
@@ -50,13 +50,14 @@ DISQUS_SITEURL= u'adrin.info'
 DISQUS_SHORTNAME='adrin'
 RECENT_ARTICLES_COUNT=5
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
-DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
+DIRECT_TEMPLATES = (('index', 'tags', 'categories','blog', 'search', '404'))
 STATIC_PATHS = ['theme/images', 'images']
 TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 SITE_LICENSE='<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.'
 USE_FOLDER_AS_CATEGORY=False
-MAILCHIMP_FORM_ACTION=True
+#MAILCHIMP_FORM_ACTION=True
 
 SITEMAP={'format':'xml'}
+

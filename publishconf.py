@@ -21,7 +21,7 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS = "UA-47061918-1"
 DISQUS_SITENAME = u'adrin'
 DISQUS_SITEURL= u'adrin.info'
 DISQUS_SHORTNAME='adrin'

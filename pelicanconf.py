@@ -49,7 +49,15 @@ DISQUS_SITENAME = u'adrin'
 DISQUS_SITEURL= u'adrin.info'
 DISQUS_SHORTNAME='adrin'
 RECENT_ARTICLES_COUNT=5
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.toc': {},
+    },
+    'output_format': 'html5',
+}
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','blog', 'search', '404'))
 STATIC_PATHS = ['theme/images', 'images']
 TAG_SAVE_AS = ''

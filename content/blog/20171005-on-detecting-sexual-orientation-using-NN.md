@@ -16,7 +16,7 @@ I don't even know where to start. I'll split these points into the ones question
 ### Questioning Validity
 
 #### AUC calculation
-In a classification problem, you'd use your module to predict the outcome, draw the ROC, and calculate the Area Under ROC (AUC). Pretty straight forward for a binary classification, which is the case in this paper. What I don't understand, is this randomly choosing a straight person's photo to compare against a homosexual, to calculate an AUC. I simply don't understand why you'd do that, and as a result, I can't asses the performance measures reported in the article.
+In a classification problem, you'd use your module to predict the outcome, draw the ROC, and calculate the Area Under ROC (AUC). Pretty straightforward for a binary classification, which is the case in this paper. What I don't understand, is this randomly choosing a straight person's photo to compare against a homosexual, to calculate an AUC. I simply don't understand why you'd do that, and as a result, I can't assess the performance measures reported in the article.
 
 #### Variance of the accuracy
 They report one AUC performance for those 20 folds. I guess the results are accumulated over 20 folds and one single AUC is calculated overall. This is important, because the calculated performance usually highly depends on the random split of the data. Therefore without a data showing the distribution of the calculated AUCs, one single number is not representative of how reliable the model in reality is.

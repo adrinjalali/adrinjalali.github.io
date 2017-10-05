@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://adrin.info/</loc>
-<lastmod>2017-07-22T12:57:10-00:00</lastmod>
+<lastmod>2017-10-05T15:37:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://adrin.info/tags.html</loc>
-<lastmod>2017-07-22T12:57:10-00:00</lastmod>
+<lastmod>2017-10-05T15:37:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://adrin.info/categories.html</loc>
-<lastmod>2017-07-22T12:57:10-00:00</lastmod>
+<lastmod>2017-10-05T15:37:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -40,7 +40,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://adrin.info/</loc>
-<lastmod>2017-07-22T12:57:10-00:00</lastmod>
+<lastmod>2017-10-05T15:37:30-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html</loc>
+<lastmod>2017-10-05T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

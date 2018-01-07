@@ -2,11 +2,23 @@ title: Home
 URL:
 save_as: index.html
 
-#### Who
-You are surfing _Adrin Jalali_'s page, who works as a data scientist/engineer
+### Who
+You are surfing _Adrin Jalali_'s page, who works as a data scientist/data science consultant
 and has spent his PhD (not finished yet) doing research in the field of Computational Biology.
 
-#### Area of research
+### Work
+I got to data science from the data and AI. My first implementation of a single hidden layer Perceptron neural network was in 2001, and in 2002 I developed a constrained based optimization using genetic algorithms which I then used as my bachelor's thesis' project in 2006. I wrote and sold a database related software in 2002 when I was still in highschool and it was operational for at least 10 years after it was deployed. By the time I wanted to start my PhD in 2011, I had worked with future stock market data for an automatic trading software, and had worked on bank data to detect/prevent fraud offline and in real time. These latter projects pushed me towards data science, and that was when I got into __data mining__.
+
+During my PhD I worked on disease/patient related data and I became more and more interested in healthcare related issues. Since mid 2016 I started working more or less as a consultant solving different problems for different projects, mostly related to NLP and time series related questions. However, this is not a fulfilling job I'm not working on a project which I find __positive__ for humanity. I may start a project on my own or with some others soon, but regardless, since I get this question very often, here's a list of factors I find important in a job and the environment around it:
+
+* As I said, it needs to be positive in my system of thought, and here are some examples:
+    * I get too many requests from the financial sector, but unless the project directly aims to reduce wealth gap and make the wealth distribution more flat (refer to Piketty's "Capital in the 21st Century") in one way or another, I'm not interested.
+    * An online retail store pushing for ethically produced goods with good labour conditions is a good thing, but not necessarily my passion.
+    * An organization working on the health situation of poor urban areas, or developing countries, developing products using local workforce all as a non-profit organization, is a place in which I could happily contribute to the cause.
+* Then it's the tools/technology used in the team and for the product. I prefer to almost exclusively work using open source solutions, and my job almost certainly has to include some contributions into the open source community in one way or another. This means it's a no go for a Windows/MacOS workstation and/or proprietary software, and it's cool if it's a GNU/Linux workstation while using Python/C++/R.
+* And the last but not least, it's the work environment. Sure it needs to be nice with all the usual perks, but more importantly I care about the people in the workplace and its gender gap. It takes a lot for me to be convinced that a team of 10 male engineers/scientists does not have sexist attitudes. I can keep most of my politics out of the workplace, but feminism is not one of them.
+
+### Area of research
 I use/design machine learning tools to classify samples. The datasets I work on vary from
 microarray to DNA methylation data. I am mostly focused on using gene/protein networks
 in order to help the classification task, while keeping in mind I need to interpret

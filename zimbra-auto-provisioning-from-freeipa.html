@@ -109,20 +109,20 @@ $ zmprov
 
 
 <p>This is the set of commands I used to set it&nbsp;up:</p>
-<div class="highlight"><pre><span></span>prov&gt; md mysampledomain.net zimbraAutoProvAccountNameMap &quot;uid&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvAttrMap &quot;givenName=givenName&quot;
-prov&gt; md mysampledomain.net +zimbraAutoProvAttrMap &quot;sn=sn&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvBatchSize 80
-prov&gt; md mysampledomain.net zimbraAutoProvLdapAdminBindDn &quot;uid=mail_server,cn=users,cn=accounts,dc=mysampledomain,dc=net&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvLdapAdminBindPassword &quot;myverysecretpassword&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvLdapBindDn &quot;uid=mail_server,cn=users,cn=accounts,dc=mysampledomain,dc=net&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvLdapSearchBase &quot;cn=accounts,dc=mysampledomain,dc=net&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvLdapSearchFilter &quot;(&amp;(ObjectClass=person))&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvLdapStartTlsEnabled TRUE
-prov&gt; md mysampledomain.net zimbraAutoProvLdapURL &quot;ldaps://ipa.mysampledomain.net:636&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvPollingInterval &quot;10m&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvScheduledDomains &quot;mysampledomain.net&quot;
-prov&gt; md mysampledomain.net zimbraAutoProvMode &quot;EAGER&quot;
+<div class="highlight"><pre><span></span>prov&amp;gt; md mysampledomain.net zimbraAutoProvAccountNameMap &quot;uid&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvAttrMap &quot;givenName=givenName&quot;
+prov&amp;gt; md mysampledomain.net +zimbraAutoProvAttrMap &quot;sn=sn&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvBatchSize 80
+prov&amp;gt; md mysampledomain.net zimbraAutoProvLdapAdminBindDn &quot;uid=mail_server,cn=users,cn=accounts,dc=mysampledomain,dc=net&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvLdapAdminBindPassword &quot;myverysecretpassword&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvLdapBindDn &quot;uid=mail_server,cn=users,cn=accounts,dc=mysampledomain,dc=net&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvLdapSearchBase &quot;cn=accounts,dc=mysampledomain,dc=net&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvLdapSearchFilter &quot;(&amp;amp;(ObjectClass=person))&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvLdapStartTlsEnabled TRUE
+prov&amp;gt; md mysampledomain.net zimbraAutoProvLdapURL &quot;ldaps://ipa.mysampledomain.net:636&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvPollingInterval &quot;10m&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvScheduledDomains &quot;mysampledomain.net&quot;
+prov&amp;gt; md mysampledomain.net zimbraAutoProvMode &quot;EAGER&quot;
 </pre></div>
 
 

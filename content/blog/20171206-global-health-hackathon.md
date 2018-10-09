@@ -36,6 +36,9 @@ two of the original ideas. The final pitch was so different from any of the
 original pitches, that we had to resubmit a pitch form to put in the
 list of final pitches.
 
+At the end, according to the judges, it was a clear and easy decision to choose
+our team as the winning team, for which we're really proud.
+
 ### Idea
 The idea is a platform which gives information about vectors and their related
 diseases to the users, and it receives information about those vectors from the

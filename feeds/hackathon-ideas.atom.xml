@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - hackathon, ideas</title><link href="http://adrin.info/" rel="alternate"></link><link href="http://adrin.info/feeds/hackathon-ideas.atom.xml" rel="self"></link><id>http://adrin.info/</id><updated>2017-12-06T00:00:00+01:00</updated><entry><title>VectorFight - Winning “Hacking Global Health”</title><link href="http://adrin.info/vectorfight-winning-hacking-global-health.html" rel="alternate"></link><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2017-12-06:/vectorfight-winning-hacking-global-health.html</id><summary type="html">&lt;p&gt;&lt;img alt="VectorFight" src="files/img/vectorfight-Winning_team-700.jpg" title="Credit: http://health.bmz.de/events/Events_2017/KfW_hackathon_innovative_urban_health_solutions/index.html"&gt;&lt;/p&gt;
+&lt;h3 id="background"&gt;Background&lt;/h3&gt;
+&lt;p&gt;A weekend in October (15-17.10.2017), on the side of the
+&lt;a href="https://www.worldhealthsummit.org/whs-2017.html"&gt;9th World Health Summit (&lt;span class="caps"&gt;WHS&lt;/span&gt;)&lt;/a&gt;
+I attended a hackathon called
+&lt;a href="https://www.kfw-entwicklungsbank.de/International-financing/KfW-Development-Bank/Topics/Health/Hacking-Global-Health/"&gt;Hacking Global Health&lt;/a&gt;.
+We were nearly 40 people, in about 20 teams, and each team had to pitch an idea
+in 2 minutes. The only constraint on …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="VectorFight" src="files/img/vectorfight-Winning_team-700.jpg" title="Credit: http://health.bmz.de/events/Events_2017/KfW_hackathon_innovative_urban_health_solutions/index.html"&gt;&lt;/p&gt;
+&lt;h3 id="background"&gt;Background&lt;/h3&gt;
+&lt;p&gt;A weekend in October (15-17.10.2017), on the side of the
+&lt;a href="https://www.worldhealthsummit.org/whs-2017.html"&gt;9th World Health Summit (&lt;span class="caps"&gt;WHS&lt;/span&gt;)&lt;/a&gt;
+I attended a hackathon called
+&lt;a href="https://www.kfw-entwicklungsbank.de/International-financing/KfW-Development-Bank/Topics/Health/Hacking-Global-Health/"&gt;Hacking Global Health&lt;/a&gt;.
+We were nearly 40 people, in about 20 teams, and each team had to pitch an idea
+in 2 minutes. The only constraint on the ideas was that it had to do with
+improving health in poor urban areas. The trick was that only 8 of these teams
+were supposed to go to the &amp;#8220;next&amp;#8221; round and develop those ideas for the final
+pitch. But that was supposed to happen organically, without any interference
+from the judges or organizers. This meant that we had around 15 minutes or so,
+to form 8 teams on our own. The organizers, however, tried to push people with
+different backgrounds into the same teams, such that each team has all the
+required&amp;nbsp;skills.&lt;/p&gt;
+&lt;p&gt;This is how I ended up in a team which needed somebody with &amp;#8220;&lt;span class="caps"&gt;IT&lt;/span&gt;&amp;#8221; background.
+They were people from two different teams, one with a focus on malaria mosquito
+traps, the other focusing on plague carrying rats. So I abandoned my idea, and
+we joined forces to come up with something. A bit later two more joined us with
+a business&amp;nbsp;background.&lt;/p&gt;
+&lt;p&gt;After merging two of the ideas, we came up with a platform to educate people and
+improve their situation regarding vector borne diseases. It was a fantastic
+experience for me, since I didn&amp;#8217;t even know this meaning of the word &amp;#8220;vector&amp;#8221;
+beforehand. Our team was fantastically open about the ideas, and that&amp;#8217;s why we
+ended up with an idea which was none of the original ones, but one covering
+two of the original ideas. The final pitch was so different from any of the
+original pitches, that we had to resubmit a pitch form to put in the
+list of final&amp;nbsp;pitches.&lt;/p&gt;
+&lt;h3 id="idea"&gt;Idea&lt;/h3&gt;
+&lt;p&gt;The idea is a platform which gives information about vectors and their related
+diseases to the users, and it receives information about those vectors from the
+users and other sources such as government organizations or research institutes.
+It has two different&amp;nbsp;faces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A smartphone app which enables the community to report potential breeding
+   sites such as potholes and communicate with each other in order to
+   potentially take action and fix them. They also receive information about
+   vectors and diseases most relevant to them. The app serves both as a mean to
+   disseminate information, and to collect data. It also would try to build
+   a community around these&amp;nbsp;issues.&lt;/li&gt;
+&lt;li&gt;A web interface/&lt;span class="caps"&gt;API&lt;/span&gt; enabling different organizations to interact with the
+   platform and use the data uploaded by the users. They would get a clear
+   overview of how a specific vector/disease is spreading through&amp;nbsp;time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;#8217;s an overview of the ecosystem around the&amp;nbsp;idea:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ecosystem" src="files/img/vectorfight-overview.png"&gt;&lt;/p&gt;
+&lt;p&gt;And the interface of the solution would&amp;nbsp;resemble:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="app" src="files/img/vectorfight-app.png"&gt;&lt;/p&gt;
+&lt;p&gt;And &lt;a href="files/VectorFIGHT_GHP_Meeting_A_Jalali_2.pdf"&gt;here&lt;/a&gt;&amp;#8216;s the presentation,
+the result of two hard working&amp;nbsp;days.&lt;/p&gt;</content><category term="blog"></category></entry></feed>

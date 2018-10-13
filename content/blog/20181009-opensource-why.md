@@ -1,5 +1,5 @@
 Title: Why would you want to contribute to an open source project?
-Date: 2018-12-06
+Date: 2018-10-09
 Tags: open-source
 Category: open-source
 
@@ -37,7 +37,7 @@ to go through some of them.
 4. __Free mentors__ while your contribution gets reviewed. This is only true
    for the friendly and nice project communities, and fortunately their number
    is growing. For quite a few years, if not decades, open source communities
-   where mostly toxic, but that's changing and people are becoming nicer and
+   were mostly toxic, but that's changing and people are becoming nicer and
    more patient with newcomers. This means you shouldn't fear contributing,
    since the core developers of the project would help you go through the
    process and get your contribution up to the standards of the project. This

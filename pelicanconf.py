@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'adrin'
 SITENAME = 'Adrin Jalali'
-SITE_DESCRIPTION="Anyone who knows anything of history knows that great social changes are impossible without feminine upheaval. Social progress can be measured exactly by the social position of the fair sex, the ugly ones included -- Karl Marx"
+# SITE_DESCRIPTION="Anyone who knows anything of history knows that great social changes are impossible without feminine upheaval. Social progress can be measured exactly by the social position of the fair sex, the ugly ones included -- Karl Marx"
 SITEURL = 'http://adrin.info'
 #SITEURL = 'localhost:8000'
 

@@ -4,7 +4,7 @@ Tags: open-source
 Category: open-source
 
 ![Diversity](files/img/foss-diversity.jpg
-Credit:https://blog.mapbox.com/our-code-of-conduct-for-open-source-2b3a81c00c80)
+"Credit: https://blog.mapbox.com/our-code-of-conduct-for-open-source-2b3a81c00c80")
 
 When looking for a project to which you'd like to contribute, there are two
 major aspects you may want to consider. One is the way it's released and

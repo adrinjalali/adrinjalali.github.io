@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://adrin.info/</loc>
-<lastmod>2018-10-14T17:35:09-00:00</lastmod>
+<lastmod>2018-10-14T17:36:13-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://adrin.info/tags.html</loc>
-<lastmod>2018-10-14T17:35:09-00:00</lastmod>
+<lastmod>2018-10-14T17:36:13-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://adrin.info/categories.html</loc>
-<lastmod>2018-10-14T17:35:09-00:00</lastmod>
+<lastmod>2018-10-14T17:36:13-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -40,7 +40,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://adrin.info/</loc>
-<lastmod>2018-10-14T17:35:09-00:00</lastmod>
+<lastmod>2018-10-14T17:36:13-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

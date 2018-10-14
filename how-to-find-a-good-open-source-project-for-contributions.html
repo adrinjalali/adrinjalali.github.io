@@ -7,23 +7,23 @@
         <meta name="author" content="adrin" />
         <meta name="copyright" content="adrin" />
 
-        <meta name="description" content="I’d like to talk about this study: Deep neural networks are more accurate than humans at detecting sexual orientation from facial images, and it’s not going to be a praise of the research! Damaging Message I put this study in the same category as studies trying to argue …
+        <meta name="description" content="When looking for a project to which you’d like to contribute, there are two major aspects you may want to consider. One is the way it’s released and managed, and the other is the community around it. The way I see the first aspect, it’s like a …
 " />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="ethics, machine-learning, ethics, " />
+<meta name="keywords" content="open-source, open-source, " />
 
-<meta property="og:title" content="A Criticism of “Detecting Sexual Orientation Using Neural Networks” "/>
-<meta property="og:url" content="http://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html" />
-<meta property="og:description" content="I’d like to talk about this study: Deep neural networks are more accurate than humans at detecting sexual orientation from facial images, and it’s not going to be a praise of the research! Damaging Message I put this study in the same category as studies trying to argue …" />
+<meta property="og:title" content="How to find a good open source project for contributions? "/>
+<meta property="og:url" content="http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html" />
+<meta property="og:description" content="When looking for a project to which you’d like to contribute, there are two major aspects you may want to consider. One is the way it’s released and managed, and the other is the community around it. The way I see the first aspect, it’s like a …" />
 <meta property="og:site_name" content="Adrin Jalali" />
 <meta property="og:article:author" content="adrin" />
-<meta property="og:article:published_time" content="2017-10-05T00:00:00+02:00" />
-<meta name="twitter:title" content="A Criticism of “Detecting Sexual Orientation Using Neural Networks” ">
-<meta name="twitter:description" content="I’d like to talk about this study: Deep neural networks are more accurate than humans at detecting sexual orientation from facial images, and it’s not going to be a praise of the research! Damaging Message I put this study in the same category as studies trying to argue …">
+<meta property="og:article:published_time" content="2018-10-13T00:00:00+02:00" />
+<meta name="twitter:title" content="How to find a good open source project for contributions? ">
+<meta name="twitter:description" content="When looking for a project to which you’d like to contribute, there are two major aspects you may want to consider. One is the way it’s released and managed, and the other is the community around it. The way I see the first aspect, it’s like a …">
 
-        <title>A Criticism of “Detecting Sexual Orientation Using Neural Networks”  · Adrin Jalali
+        <title>How to find a good open source project for contributions?  · Adrin Jalali
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -93,7 +93,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html"> A Criticism of &#8220;Detecting Sexual Orientation Using Neural&nbsp;Networks&#8221;  </a></h1>
+    <h1><a href="http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html"> How to find a good open source project for&nbsp;contributions?  </a></h1>
     </header>
 </div>
 
@@ -101,43 +101,127 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>I&#8217;d like to talk about this study: <a href="https://osf.io/fk3xr/">Deep neural networks are more accurate than humans at detecting sexual orientation from facial images</a>, and it&#8217;s not going to be a praise of the&nbsp;research!</p>
-<h2 id="damaging-message">Damaging&nbsp;Message</h2>
-<p>I put this study in the same category as studies trying to argue women are different than men, usually in derogatory ways, e.g. proving they&#8217;re weaker, less intelligent, or worse at math. Recently we had the google engineer citing a whole bunch of them to support his argument about why men are better coders, or men are better in tech, or whatever bullshit he wanted to argue for. Honestly I won&#8217;t bother reading it; I mostly heard about it in podcasts and read about it in the news. My point is, those gender related studies tend to be more damaging than beneficial, and I see no point in doing them. I understand this is a very consequentialist way of assessing the value of the work, but I&#8217;m comfortable with it for&nbsp;now.</p>
-<p>It&#8217;s the same with the study in question. What&#8217;s the point of having a module predicting people&#8217;s sexual orientation given a face image, other than some other people using it in an argument such as: &#8220;Your face shouts you&#8217;re gay, scientifically proven&#8221;!!! I&#8217;m sure our dear homophobes out there can think of more damaging ways of using the results of this research. This is all I could come up&nbsp;with!</p>
-<h2 id="methodology">Methodology</h2>
-<p>I don&#8217;t even know where to start. I&#8217;ll split these points into the ones questioning the validity of the study, and the ones which are simply poor&nbsp;wording.</p>
-<h3 id="questioning-validity">Questioning&nbsp;Validity</h3>
-<h4 id="auc-calculation"><span class="caps">AUC</span>&nbsp;calculation</h4>
-<p>In a classification problem, you&#8217;d use your module to predict the outcome, draw the <span class="caps">ROC</span>, and calculate the Area Under <span class="caps">ROC</span> (<span class="caps">AUC</span>). Pretty straightforward for a binary classification, which is the case in this paper. What I don&#8217;t understand, is this randomly choosing a straight person&#8217;s photo to compare against a homosexual, to calculate an <span class="caps">AUC</span>. I simply don&#8217;t understand why you&#8217;d do that, and as a result, I can&#8217;t assess the performance measures reported in the&nbsp;article.</p>
-<h4 id="variance-of-the-accuracy">Variance of the&nbsp;accuracy</h4>
-<p>They report one <span class="caps">AUC</span> performance for those 20 folds. I guess the results are accumulated over 20 folds and one single <span class="caps">AUC</span> is calculated overall. This is important, because the calculated performance usually highly depends on the random split of the data. Therefore without a data showing the distribution of the calculated AUCs, one single number is not representative of how reliable the model in reality&nbsp;is.</p>
-<h4 id="svd-on-each-fold-separately-or-not"><span class="caps">SVD</span> on each fold separately or&nbsp;not?</h4>
-<p>In any data analysis, it is crucial to apply [virtually all] preprocessing steps only on the training data. Otherwise you&#8217;re already seeing the test data before even starting you training, and that&#8217;s&nbsp;cheating.</p>
-<p>The text is not clear weather they run a separate <span class="caps">SVD</span> for each of those 20 folds they have or not. If they do <span class="caps">SVD</span> once and use the same features on all those folds, the results are immediately invalid. I cannot tell from the text what they&#8217;ve done, and I couldn&#8217;t see a link to their source code. My guess is that they are actually doing it the right way, but it&#8217;s not written&nbsp;clearly.</p>
-<h4 id="model-interpretation">Model&nbsp;Interpretation</h4>
-<p>Quoting the&nbsp;article:</p>
-<blockquote>
-<p>The gender atypicality of gay faces extended beyond morphology. Gay men had less facial hair, suggesting differences in androgenic hair growth, grooming style, or both. They also had lighter skin, suggesting potential differences in grooming, sun exposure, and/or testosterone levels. Lesbians tended to use less eye makeup, had darker hair, and wore less revealing clothes (note the higher neckline), indicating less gender-typical grooming and style. Furthermore, although women tend to smile more in general (Halberstadt, Hayes, <span class="amp">&amp;</span> Pike, 1988), lesbians smiled less than their heterosexual counterparts. Additionally, consistent with the association between baseball caps and masculinity in American culture (Skerski, 2011), heterosexual men and lesbians tended to wear baseball caps (see the shadow on their foreheads; this was also confirmed by a manual inspection of individual images). The gender atypicality of the faces of gay men and lesbians is further explored in Study&nbsp;2.</p>
-</blockquote>
-<p>Comparing these factors with the reported <span class="caps">AUC</span>, you could argue that social trends and stereotypes followed by many people, has a substantial factor in giving the classifier its power. To better understand my point, assume you want to train a classifier predicting whether or not a person in a picture is a transgender. Since many transgender people follow an exaggerated version of the opposite gender&#8217;s stereotypes in the society, and the skull itself is predictive of the sex of the person to a good extent on its own, the model would probably have an easy time giving the right&nbsp;outcome.</p>
-<p><a href="http://www.youtube.com/watch?v=GHl8xvc-GCI"><img alt="Skull and sex" src="http://img.youtube.com/vi/GHl8xvc-GCI/0.jpg"></a></p>
-<p>What I mean, is that if you have a model which doesn&#8217;t take into account the confound social variables to predict a certain variable, your results are&nbsp;crap!</p>
-<h3 id="poor-wording">Poor&nbsp;wording</h3>
-<h4 id="not-a-deep-neural-network-dnn-method">Not a Deep Neural Network (<span class="caps">DNN</span>)&nbsp;Method</h4>
-<p>The article suggests DNNs can achieve the reported performance, while using a <span class="caps">DNN</span> only to extract features, and then feeding them to an <span class="caps">SVD</span>-&gt;<span class="caps">LASSO</span>-&gt;logistic regression pipeline. How is that a <span class="caps">DNN</span> method? I can only imagine they&#8217;ve chosen to advertise it as such, due to the hype around deep learning; after all, who would dare to argue with a <span class="caps">DNN</span> these days? Basically, the statement &#8220;deep neural networks can detect sexual orientation from faces&#8221; is a complete misrepresentation of the&nbsp;research.</p>
-<h4 id="lasso-and-alpha"><span class="caps">LASSO</span> and&nbsp;alpha</h4>
-<p>They say they use <span class="caps">LASSO</span> with alpha=1 for feature selection. The alpha they refer to is a parameter of elastic net, not <span class="caps">LASSO</span>, which results in <span class="caps">LASSO</span> when set to 1. In other words, <span class="caps">LASSO</span> <span class="caps">ALWAYS</span> has that alpha equal to 1, otherwise it&#8217;s not a <span class="caps">LASSO</span>.</p>
-<h2 id="final-remarks">Final&nbsp;Remarks</h2>
-<p>I guess at the writing of this post, the article has not been accepted and it may be subject to many changes; in which case, I hope reviewers find the problems I found and many more, so that the final version of the article is a much better work than what I read. But even then, I have a hard time understanding the reason behind such studies. I&#8217;m sure there are much better and more beneficial ways of analyzing the same data and coming up with much better&nbsp;conclusions.</p>
-<p>Also, I could only analyze this research in depth only if I had the code and the data publicly available. One may argue that I can contact the authors asking for the code and the data; but that&#8217;s not what I call &#8220;publicly&nbsp;available&#8221;!</p>
+            <p><img alt="Diversity" src="files/img/foss-diversity.jpg
+Credit:https://blog.mapbox.com/our-code-of-conduct-for-open-source-2b3a81c00c80"></p>
+<p>When looking for a project to which you&#8217;d like to contribute, there are two
+major aspects you may want to consider. One is the way it&#8217;s released and
+managed, and the other is the community around&nbsp;it.</p>
+<p>The way I see the first aspect, it&#8217;s like a spectrum. Closed source proprietary
+software on one side (let say the right side), and community driven and fully 
+transparent and open
+sourced project on the other side (let say the left side).
+And it&#8217;s important to realize that different
+projects are somewhere on this spectrum, and not necessarily on either of the
+two ends; let aside the whole licensing issue which itself complicates matters
+by another order of&nbsp;magnitude.</p>
+<p>Sometimes companies &#8220;release&#8221; the source code of a product, or a part of a
+product. Microsoft does this pretty often. You can only look at the code; you
+can&#8217;t run it, you can&#8217;t use it, and most people won&#8217;t. To me it&#8217;s more like a
+public relations thingy. They use it as a tool to gain reputation among the
+community. I see such examples as the ones pretty close the right side of the&nbsp;spectrum.</p>
+<p>Going slightly to the left side of the spectrum, there are projects which are
+&#8220;released&#8221; as a whole, and they may even include a friendly license letting
+you use it under certain conditions. They may even have a GitHub account and
+dump the source code there. Some of these projects are released once, and never
+maintained further, and some go through periodical releases; but they still
+keep the public community mostly in dark about the development of the
+new features. They usually also don&#8217;t really welcome contributions from
+&#8220;outsiders&#8221;, and that&#8217;s not because they don&#8217;t like contributions; it&#8217;s mostly
+due to the fact that they have limited amount of resources and their priorities
+are dictated by the products in which these pieces of software are used. I&#8217;m not
+a big fan of contributing to these projects since a large part of the
+conversation about the project happens within the team inside the company,
+and external contributors are treated somewhat like a second order citizens to
+these projects. I get the feeling that projects such as
+<a href="https://github.com/explosion/spaCy">spaCy</a> or
+<a href="https://github.com/tensorflow/tensorflow">tensorflow</a> are such projects. They
+have an extremely slow response rate on community questions. You do get the
+feeling that it&#8217;s a one sided relationship, <em>i.e.</em> they release a version,
+and if you&#8217;re lucky, your concerns may have been addressed in the&nbsp;release.</p>
+<p>The next group of projects are the ones which are considered as a part of
+<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free and open source software (<span class="caps">FOSS</span>)</a>.
+This means not only the software is free and open source, but also volunteers
+are encouraged to contribute to it and help it be improved. Naturally, if you&#8217;d
+like to work on a project as a volunteer, these are good candidates. But even
+within this category of projects, not all of them are a friendly place to
+contributors. Fortunately, more and more projects are moving towards having
+a proper code of conduct ensuring a harassment free environment, and probably
+the most high
+profile one among the recent ones is the Linux Kernel project, which recently
+confronted Linus Trovalds about it and adopted a
+<a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=8a104f8b5867c682d994ffa7a74093c54469c11f">new code of conduct</a>.
+It is important to realize that there&#8217;s no such thing as the open source
+community. The reality is that there are different communities around different
+projects/topics. People&#8217;s attitudes differ from community to community,
+programming language to programming language,&nbsp;etc.</p>
+<p>My personal experience, which admittedly doesn&#8217;t necessarily project the
+complete picture about any community since it&#8217;s by definition subjective, has
+been the&nbsp;following:</p>
+<ul>
+<li><strong>C++</strong> community has always been the harshest in my experience (and I know
+  I&#8217;m not alone having experienced that). If you ask a question there which
+  sounds <em>stupid</em> to the experts in the field, they probably would crush you by
+  asking why you haven&#8217;t read a &#8220;proper&#8221; book on C++. By that they usually
+  mean the whole C++ <span class="caps">ISO</span>&nbsp;standard.</li>
+<li><strong>R</strong> community was really unpleasant to interact, to the point it encouraged
+  me to switch from R to Python (yeah, that is in fact why I became a python
+  coder). After creating and maintaining three packages for R in <span class="caps">CRAN</span> and
+  Bioconductor, I was kinda done with it. I need to mention that this was back
+  in 2012, and a lot could have changed in these few years. I have no idea how
+  the community behaves these days; and I&#8217;d be delighted if I&#8217;m completely wrong
+  about the community&nbsp;now.</li>
+<li><strong>Python</strong> has always been nice as far as I&#8217;m concerned. It is a language
+  which has it&#8217;s
+  <a href="https://www.python.org/psf/codeofconduct/">own code of conduct</a>. You can
+  imagine how that has influenced the whole community around&nbsp;it.</li>
+</ul>
+<p>Here are a few things you can consider when checking on a [<span class="caps">FOSS</span>]&nbsp;project:</p>
+<ul>
+<li><strong>Activity</strong>: Is the project under active development? When was the last
+  release? How often people open issues and contribute to the project? How often
+  do main developers respond to those issues? Many projects may seem pretty cool
+  at the first glance, but when you dig deeper, they may be dead projects. Sure
+  you can try to revive it, but that may require more dedication and time than
+  what you have at&nbsp;hand.</li>
+<li><strong>Code of Conduct</strong>: The presence of a code of conduct is neither a necessary
+  nor a sufficient condition for a healthy atmosphere in a project, but it&#8217;s a
+  sign that the core developers do care about the kind of atmosphere around the
+  project. Also, the more people care about codes of conducts, the more pressure
+  on the projects to adopt&nbsp;one.</li>
+<li><strong>Community Contributions</strong>: For larger projects, you can check how open the
+  community is, by checking the repository logs. There are many tools to
+  visualize activity on repositories, for instance, you can check the activity
+  around tensorflow
+  <a href="http://ghv.artzub.com/#repo=tensorflow&amp;climit=100&amp;user=tensorflow">here</a>,
+  and activity around scikit-learn
+  <a href="http://ghv.artzub.com/#repo=scikit-learn&amp;climit=100&amp;user=scikit-learn">here</a>.
+  You can easily notice how tensorflow has a special user called
+  <em>tensorflow-gardener</em>, and you can read about it
+  <a href="https://www.oreilly.com/ideas/how-the-tensorflow-team-handles-open-source-support">here</a>.
+  I personally prefer repositories which have a larger set of contributors
+  publicly contributing to the ones hiding internal development behind a special&nbsp;user.</li>
+<li><strong>Treating Contributors</strong>: It&#8217;s never pleasant to work with a bunch of snobs!
+  As a new contributor, you are bound to make many mistakes, or try things the
+  way which is not the common way it&#8217;s done in the project you&#8217;re working on.
+  This is
+  normal and expected as users join a community. It is very important for the
+  core developers of that project to know that and treat newcommers nicely
+  and encouragingly. You can see if that&#8217;s the case or not, by going through
+  some of the issues and pull requests in the project you&#8217;re checking. Just
+  take your time and read some of the conversations happening around some of
+  the issues to make sure it suits your taste. You can also check the &#8220;closed&#8221;
+  issues
+  to see how the core developers handle closing&nbsp;issues.</li>
+</ul>
+<p>In another post I&#8217;ll talk about ways you can start contributing to a project
+of your&nbsp;choice.</p>
             
             <section>
 <div class="accordion" id="accordion2">
     <div class="accordion-group">
         <div class="accordion-heading">
             <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
-                href="http://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html#disqus_thread">
+                href="http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html#disqus_thread">
                 Comments
             </a>
         </div>
@@ -147,8 +231,8 @@
                     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'adrin';
-        var disqus_identifier = 'http://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html';
-    var disqus_url = 'http://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html';
+        var disqus_identifier = 'http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html';
+    var disqus_url = 'http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html';
 
     (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -171,16 +255,13 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2017-10-05T00:00:00+02:00">Oct 5, 2017</time>
+            <time pubdate="pubdate" datetime="2018-10-13T00:00:00+02:00">Oct 13, 2018</time>
             <h4>Category</h4>
-            <a class="category-link" href="http://adrin.info/categories.html#ethics-ref">ethics</a>
+            <a class="category-link" href="http://adrin.info/categories.html#open-source-ref">open-source</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="http://adrin.info/tags.html#ethics-ref">ethics
+                <li><a href="http://adrin.info/tags.html#open-source-ref">open-source
                     <span>2</span>
-</a></li>
-                <li><a href="http://adrin.info/tags.html#machine-learning-ref">machine-learning
-                    <span>1</span>
 </a></li>
             </ul>
 <h4>Contact</h4>

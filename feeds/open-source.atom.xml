@@ -1,5 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - open-source</title><link href="http://adrin.info/" rel="alternate"></link><link href="http://adrin.info/feeds/open-source.atom.xml" rel="self"></link><id>http://adrin.info/</id><updated>2018-12-06T00:00:00+01:00</updated><entry><title>Why would you want to contribute to an open source project?</title><link href="http://adrin.info/why-would-you-want-to-contribute-to-an-open-source-project.html" rel="alternate"></link><published>2018-12-06T00:00:00+01:00</published><updated>2018-12-06T00:00:00+01:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2018-12-06:/why-would-you-want-to-contribute-to-an-open-source-project.html</id><summary type="html">&lt;p&gt;&lt;img alt="OpenSource" src="files/img/open-source-bart.jpg"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - open-source</title><link href="http://adrin.info/" rel="alternate"></link><link href="http://adrin.info/feeds/open-source.atom.xml" rel="self"></link><id>http://adrin.info/</id><updated>2018-10-13T00:00:00+02:00</updated><entry><title>How to find a good open source project for contributions?</title><link href="http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html" rel="alternate"></link><published>2018-10-13T00:00:00+02:00</published><updated>2018-10-13T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2018-10-13:/how-to-find-a-good-open-source-project-for-contributions.html</id><summary type="html">&lt;p&gt;&lt;img alt="Diversity" src="files/img/foss-diversity.jpg
+Credit:https://blog.mapbox.com/our-code-of-conduct-for-open-source-2b3a81c00c80"&gt;&lt;/p&gt;
+&lt;p&gt;When looking for a project to which you&amp;#8217;d like to contribute, there are two
+major aspects you may want to consider. One is the way it&amp;#8217;s released and
+managed, and the other is the community around&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;The way I see the first aspect, it&amp;#8217;s like a …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Diversity" src="files/img/foss-diversity.jpg
+Credit:https://blog.mapbox.com/our-code-of-conduct-for-open-source-2b3a81c00c80"&gt;&lt;/p&gt;
+&lt;p&gt;When looking for a project to which you&amp;#8217;d like to contribute, there are two
+major aspects you may want to consider. One is the way it&amp;#8217;s released and
+managed, and the other is the community around&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;The way I see the first aspect, it&amp;#8217;s like a spectrum. Closed source proprietary
+software on one side (let say the right side), and community driven and fully 
+transparent and open
+sourced project on the other side (let say the left side).
+And it&amp;#8217;s important to realize that different
+projects are somewhere on this spectrum, and not necessarily on either of the
+two ends; let aside the whole licensing issue which itself complicates matters
+by another order of&amp;nbsp;magnitude.&lt;/p&gt;
+&lt;p&gt;Sometimes companies &amp;#8220;release&amp;#8221; the source code of a product, or a part of a
+product. Microsoft does this pretty often. You can only look at the code; you
+can&amp;#8217;t run it, you can&amp;#8217;t use it, and most people won&amp;#8217;t. To me it&amp;#8217;s more like a
+public relations thingy. They use it as a tool to gain reputation among the
+community. I see such examples as the ones pretty close the right side of the&amp;nbsp;spectrum.&lt;/p&gt;
+&lt;p&gt;Going slightly to the left side of the spectrum, there are projects which are
+&amp;#8220;released&amp;#8221; as a whole, and they may even include a friendly license letting
+you use it under certain conditions. They may even have a GitHub account and
+dump the source code there. Some of these projects are released once, and never
+maintained further, and some go through periodical releases; but they still
+keep the public community mostly in dark about the development of the
+new features. They usually also don&amp;#8217;t really welcome contributions from
+&amp;#8220;outsiders&amp;#8221;, and that&amp;#8217;s not because they don&amp;#8217;t like contributions; it&amp;#8217;s mostly
+due to the fact that they have limited amount of resources and their priorities
+are dictated by the products in which these pieces of software are used. I&amp;#8217;m not
+a big fan of contributing to these projects since a large part of the
+conversation about the project happens within the team inside the company,
+and external contributors are treated somewhat like a second order citizens to
+these projects. I get the feeling that projects such as
+&lt;a href="https://github.com/explosion/spaCy"&gt;spaCy&lt;/a&gt; or
+&lt;a href="https://github.com/tensorflow/tensorflow"&gt;tensorflow&lt;/a&gt; are such projects. They
+have an extremely slow response rate on community questions. You do get the
+feeling that it&amp;#8217;s a one sided relationship, &lt;em&gt;i.e.&lt;/em&gt; they release a version,
+and if you&amp;#8217;re lucky, your concerns may have been addressed in the&amp;nbsp;release.&lt;/p&gt;
+&lt;p&gt;The next group of projects are the ones which are considered as a part of
+&lt;a href="https://en.wikipedia.org/wiki/Free_and_open-source_software"&gt;free and open source software (&lt;span class="caps"&gt;FOSS&lt;/span&gt;)&lt;/a&gt;.
+This means not only the software is free and open source, but also volunteers
+are encouraged to contribute to it and help it be improved. Naturally, if you&amp;#8217;d
+like to work on a project as a volunteer, these are good candidates. But even
+within this category of projects, not all of them are a friendly place to
+contributors. Fortunately, more and more projects are moving towards having
+a proper code of conduct ensuring a harassment free environment, and probably
+the most high
+profile one among the recent ones is the Linux Kernel project, which recently
+confronted Linus Trovalds about it and adopted a
+&lt;a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=8a104f8b5867c682d994ffa7a74093c54469c11f"&gt;new code of conduct&lt;/a&gt;.
+It is important to realize that there&amp;#8217;s no such thing as the open source
+community. The reality is that there are different communities around different
+projects/topics. People&amp;#8217;s attitudes differ from community to community,
+programming language to programming language,&amp;nbsp;etc.&lt;/p&gt;
+&lt;p&gt;My personal experience, which admittedly doesn&amp;#8217;t necessarily project the
+complete picture about any community since it&amp;#8217;s by definition subjective, has
+been the&amp;nbsp;following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;C++&lt;/strong&gt; community has always been the harshest in my experience (and I know
+  I&amp;#8217;m not alone having experienced that). If you ask a question there which
+  sounds &lt;em&gt;stupid&lt;/em&gt; to the experts in the field, they probably would crush you by
+  asking why you haven&amp;#8217;t read a &amp;#8220;proper&amp;#8221; book on C++. By that they usually
+  mean the whole C++ &lt;span class="caps"&gt;ISO&lt;/span&gt;&amp;nbsp;standard.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R&lt;/strong&gt; community was really unpleasant to interact, to the point it encouraged
+  me to switch from R to Python (yeah, that is in fact why I became a python
+  coder). After creating and maintaining three packages for R in &lt;span class="caps"&gt;CRAN&lt;/span&gt; and
+  Bioconductor, I was kinda done with it. I need to mention that this was back
+  in 2012, and a lot could have changed in these few years. I have no idea how
+  the community behaves these days; and I&amp;#8217;d be delighted if I&amp;#8217;m completely wrong
+  about the community&amp;nbsp;now.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt; has always been nice as far as I&amp;#8217;m concerned. It is a language
+  which has it&amp;#8217;s
+  &lt;a href="https://www.python.org/psf/codeofconduct/"&gt;own code of conduct&lt;/a&gt;. You can
+  imagine how that has influenced the whole community around&amp;nbsp;it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are a few things you can consider when checking on a [&lt;span class="caps"&gt;FOSS&lt;/span&gt;]&amp;nbsp;project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Activity&lt;/strong&gt;: Is the project under active development? When was the last
+  release? How often people open issues and contribute to the project? How often
+  do main developers respond to those issues? Many projects may seem pretty cool
+  at the first glance, but when you dig deeper, they may be dead projects. Sure
+  you can try to revive it, but that may require more dedication and time than
+  what you have at&amp;nbsp;hand.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code of Conduct&lt;/strong&gt;: The presence of a code of conduct is neither a necessary
+  nor a sufficient condition for a healthy atmosphere in a project, but it&amp;#8217;s a
+  sign that the core developers do care about the kind of atmosphere around the
+  project. Also, the more people care about codes of conducts, the more pressure
+  on the projects to adopt&amp;nbsp;one.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Community Contributions&lt;/strong&gt;: For larger projects, you can check how open the
+  community is, by checking the repository logs. There are many tools to
+  visualize activity on repositories, for instance, you can check the activity
+  around tensorflow
+  &lt;a href="http://ghv.artzub.com/#repo=tensorflow&amp;amp;climit=100&amp;amp;user=tensorflow"&gt;here&lt;/a&gt;,
+  and activity around scikit-learn
+  &lt;a href="http://ghv.artzub.com/#repo=scikit-learn&amp;amp;climit=100&amp;amp;user=scikit-learn"&gt;here&lt;/a&gt;.
+  You can easily notice how tensorflow has a special user called
+  &lt;em&gt;tensorflow-gardener&lt;/em&gt;, and you can read about it
+  &lt;a href="https://www.oreilly.com/ideas/how-the-tensorflow-team-handles-open-source-support"&gt;here&lt;/a&gt;.
+  I personally prefer repositories which have a larger set of contributors
+  publicly contributing to the ones hiding internal development behind a special&amp;nbsp;user.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Treating Contributors&lt;/strong&gt;: It&amp;#8217;s never pleasant to work with a bunch of snobs!
+  As a new contributor, you are bound to make many mistakes, or try things the
+  way which is not the common way it&amp;#8217;s done in the project you&amp;#8217;re working on.
+  This is
+  normal and expected as users join a community. It is very important for the
+  core developers of that project to know that and treat newcommers nicely
+  and encouragingly. You can see if that&amp;#8217;s the case or not, by going through
+  some of the issues and pull requests in the project you&amp;#8217;re checking. Just
+  take your time and read some of the conversations happening around some of
+  the issues to make sure it suits your taste. You can also check the &amp;#8220;closed&amp;#8221;
+  issues
+  to see how the core developers handle closing&amp;nbsp;issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In another post I&amp;#8217;ll talk about ways you can start contributing to a project
+of your&amp;nbsp;choice.&lt;/p&gt;</content><category term="open-source"></category></entry><entry><title>Why would you want to contribute to an open source project?</title><link href="http://adrin.info/why-would-you-want-to-contribute-to-an-open-source-project.html" rel="alternate"></link><published>2018-10-09T00:00:00+02:00</published><updated>2018-10-09T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2018-10-09:/why-would-you-want-to-contribute-to-an-open-source-project.html</id><summary type="html">&lt;p&gt;&lt;img alt="OpenSource" src="files/img/open-source-bart.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;ve been a fan of open source software for a long time. However, up until
 recently, I wasn&amp;#8217;t seriously contributing to any specific project; but why
 would you want to contribute to an open source project in the first&amp;nbsp;place?&lt;/p&gt;
@@ -35,7 +153,7 @@ to go through some of&amp;nbsp;them.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Free mentors&lt;/strong&gt; while your contribution gets reviewed. This is only true
    for the friendly and nice project communities, and fortunately their number
    is growing. For quite a few years, if not decades, open source communities
-   where mostly toxic, but that&amp;#8217;s changing and people are becoming nicer and
+   were mostly toxic, but that&amp;#8217;s changing and people are becoming nicer and
    more patient with newcomers. This means you shouldn&amp;#8217;t fear contributing,
    since the core developers of the project would help you go through the
    process and get your contribution up to the standards of the project. This

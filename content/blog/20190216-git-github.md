@@ -1,4 +1,5 @@
 Title: GIT/GITHUB, how to contribute to an open source project on GitHub?
+Status: draft
 Date: 2019-02-16
 Tags: open-source
 Category: open-source
@@ -430,6 +431,11 @@ branch as the _from_ branch, and the _master_ on the original repo as the _to_
 branch. Please note that it would be the _develop_ branch on the upstream repo
 if that was what you based your changes on. But in this case, we based the
 changes on the `master` branch of the upstream repo.
+
+Now you could click on the "_Compare & pull request_" button, or you could go
+to the upstream repository, then _Pull requests_, and then _New pull request_,
+which brings you to this page:
+
 
 
 [^f1]: Chacon, Scott, and Ben Straub. Pro git. Apress, 2014.

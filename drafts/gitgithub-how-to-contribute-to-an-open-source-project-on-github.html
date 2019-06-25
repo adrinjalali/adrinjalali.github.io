@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="adrin" />
+        <meta name="copyright" content="adrin" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="open-source, open-source, " />
+
+<meta property="og:title" content="GIT/GITHUB, how to contribute to an open source project on GitHub? "/>
+<meta property="og:url" content="../drafts/gitgithub-how-to-contribute-to-an-open-source-project-on-github.html" />
+<meta property="og:description" content="The idea behind this post is not to show how to install the tools you need, or to list a bunch of [at a first glance seemingly random] git commands. There are enough tutorials and blog posts explaining them out there in the wild that with a web search you …" />
+<meta property="og:site_name" content="Adrin Jalali" />
+<meta property="og:article:author" content="adrin" />
+<meta property="og:article:published_time" content="2019-02-16T00:00:00+01:00" />
+<meta name="twitter:title" content="GIT/GITHUB, how to contribute to an open source project on GitHub? ">
+<meta name="twitter:description" content="The idea behind this post is not to show how to install the tools you need, or to list a bunch of [at a first glance seemingly random] git commands. There are enough tutorials and blog posts explaining them out there in the wild that with a web search you …">
+
+        <title>GIT/GITHUB, how to contribute to an open source project on GitHub?  · Adrin Jalali
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../theme/css/custom.css" media="screen">
+        <link href="http://adrin.info/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Adrin Jalali - Full Atom Feed" />
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-47061918-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+  <header><hgroup>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+  <h2><a href="/">Adrin Jalali</a></h2>
+  
+    <!-- <h4>Anyone who knows anything of history knows that great social changes are impossible without feminine upheaval. Social progress can be measured exactly by the social position of the fair sex, the ugly ones included -- Karl Marx</h4> -->
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+  
+</hgroup>
+
+</header>
+
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <div class="span1"></div>
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- <a class="brand" href="../"><span class=site-name>Adrin Jalali</span></a> -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href="../blog.html">Blog</a></li>
+                            <li ><a href="..">About</a></li>
+                            <li ><a href="..//pages/get-in-touch">Get in Touch</a></li>
+                            <li ><a href="..//pages/curriculum-vitae">Curriculum Vitae</a></li>
+                            <li ><a href="../categories.html">Categories</a></li>
+                            <li ><a href="../tags.html">Tags</a></li>
+                            <!-- <li ><a href="../archives.html">Archives</a></li> -->
+                            <li><form class="navbar-search" action="../search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="../drafts/gitgithub-how-to-contribute-to-an-open-source-project-on-github.html"> <span class="caps">GIT</span>/<span class="caps">GITHUB</span>, how to contribute to an open source project on&nbsp;GitHub?  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            
+            <p><img alt="git/github" src="files/img/20190216-git-github.png" title="Credit: https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3"></p>
+<p>The idea behind this post is not to show how to install the tools you need, or
+to list a bunch of [at a first glance seemingly random] <code>git</code> commands. There
+are enough tutorials and blog posts explaining them out there in the wild that
+with a web search you&#8217;ll find too many of them&nbsp;anyway.</p>
+<p>This goal of this post is to give you the ingredients you need, to contribute
+to a project on the GitHub platform and collaborate with other people&nbsp;there.</p>
+<p>The first important point is the distinction between <strong>git</strong> and <strong>GitHub</strong>!
+GitHub is a platform which uses <code>git</code>, but it&#8217;s also not the only platform that
+uses it. Another somewhat similar platform is <strong>GitLab</strong>, but there are crucial
+differences between the two that has made GitHub a much more convenient place
+for a community of strangers to work together. By far the best source of
+information I can recommend is the <a href="https://git-scm.com/book/en/v2">Pro Git
+book</a>. To keep it practical, I may not strictly
+stick to the definitions present in the book; the idea is to get you started
+first, then you can cover the concepts more <em>accurately</em> once you have more&nbsp;time.</p>
+<p><code>git</code> is a version control system, which&nbsp;is:</p>
+<blockquote>
+<p>Version control is a system that records changes to a file or set of files
+over time so that you can recall specific versions later<sup id="fnref:f1"><a class="footnote-ref" href="#fn:f1" rel="footnote">1</a></sup>.</p>
+</blockquote>
+<p>Strictly speaking, to develop a package using <code>git</code> there is no need for any
+server or a platform. Most <code>git</code> related tasks you&#8217;d be doing are done
+completely locally on your own machine&nbsp;anyway.</p>
+<p>The main issue at the beginning when you start to work with <code>git</code> is all the
+jargon used around it. To get an idea of what we&#8217;re talking about here, the
+<a href="https://www.youtube.com/watch?v=3a2x1iJFJWc"><span class="caps">GIT</span> Workflow - Georgia Tech - Software Development
+Process</a> short video is a great
+place to&nbsp;start:</p>
+<p><a href="https://www.youtube.com/watch?v=3a2x1iJFJWc" title="GIT Workflow - Georgia Tech - Software Development Process"><img alt="GIT Workflow - Georgia Tech - Software Development
+Process" src="http://img.youtube.com/vi/3a2x1iJFJWc/0.jpg"></a></p>
+<p>Now let&#8217;s go through some of the concepts you&#8217;d encounter in
+almost any project. For the rest of this post, I&#8217;ll be assuming you&#8217;ve
+installed <code>git</code> and gone through <a href="https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3">this
+tutorial</a>
+up to Step 3: setup &#8220;config&#8221;, and know your way around a <em>shell/terminal</em>.</p>
+<p><em>Source tree</em> is your project&#8217;s folder, with all its subfolders and files that
+are included in the project. Using <code>git</code> you&#8217;ll be keeping track of all the
+changes on the source&nbsp;tree.</p>
+<p>However, there are always files and folders which you don&#8217;t want to keep track
+of, for instance the <code>build</code> directory which keeps compiled binary files of
+your project. Cache and temporary files are also another category of files you
+would like to exclude from being tracked. The way you tell <code>git</code> to ignore
+those is through a <code>.gitignore</code> file usually put in the root of the project&#8217;s
+folder. For most programming languages, there are descent <code>.gitignore</code>
+templates, for instance you can take a look at the
+<a href="https://github.com/github/gitignore/blob/master/Python.gitignore">Python.gitignore</a>.
+This means <code>git</code> will not automatically start tracking any of the files and/or
+folders mentioned in <code>.gitignore</code>, but you can still explicitly tell it to do
+so if you wish for a particular file or folder. For instance, you may want to
+ignore all <code>.pdf</code> files, but keep a single <code>.pdf</code> in your repository for some
+reason. You would be able to do so by explicitly telling <code>git</code> to keep track of&nbsp;it.</p>
+<p>Once you start tracking changes to your project&#8217;s source tree using <code>git</code>, you
+have a <em>git repository</em>. The git repository includes all the history of the
+whole project in a <code>.git</code> folder under the root of the project. It&#8217;s worth
+noting that by default, every file and folder starting with a dot (<code>.</code>) is a
+<em>hidden</em> file/folder under&nbsp;linux.</p>
+<p>For the rest of this post, I&#8217;ll be using the screenshots taken at the time of
+writing the post. It may slightly change through time as GitHub continues its&nbsp;development.</p>
+<p>For the purpose of this tutorial, I&#8217;ve setup an example repository on GitHub,
+which you can see under <a href="https://github.com/github-tutorials/example-repo">this
+link</a>. At first it&#8217;s almost
+empty and it looks like&nbsp;this:</p>
+<p><img alt="git/github" src="files/img/git/initial-orig.png"></p>
+<p>A few things to notice here&nbsp;are:</p>
+<ul>
+<li>There&#8217;s a <em>Watch/Unwatch</em> button which takes a few states, and you can use it
+  to set the amount of notification you&#8217;d be receiving for the repository. You
+  will receive a notification (depending on your settings, it can be an email)
+  for each event happening on the repository. If you&#8217;d like to be informed and
+  notified of every single post and contribution on the repo, then you&#8217;d want
+  to &#8220;<em>watch</em>&#8221; it. For a busy repository like <em>scikit-learn</em>, it can be tens of
+  emails a day. By default, you&#8217;ll be notified if there&#8217;s a response to the
+  issues and pull requests you&#8217;ve been working on (we&#8217;ll get to them&nbsp;shortly).</li>
+<li>If you like to make the contributors and maintainers of the repository happy,
+  you should consider &#8220;<em>Star</em>&#8220;ing the&nbsp;repo.</li>
+</ul>
+<p>The other option up there, is <strong>fork</strong>, which requires a bit of an explanation.
+When you have a git repository, you can <strong>clone</strong> that by copying everything
+you have on that repo, including the <code>.git</code> folder. So copying is the simplest
+type of clone you can have. The clone is the same as the original repository,
+including its history (since you copied the <code>.git</code> folder as well). But let say
+you want to clone a repository from a server, and every now and then sync your
+local copy with what you have on the server. That&#8217;s why you also have a &#8220;clone
+or download&#8221; button on your repository, which gives you the address of the
+repository which you can use locally to clone using a <code>git</code> command. Here&#8217;s how
+you could get the address on the original&nbsp;repository:</p>
+<p><img alt="git/github" src="files/img/git/git-clone-orig.png"></p>
+<p>And then you&#8217;d be using the following command to clone that repository&nbsp;locally:</p>
+<div class="highlight"><pre><span></span>$ git clone https://github.com/github-tutorials/example-repo.git
+</pre></div>
+
+
+<p>The above command will download the repository and put it in a folder named the
+same as the repo itself (<code>example-repo</code> in this case). At the same time, it
+will store the information about from where it got the repository, which is
+called a <strong>remote</strong>, and by default this remote is called <em>origin</em>. You can get
+a list of your remotes using the following command (after going to your repo&#8217;s&nbsp;folder):</p>
+<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> example-repo
+$ git remote -v
+origin  https://github.com/github-tutorials/example-repo.git <span class="o">(</span>fetch<span class="o">)</span>
+origin  https://github.com/github-tutorials/example-repo.git <span class="o">(</span>push<span class="o">)</span>
+</pre></div>
+
+
+<p>Again, please note that the above command and all the ones from this point
+should be run when you&#8217;re already in your repository&#8217;s folder. As you can see,
+there are two identical addressed for two purposes, <em>fetch</em> and <em>push</em>. You can
+<em>fetch</em> changes on the repository which have happened on the <em>remote</em> server,
+but you don&#8217;t have, using <code>git fetch</code>, and <em>push</em> any changes on your local
+machine using <code>git push</code>. But there are a few steps before we can do&nbsp;that.</p>
+<p>You may have noticed that we cloned the repository, without telling a
+maintainer of the original repo that we&#8217;re doing so. That&#8217;s because the repo is
+a <em>public repository</em>. For a <em>private repository</em> you need to be given explicit
+permissions by a maintainer/package developer before you can access it.
+Basically if you see a repository on GitHub, you can clone&nbsp;it.</p>
+<p>However, since you&#8217;re not given explicit permissions, you cannot modify
+anything on the original repo, and that also means you cannot do a <code>git push</code>
+directly to it. That&#8217;s why you need to <strong>fork</strong> the repository before cloning
+it. It&#8217;ll create a server side clone of the repo in your account. You can do
+that by simply pushing the &#8220;<em>fork</em>&#8221; button up there. Please note that if you&#8217;re
+a member of one or more organizations, it&#8217;ll ask you to choose an organization
+where it should create the fork. Your username will be listed there and you
+can choose that to create the fork under your own user and not touch any of the
+organizations you&#8217;re a member of. Otherwise it&#8217;ll simply create the fork under
+your username. This is what you&#8217;ll see once you fork the&nbsp;repo:</p>
+<p><img alt="git/github" src="files/img/git/initial-fork.png"></p>
+<p>As you can see, it also tells you from where you forked the repository. Now you
+have administrative access to this repository, and that&#8217;s why you also see a
+&#8220;<em>Settings</em>&#8221; tab. Now if you try to get the clone address of this repo, it
+shows you the one you own. Now you have two options, you can delete what you
+had cloned, and clone a new one using the new address, which in my case would&nbsp;be:</p>
+<div class="highlight"><pre><span></span>$ git clone https://github.com/adrinjalali/example-repo.git
+</pre></div>
+
+
+<p>Please note that the <code>github-tutorials</code> is changed to <code>adrinjalali</code>, my
+username. But you can also manipulate your remotes and change what you have to
+the new remote address, and avoid having to delete and redownload the
+repository. By convention/default, <code>origin</code> is the remote you own and you sync
+your local copy with, and <code>upstream</code> is the original repository you forked.
+Every now and then you&#8217;ll be needing to resync your repository with the changes
+which have happened on <code>upstream</code>, to keep up with the latest changes. So,
+let&#8217;s first rename <code>origin</code> to <code>upstream</code>:</p>
+<div class="highlight"><pre><span></span>$ git remote rename origin upstream
+</pre></div>
+
+
+<p>And then add the new <code>origin</code>:</p>
+<div class="highlight"><pre><span></span>$ git remote add origin https://github.com/adrinjalali/example-repo.git
+$ git remote -v
+origin  https://github.com/adrinjalali/example-repo.git <span class="o">(</span>fetch<span class="o">)</span>
+origin  https://github.com/adrinjalali/example-repo.git <span class="o">(</span>push<span class="o">)</span>
+upstream    https://github.com/github-tutorials/example-repo.git <span class="o">(</span>fetch<span class="o">)</span>
+upstream    https://github.com/github-tutorials/example-repo.git <span class="o">(</span>push<span class="o">)</span>
+</pre></div>
+
+
+<p>If you had first forked and then cloned your own repo, you&#8217;d need to only add
+the <code>upstream</code> as a remote, and now you have the ingredients to do&nbsp;so.</p>
+<p>Now let say you&#8217;d want to find something to work on, related to this repo.
+Usually (but not always), there&#8217;s an issue related what you&#8217;d be working on.
+You can either report an issue yourself before starting a change, or you can
+pick up an issue and say you&#8217;d like to work on it. The &#8220;<em>issues</em>&#8221; tab on the
+original repository (the upstream, not yours) would be the place to start. For
+instance, I&#8217;ve added two issues on our example and it looks&nbsp;like:</p>
+<p><img alt="git/github" src="files/img/git/issues.png"></p>
+<p>Now assume you&#8217;d like to work on the &#8220;Explain what this repository is&#8221; issue.
+It states what should be done, and you can leave a comment saying you&#8217;ll fix
+it. It&#8217;ll be different for you since you&#8217;re not a member/maintainer of the
+repo, but it&#8217;ll look similar to this&nbsp;one:</p>
+<p><img alt="git/github" src="files/img/git/issue-1.png"></p>
+<p>Please also note that on the right side of the title of the issue, and in the
+<span class="caps">URL</span> of the issue, the <span class="caps">ID</span> of the issue is mentioned, which is 1 in this case
+(the first issue in the repository); we&#8217;ll get back to it&nbsp;later.</p>
+<p>Going back to your local copy of the repo, you can start contributing using a
+<em>git workflow</em>, which involves proper <em>branching</em> and <em>merging</em> and so on.
+There are different ways you can do that, and with a quick search you&#8217;ll find
+proposals such as <a href="https://sandofsky.com/blog/git-workflow.html">this</a>,
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows">this</a>, and
+<a href="https://nvie.com/posts/a-successful-git-branching-model/">this</a> one. It&#8217;s good
+to go through some of those and familiarize yourself with the process, but it&#8217;s
+not a must. Those workflows become more important if a few collaborators start
+working on the same repository, which would happen in an organization and
+specially on a GitLab platform. However, since you&#8217;ll be doing everything on
+your own repository and not the upstream, you can do whatever you want without
+disturbing the <em>upstream</em>. Something they all have in common is the concept of
+a <strong>branch</strong>. As <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">the book has
+it</a>:</p>
+<blockquote>
+<p>Nearly every <span class="caps">VCS</span> [(Version Control System)] has some form of branching
+support. Branching means you diverge from the main line of development and
+continue to do work without messing with that main line. In many <span class="caps">VCS</span> tools,
+this is a somewhat expensive process, often requiring you to create a new
+copy of your source code directory, which can take a long time for large&nbsp;projects.</p>
+<p>Some people refer to Git’s branching model as its “killer feature,” and it
+certainly sets Git apart in the <span class="caps">VCS</span> community. Why is it so special? The way
+Git branches is incredibly lightweight, making branching operations nearly
+instantaneous, and switching back and forth between branches generally just
+as fast. Unlike many other VCSs, Git encourages workflows that branch and
+merge often, even multiple times in a day. Understanding and mastering this
+feature gives you a powerful and unique tool and can entirely change the way
+that you&nbsp;develop.</p>
+</blockquote>
+<p>The main branch is always <code>master</code>. Another main branch in a project may be
+<code>dev</code>, <code>devel</code>, or <code>develop</code>, but not all projects have it, and it depends on
+the kind of <em>workflow</em> they choose to follow. If they choose to have <code>master</code>
+very stable and corresponding to the latest release, then the main development
+would happen on <code>develop</code>. On the other hand, if they decide to have release
+branches and have the main development happen on <code>master</code>, they&#8217;ll probably not
+have the <code>develop</code> branch and instead have branches such as <code>v1.2</code>, <code>v1.3</code>,
+etc. You usually would need to <em>base</em> your development on the active and under
+development branch. When you <em>fork</em> or <em>clone</em> a repository, it also includes
+all the branches that repository, and you can simply change to that branch&nbsp;locally.</p>
+<p>You can always see the branch you have as active&nbsp;using:</p>
+<div class="highlight"><pre><span></span>$ git status
+On branch master
+nothing to commit, working tree clean
+</pre></div>
+
+
+<p>As you can see, by default you&#8217;re on the <code>master</code> branch. Now since <code>master</code> is
+our main development branch, you can base your work on it and create a branch
+from it. You can create a branch based on your current active branch&nbsp;using:</p>
+<div class="highlight"><pre><span></span>$ git branch <span class="nb">test</span>
+$ git status
+On branch master
+nothing to commit, working tree clean
+$ git branch --list
+* master
+  <span class="nb">test</span>
+</pre></div>
+
+
+<p>As you can see, we created a branch, but still stayed on master. In order to
+change to the newly created branch, you should <strong>checkout</strong> the&nbsp;branch:</p>
+<div class="highlight"><pre><span></span>$ git checkout <span class="nb">test</span>
+Switched to branch <span class="s1">&#39;test&#39;</span>
+$ git branch --list
+  master
+* <span class="nb">test</span>
+</pre></div>
+
+
+<p>You can also go back to <code>master</code>, and safely delete this <code>test</code> branch:</p>
+<div class="highlight"><pre><span></span>$ git checkout master
+Switched to branch <span class="s1">&#39;master&#39;</span>
+$ git branch -D <span class="nb">test</span>
+Deleted branch <span class="nb">test</span> <span class="o">(</span>was ea65abd<span class="o">)</span>.
+$ git branch --list
+* master
+</pre></div>
+
+
+<p><code>ea65abd</code> is the <em>abbreviated commit hash</em> which you can ignore for&nbsp;now.</p>
+<p>A more convenient way to create a new branch and check it out at the same time
+would&nbsp;be:</p>
+<div class="highlight"><pre><span></span>$ git checkout -b doc/readme
+Switched to a new branch <span class="s1">&#39;doc/readme&#39;</span>
+</pre></div>
+
+
+<p>As you can see, the name of the new branch is <code>doc/readme</code>. The name can be
+almost anything, and one convention that some people follow is to name branches
+as <code>category/item</code>, but you could as well do <code>category-item</code>, or
+<code>my-random-branch-name</code>. I&#8217;d suggest you always keep your master clean and in
+sync with your remote, and only work on branches for each&nbsp;feature/issue.</p>
+<p>Now we can finally start working on the issue. This is the <code>README.md</code> now:</p>
+<div class="highlight"><pre><span></span>$ cat README.md 
+<span class="c1"># example-repo</span>
+example repository <span class="k">for</span> github tutorials
+</pre></div>
+
+
+<p>And let&#8217;s change it&nbsp;to:</p>
+<div class="highlight"><pre><span></span>$ cat README.md 
+<span class="c1"># example-repo</span>
+example repository <span class="k">for</span> github tutorials
+
+This repository is made to showcase some common tasks and processes on GitHub
+and to present the related <span class="sb">`</span>git<span class="sb">`</span> commands. The post explaining these processes
+is located
+<span class="o">[</span>here<span class="o">](</span>gitgithub-how-to-contribute-to-an-open-source-project-on-github.html<span class="o">)</span>.
+</pre></div>
+
+
+<p>Now let&#8217;s see what the status of the local repo&nbsp;is:</p>
+<div class="highlight"><pre><span></span>$ git status
+On branch doc/readme
+Changes not staged <span class="k">for</span> commit:
+  <span class="o">(</span>use <span class="s2">&quot;git add &amp;lt;file&amp;gt;...&quot;</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">&quot;git checkout -- &amp;lt;file&amp;gt;...&quot;</span> to discard changes in working directory<span class="o">)</span>
+
+    modified:   README.md
+
+no changes added to commit <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> and/or <span class="s2">&quot;git commit -a&quot;</span><span class="o">)</span>
+</pre></div>
+
+
+<p>As you can see, it says the <code>README.md</code> file is <strong>modified</strong>. You would need to
+<strong>add</strong> the file. That brings us to the lifecycle of a file on a git repo. As
+shown in <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">the
+book</a>:</p>
+<p><img alt="git/github" src="files/img/git/lifecycle.png"></p>
+<p>These are the 4 states a file can have under the&nbsp;repo:</p>
+<ul>
+<li><em>Untracked</em>: the file exists in the project tree, but it&#8217;s not being tracked
+  by&nbsp;git.</li>
+<li><em>Unmodified</em>: <code>git status</code> won&#8217;t report any of these files, since there has
+  been no changes to them since the last <em>snapshot</em> git has taken from them.
+  That snapshot happens when you <strong>commit</strong> the changes to&nbsp;files.</li>
+<li><em>Modified</em>: the previous version of the file is recorded in the git repo, but
+  since then, there has been changes to it, and these changes are not recorded&nbsp;yet.</li>
+<li><em>Staged</em>: there has been changes to the file since the last <em>snapshot</em>, and
+  these changes are set to be recorded by a <strong>commit</strong>, but that commit hasn&#8217;t
+  happened&nbsp;yet.</li>
+</ul>
+<p>A more comprehensive explanation of how to record changes in the repo can be
+found
+<a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">here</a>.</p>
+<p>So now we need to move the <code>README.md</code> from <em>modified</em> to <em>staged</em> (using <code>git
+add</code>), and then to <em>unmodified</em> (using <code>git commit</code>):</p>
+<div class="highlight"><pre><span></span>$ git add README.md
+$ git commit -m <span class="s2">&quot;added required changes to the README.md&quot;</span>
+</pre></div>
+
+
+<p>Always include a message with the commit. Meaningful <em>Commit messages</em> are
+extremely helpful for later coming back and finding some changes you&#8217;ve made
+previously. Alternatively, you could summarize the above two commands in&nbsp;one:</p>
+<div class="highlight"><pre><span></span>$ git commit -am <span class="s2">&quot;added required changes to the README.md&quot;</span>
+<span class="o">[</span>doc/readme b43f0b6<span class="o">]</span> added required changes to the README.md
+ <span class="m">1</span> file changed, <span class="m">5</span> insertions<span class="o">(</span>+<span class="o">)</span>
+$ git status
+On branch doc/readme
+nothing to commit, working tree clean
+</pre></div>
+
+
+<p>The difference is that <code>git commit -a</code> adds all modified files to the staging
+area, which may not be what you want. For more control you can use the two
+separate commands. Also, as you can see, the working tree is <em>clean</em>&nbsp;again.</p>
+<p>Now it&#8217;s time to <strong>push</strong> the changes to our remote copy of the repository,
+which we can do by <code>git push</code>:</p>
+<div class="highlight"><pre><span></span>$ git push
+fatal: The current branch doc/readme has no upstream branch.
+To push the current branch and <span class="nb">set</span> the remote as upstream, use
+
+    git push --set-upstream origin doc/readme
+</pre></div>
+
+
+<p><span class="caps">OOPS</span>, it failed, because there is no corresponding branch on the remote copy
+which corresponds to the local branch we&#8217;ve made. Your own remote copy is the
+<em>upstream</em> to the local copy, and you see that you need to tell git which
+branch on the upstream should be the corresponding one. As you can see, by
+default it suggests the same branch name, on the <code>origin</code> remote. The suggested
+command would create a new branch on your remote copy, and upload the changes
+to that&nbsp;branch:</p>
+<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">set</span><span class="o">-</span><span class="n">upstream</span> <span class="n">origin</span> <span class="n">doc</span><span class="o">/</span><span class="n">readme</span>
+<span class="n">Enumerating</span> <span class="nl">objects</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="n">done</span><span class="p">.</span>
+<span class="n">Counting</span> <span class="nl">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">5</span><span class="p">),</span> <span class="n">done</span><span class="p">.</span>
+<span class="n">Delta</span> <span class="n">compression</span> <span class="n">using</span> <span class="n">up</span> <span class="n">to</span> <span class="mi">4</span> <span class="n">threads</span>
+<span class="n">Compressing</span> <span class="nl">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="n">done</span><span class="p">.</span>
+<span class="n">Writing</span> <span class="nl">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="mi">461</span> <span class="n">bytes</span> <span class="o">|</span> <span class="mf">461.00</span> <span class="n">KiB</span><span class="o">/</span><span class="n">s</span><span class="p">,</span> <span class="n">done</span><span class="p">.</span>
+<span class="n">Total</span> <span class="mi">3</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">),</span> <span class="n">reused</span> <span class="mi">0</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nl">remote</span><span class="p">:</span> 
+<span class="nl">remote</span><span class="p">:</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">pull</span> <span class="n">request</span> <span class="k">for</span> <span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span> <span class="n">on</span> <span class="n">GitHub</span> <span class="n">by</span> <span class="nl">visiting</span><span class="p">:</span>
+<span class="nl">remote</span><span class="p">:</span>      <span class="nl">https</span><span class="p">:</span><span class="c1">//github.com/adrinjalali/example-repo/pull/new/doc/readme</span>
+<span class="nl">remote</span><span class="p">:</span> 
+<span class="n">To</span> <span class="n">github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">adrinjalali</span><span class="o">/</span><span class="n">example</span><span class="o">-</span><span class="n">repo</span><span class="p">.</span><span class="n">git</span>
+ <span class="o">*</span> <span class="p">[</span><span class="n">new</span> <span class="n">branch</span><span class="p">]</span>      <span class="n">doc</span><span class="o">/</span><span class="n">readme</span> <span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">doc</span><span class="o">/</span><span class="n">readme</span>
+<span class="n">Branch</span> <span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span> <span class="n">set</span> <span class="n">up</span> <span class="n">to</span> <span class="n">track</span> <span class="n">remote</span> <span class="n">branch</span> <span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span> <span class="n">from</span> <span class="err">&#39;</span><span class="n">origin</span><span class="err">&#39;</span><span class="p">.</span>
+</pre></div>
+
+
+<p>Your output would be slightly different. Here I had to change my remote and use
+the ssh connection instead. Not only it&#8217;s more secure, it also allows you to
+interact with your account without the need to enter your username/password
+every time you need permissions. You can find the guides to setup that for your
+account
+<a href="https://help.github.com/articles/connecting-to-github-with-ssh/">here</a>. I also
+recommend activating a two factor authentication (<span class="caps">2FA</span>) for your&nbsp;account.</p>
+<p>Now if you go back to your account and check the repository, you&#8217;ll see that a
+new branch has been&nbsp;created:</p>
+<p><img alt="git/github" src="files/img/git/github-branches.png"></p>
+<p>Now that you have the changes on your account, you can go ahead and create the
+first <strong>pull request</strong>. It basically means you&#8217;d send a request to the
+maintainers of the repository to pull the changes you&#8217;ve made, from your repo
+into the original repo. For that, you also need to specify your <code>doc/readme</code>
+branch as the <em>from</em> branch, and the <em>master</em> on the original repo as the <em>to</em>
+branch. Please note that it would be the <em>develop</em> branch on the upstream repo
+if that was what you based your changes on. But in this case, we based the
+changes on the <code>master</code> branch of the upstream&nbsp;repo.</p>
+<p>Now you could click on the &#8220;<em>Compare <span class="amp">&amp;</span> pull request</em>&#8221; button, or you could go
+to the upstream repository, then <em>Pull requests</em>, and then <em>New pull request</em>,
+which brings you to this&nbsp;page:</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:f1">
+<p>Chacon, Scott, and Ben Straub. Pro git. Apress, 2014.&#160;<a class="footnote-backref" href="#fnref:f1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+            
+            
+            <hr/>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2019-02-16T00:00:00+01:00">Feb 16, 2019</time>
+            <h4>Category</h4>
+            <a class="category-link" href="../categories.html#open-source-ref">open-source</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="../tags.html#open-source-ref">open-source
+                    <span>4</span>
+</a></li>
+            </ul>
+<h4>Contact</h4>
+<ul class="menu-list">
+    <li><a href="mailto:adrin.jalali@gmail.com">
+      <span class="icon is-small">
+          <i class="fa fa-globe fa-fw"></i>
+      </span>
+      <span class="link-text">email</span>
+    </a></li>
+    <li><a href="https://github.com/adrinjalali">
+      <span class="icon is-small">
+          <i class="fa fa-github fa-fw"></i>
+      </span>
+      <span class="link-text">github</span>
+    </a></li>
+    <li><a href="https://stackoverflow.com/users/2536294/adrin">
+      <span class="icon is-small">
+          <i class="fa fa-globe fa-fw"></i>
+      </span>
+      <span class="link-text">stack-overflow</span>
+    </a></li>
+    <li><a href="https://de.linkedin.com/in/adrinjalali">
+      <span class="icon is-small">
+          <i class="fa fa-linkedin fa-fw"></i>
+      </span>
+      <span class="link-text">linkedin</span>
+    </a></li>
+</ul>
+            <h4 id="recent-posts">Recent Posts <a id="allposts" href="../archives.html">all posts</a></h4>
+        <div class="recent-posts">
+            <article>
+                <a href="../scikit-learn-sprint-at-nairobi-kenya.html">scikit-learn sprint at Nairobi,&nbsp;Kenya  </a>
+                <section>
+                    posted in
+                <a href="../categories.html#open-source-ref">open-source</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2019-06-25T00:00:00+02:00">Tue 25 June 2019</time>
+                </div>
+                </section>
+            </article>
+            <article>
+                <a href="../ways-to-contribute-to-open-source-projects.html">Ways to contribute to open source&nbsp;projects!  </a>
+                <section>
+                    posted in
+                <a href="../categories.html#open-source-ref">open-source</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2018-10-27T00:00:00+02:00">Sat 27 October 2018</time>
+                </div>
+                </section>
+            </article>
+            <article>
+                <a href="../how-to-find-a-good-open-source-project-for-contributions.html">How to find a good open source project for&nbsp;contributions?  </a>
+                <section>
+                    posted in
+                <a href="../categories.html#open-source-ref">open-source</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2018-10-13T00:00:00+02:00">Sat 13 October 2018</time>
+                </div>
+                </section>
+            </article>
+            <article>
+                <a href="../why-would-you-want-to-contribute-to-an-open-source-project.html">Why would you want to contribute to an open source&nbsp;project?  </a>
+                <section>
+                    posted in
+                <a href="../categories.html#open-source-ref">open-source</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2018-10-09T00:00:00+02:00">Tue 09 October 2018</time>
+                </div>
+                </section>
+            </article>
+            <article>
+                <a href="../vectorfight-winning-hacking-global-health.html">VectorFight - Winning &#8220;Hacking Global&nbsp;Health&#8221;  </a>
+                <section>
+                    posted in
+                <a href="../categories.html#healthcare-ref">healthcare</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2017-12-06T00:00:00+01:00">Wed 06 December 2017</time>
+                </div>
+                </section>
+            </article>
+        </div>
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-license"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</li>
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    
+    </body>
+    <!-- Theme: Elegant built for Pelican
+    License : http://oncrashreboot.com/pelican-elegant -->
+</html>

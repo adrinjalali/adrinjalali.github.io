@@ -1,5 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="http://adrin.info/" rel="alternate"></link><link href="http://adrin.info/feeds/all-en.atom.xml" rel="self"></link><id>http://adrin.info/</id><updated>2018-10-13T00:00:00+02:00</updated><entry><title>How to find a good open source project for contributions?</title><link href="http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html" rel="alternate"></link><published>2018-10-13T00:00:00+02:00</published><updated>2018-10-13T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2018-10-13:/how-to-find-a-good-open-source-project-for-contributions.html</id><summary type="html">&lt;p&gt;&lt;img alt="Diversity" src="files/img/foss-diversity.jpg" title="Credit: https://blog.mapbox.com/our-code-of-conduct-for-open-source-2b3a81c00c80"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="http://adrin.info/" rel="alternate"></link><link href="http://adrin.info/feeds/all-en.atom.xml" rel="self"></link><id>http://adrin.info/</id><updated>2019-06-25T00:00:00+02:00</updated><entry><title>scikit-learn sprint at Nairobi, Kenya</title><link href="http://adrin.info/scikit-learn-sprint-at-nairobi-kenya.html" rel="alternate"></link><published>2019-06-25T00:00:00+02:00</published><updated>2019-06-25T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2019-06-25:/scikit-learn-sprint-at-nairobi-kenya.html</id><summary type="html">&lt;p&gt;&lt;img alt="nairobi/sklearn" src="files/img/nairobi-sklearn.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Almost a year ago, after being the co-speaker of a &amp;#8220;My first open source
+contribution&amp;#8221; talk at PyData Berlin 2018, I myself became very motivated and
+started actively contributing to the &lt;code&gt;scikit-learn&lt;/code&gt; project. I was surprised to
+see how much I could and had to learn to improve my contributions …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="nairobi/sklearn" src="files/img/nairobi-sklearn.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Almost a year ago, after being the co-speaker of a &amp;#8220;My first open source
+contribution&amp;#8221; talk at PyData Berlin 2018, I myself became very motivated and
+started actively contributing to the &lt;code&gt;scikit-learn&lt;/code&gt; project. I was surprised to
+see how much I could and had to learn to improve my contributions, and that was
+after over 20 years of programming experience, 6 years of which I did mostly
+Python, and several years of working in the industry. It wasn&amp;#8217;t even the first
+time I was contributing to an open source project, but it was the first time I
+was actively looking for issues to&amp;nbsp;fix.&lt;/p&gt;
+&lt;p&gt;One of the reasons I stayed on the project, was the extremely nice and patient
+attitude of the reviewers and core developers of the project, most importantly,
+Joel Nothman. I felt welcomed, tutored, and guided throughout my contributions.
+Of course it also required my patience, since some of the contributions would
+go through a long iteration process, even though they were only a few lines of
+example code. After a while I was more confident taking over some of the more
+challenging tasks, and it felt more rewarding as they became more&amp;nbsp;challenging.&lt;/p&gt;
+&lt;p&gt;One day in December (2018), I woke up to find an email in my inbox which said
+they&amp;#8217;d like to have me as a core developer, and if I&amp;#8217;d accept. There are very
+few instances in my life in which I remember such a feeling of happiness
+flowing through my whole existence. I accepted with joy, and there I was with
+a whole bunch of new responsibilities added to my shoulders; but the kind which
+make me want to wake up in the morning to take care&amp;nbsp;of.&lt;/p&gt;
+&lt;p&gt;It also happened to be the case that the core team was planning a sprint in
+Paris to go be together and work on issues in person for a few days. I joined
+that sprint, in February, where we worked for a whole week, 9am to 10pm more or
+less. It was so stimulating that I did not realize how exhausted I had become.
+When I went back home, it took me quite a few days to recover, but it was one
+of the best weeks of my life, working with brilliant people from all around the
+world. It was also really good for the project, since we managed to solve some
+of the very long standing issues of the project, which had been open for&amp;nbsp;years.&lt;/p&gt;
+&lt;p&gt;It was a while after that when I saw an email in the mailing list, asking if
+somebody could give a hand for a sprint being planned in Nairobi, Kenya. It was
+going to be organized by Women in Machine Learning and Data Science
+(&lt;a href="http://wimlds.org/"&gt;WiMLDS&lt;/a&gt;), and since it was the combination of two things
+very close to my heart (diversity and open source), I made sure to respond to
+it and offer my help &lt;span class="caps"&gt;ASAP&lt;/span&gt;. Reshama Shaikh, the main organizer from the WiMLDS
+side, got back to me shortly and we started planning for the sprint. What I did
+&lt;span class="caps"&gt;NOT&lt;/span&gt; know, was that they were planning to fly a contributor to Nairobi to be
+there in person for the sprint, which I found a very nice&amp;nbsp;surprise.&lt;/p&gt;
+&lt;p&gt;I think it took around 4 months of planning which I was involved with,
+including vaccination, visa, etc. I don&amp;#8217;t think we even planned the sprint in
+Paris this much, but Reshama and Mariam Haji (the main organizer in Nairobi)
+were both very thorough and planned everything to the last bit of it. So I flew
+to Nairobi, stayed there for 2 days, and had the sprint on a Saturday. We ended
+up having about 40 attendees, almost all new to open source, and by the end of
+the day we had over 20 open pull requests (PRs) generated by them on that
+single&amp;nbsp;day.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s so gratifying to see the joy in people&amp;#8217;s face when they open their first
+&lt;span class="caps"&gt;PR&lt;/span&gt; and receive feedback from the core developers. I always love to see their
+faces when they start touching the files of the package, which they&amp;#8217;ve used
+till then as a user. I still remember the feeling of sending a patch for an
+open source project for the first time (before &lt;code&gt;git&lt;/code&gt; was invented), and when I
+see those same feelings in new contributors faces, it pushes all the exhaustion
+out of my&amp;nbsp;being.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;d say it was a very successful sprint, specially since quite a few of the
+contributors we had there, are still contributing and opening new PRs even
+afterwards. To me, that&amp;#8217;s what a sprint for new contributors is for, to enable
+them and break all the barriers they feel having in front of them, and have
+them motivated enough that they continue contributing&amp;nbsp;afterwards.&lt;/p&gt;
+&lt;p&gt;However, I think there are still a few things which could be improved and I&amp;#8217;m
+noting them here mostly for my own future&amp;nbsp;reference.&lt;/p&gt;
+&lt;p&gt;There is a trade off between how much information the instructor tries to give
+to the audience, before they jump into finding issues to work on, and how much
+time is left for them to contribute. I kept the introduction very short, and
+just pointed them to the part of the documentation where they could follow the
+instructions and start working on issues. I did that mostly because I
+personally don&amp;#8217;t find those slide based talks very productive. However, I
+figured most people were lost, and they were not even sure which question to
+ask or where to start. What helped, was that I found a minor issue in the
+documentation, and fixed it and submitted a corresponding &lt;span class="caps"&gt;PR&lt;/span&gt;, while sharing my
+screen. Immediately after that it felt like the room now knows much better what
+they&amp;#8217;re doing. I would have one of those ready next time, and have kind of a
+hands on tutorial on contributing, &lt;code&gt;git&lt;/code&gt;, and GitHub&amp;nbsp;instead.&lt;/p&gt;
+&lt;p&gt;Another thing which I think we should improve in &lt;code&gt;sklearn&lt;/code&gt; documentation, is
+the guide for people to setup their environments. There were people who were
+still trying to setup their environment and get the package to compile still at
+the end of the day, and that to me is a strong hint that something could be&amp;nbsp;improved.&lt;/p&gt;
+&lt;p&gt;Another point is that it was a weekend, and most core developers were either
+sleeping or not at their PCs. Being the sole person trying to review the PRs as
+they come and at the same time to answer the questions on-site, is almost not
+manageable. I&amp;#8217;d try to coordinate with at least one other core developer to be
+online during the sprint, before the sprint this&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;Overall, I loved everything related to this sprint, and I hope we get to do it
+again next year&amp;nbsp;:)&lt;/p&gt;</content><category term="open-source"></category></entry><entry><title>Ways to contribute to open source projects!</title><link href="http://adrin.info/ways-to-contribute-to-open-source-projects.html" rel="alternate"></link><published>2018-10-27T00:00:00+02:00</published><updated>2018-10-27T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2018-10-27:/ways-to-contribute-to-open-source-projects.html</id><summary type="html">&lt;p&gt;&lt;img alt="OpenSource" src="files/img/20181027-opensource.png"&gt;&lt;/p&gt;
+&lt;p&gt;Writing code is not the only way you can contribute to an open source project.
+Like any other project, there are many tasks which are not programming, but are
+required to push the project forward, and many programmers are not even
+necessarily good at those tasks. Think of organizing meetups …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="OpenSource" src="files/img/20181027-opensource.png"&gt;&lt;/p&gt;
+&lt;p&gt;Writing code is not the only way you can contribute to an open source project.
+Like any other project, there are many tasks which are not programming, but are
+required to push the project forward, and many programmers are not even
+necessarily good at those tasks. Think of organizing meetups, &lt;span class="caps"&gt;UI&lt;/span&gt;/&lt;span class="caps"&gt;UX&lt;/span&gt; design,
+documentation, and translation as some examples. You can read more about these
+&lt;a href="https://opensource.com/life/16/1/8-ways-contribute-open-source-without-writing-code"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This post is by far not an exhaustive list of what can be done, rather what I
+have personally been engaged with. Let&amp;#8217;s assume you start using a piece of
+software as a library in of your projects, and through time you want to get
+engaged with it&amp;nbsp;more.&lt;/p&gt;
+&lt;p&gt;Please always remember that many of these packages are maintained by volunteers
+and they&amp;#8217;re not always immediately available to respond to your questions,
+suggestions, or contributions, so be&amp;nbsp;patient.&lt;/p&gt;
+&lt;p&gt;As a user, one of the first things you may do is to read the documentation of
+the package (and hopefully that exists for the package you&amp;#8217;re going to use). For
+most libraries out there, the documentation may be sparse, incomplete, or at
+times incomprehensible. Although in some cases it may be the case that you need
+to cover some background to better understand what you&amp;#8217;re reading, but in most
+cases it&amp;#8217;s the documentation you&amp;#8217;re reading which is not perfect. Unfortunately,
+it&amp;#8217;s not easy to convince core developers to write good and extensive
+documentation, since they&amp;#8217;re mostly busy implementing new features or fixing
+reported bugs and&amp;nbsp;issues.&lt;/p&gt;
+&lt;p&gt;Some packages allow you to suggest an edit to the documentation on the fly, from
+the browser itself, which removes the initial barrier for many to start
+contributing.
+&lt;a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html"&gt;Elasticsearch&lt;/a&gt;
+is a good example. As a new user, you probably pay attention to the
+documentation probably more than anybody else. Therefore you may find mistakes
+or see potential easy improvements which are usually not noticed by other more
+experienced users and developers. Be encouraged to suggest any change you deem
+appropriate. It may be accepted immediately, or it may start a whole
+conversation about a certain aspect of the software. Some of my contributions
+have been as small as a punctuation, to make the sentence a bit easier to&amp;nbsp;understand.&lt;/p&gt;</content><category term="open-source"></category></entry><entry><title>How to find a good open source project for contributions?</title><link href="http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html" rel="alternate"></link><published>2018-10-13T00:00:00+02:00</published><updated>2018-10-13T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2018-10-13:/how-to-find-a-good-open-source-project-for-contributions.html</id><summary type="html">&lt;p&gt;&lt;img alt="Diversity" src="files/img/foss-diversity.jpg" title="Credit: https://blog.mapbox.com/our-code-of-conduct-for-open-source-2b3a81c00c80"&gt;&lt;/p&gt;
 &lt;p&gt;When looking for a project to which you&amp;#8217;d like to contribute, there are two
 major aspects you may want to consider. One is the way it&amp;#8217;s released and
 managed, and the other is the community around&amp;nbsp;it.&lt;/p&gt;

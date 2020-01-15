@@ -4,133 +4,140 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://adrin.info/</loc>
-<lastmod>2019-06-25T16:59:22-00:00</lastmod>
+<loc>https://adrin.info/</loc>
+<lastmod>2020-01-15T16:54:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/tags.html</loc>
-<lastmod>2019-06-25T16:59:22-00:00</lastmod>
+<loc>https://adrin.info/tags.html</loc>
+<lastmod>2020-01-15T16:54:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/categories.html</loc>
-<lastmod>2019-06-25T16:59:22-00:00</lastmod>
+<loc>https://adrin.info/categories.html</loc>
+<lastmod>2020-01-15T16:54:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/pages/curriculum-vitae.html</loc>
+<loc>https://adrin.info/pages/curriculum-vitae.html</loc>
 <lastmod>2014-01-12T13:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/pages/get-in-touch.html</loc>
+<loc>https://adrin.info/pages/get-in-touch.html</loc>
 <lastmod>2018-10-09T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/</loc>
-<lastmod>2019-06-25T16:59:22-00:00</lastmod>
+<loc>https://adrin.info/</loc>
+<lastmod>2020-01-15T16:54:12-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/scikit-learn-sprint-at-nairobi-kenya.html</loc>
+<loc>https://adrin.info/how-we-form-beliefs-and-implications-on-our-beliefs-regarding-metoo.html</loc>
+<lastmod>2020-01-15T00:00:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://adrin.info/scikit-learn-sprint-at-nairobi-kenya.html</loc>
 <lastmod>2019-06-25T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/ways-to-contribute-to-open-source-projects.html</loc>
+<loc>https://adrin.info/ways-to-contribute-to-open-source-projects.html</loc>
 <lastmod>2018-10-27T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html</loc>
+<loc>https://adrin.info/how-to-find-a-good-open-source-project-for-contributions.html</loc>
 <lastmod>2018-10-13T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/why-would-you-want-to-contribute-to-an-open-source-project.html</loc>
+<loc>https://adrin.info/why-would-you-want-to-contribute-to-an-open-source-project.html</loc>
 <lastmod>2018-10-09T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/vectorfight-winning-hacking-global-health.html</loc>
+<loc>https://adrin.info/vectorfight-winning-hacking-global-health.html</loc>
 <lastmod>2017-12-06T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html</loc>
+<loc>https://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html</loc>
 <lastmod>2017-10-05T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/a-central-cancer-diagnostics-hub.html</loc>
+<loc>https://adrin.info/a-central-cancer-diagnostics-hub.html</loc>
 <lastmod>2017-04-18T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/an-essay-on-the-reproducibility-crisis.html</loc>
+<loc>https://adrin.info/an-essay-on-the-reproducibility-crisis.html</loc>
 <lastmod>2017-04-16T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/clue-wattx-hackathon.html</loc>
+<loc>https://adrin.info/clue-wattx-hackathon.html</loc>
 <lastmod>2017-04-02T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/tv-ad-attribution-gaussian-processes.html</loc>
+<loc>https://adrin.info/tv-ad-attribution-gaussian-processes.html</loc>
 <lastmod>2016-10-06T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/on-the-ethics-of-crispr.html</loc>
+<loc>https://adrin.info/on-the-ethics-of-crispr.html</loc>
 <lastmod>2015-09-01T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/zimbra-auto-provisioning-from-freeipa.html</loc>
+<loc>https://adrin.info/zimbra-auto-provisioning-from-freeipa.html</loc>
 <lastmod>2015-08-07T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://adrin.info/synapseorg.html</loc>
+<loc>https://adrin.info/synapseorg.html</loc>
 <lastmod>2014-06-10T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>

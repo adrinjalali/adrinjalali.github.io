@@ -1,5 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - ethics</title><link href="http://adrin.info/" rel="alternate"></link><link href="http://adrin.info/feeds/ethics.atom.xml" rel="self"></link><id>http://adrin.info/</id><updated>2017-10-05T00:00:00+02:00</updated><entry><title>A Criticism of “Detecting Sexual Orientation Using Neural Networks”</title><link href="http://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html" rel="alternate"></link><published>2017-10-05T00:00:00+02:00</published><updated>2017-10-05T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2017-10-05:/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html</id><summary type="html">&lt;p&gt;I&amp;#8217;d like to talk about this study: &lt;a href="https://osf.io/fk3xr/"&gt;Deep neural networks are more accurate than humans at detecting sexual orientation from facial images&lt;/a&gt;, and it&amp;#8217;s not going to be a praise of the&amp;nbsp;research!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - ethics</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/ethics.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2020-01-15T00:00:00+01:00</updated><entry><title>How we form beliefs, and implications on our beliefs regarding #metoo</title><link href="https://adrin.info/how-we-form-beliefs-and-implications-on-our-beliefs-regarding-metoo.html" rel="alternate"></link><published>2020-01-15T00:00:00+01:00</published><updated>2020-01-15T00:00:00+01:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-01-15:/how-we-form-beliefs-and-implications-on-our-beliefs-regarding-metoo.html</id><summary type="html">&lt;p&gt;&lt;img alt="celestekiss" src="files/img/202001-celestekidd-neurips.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;This is a repost of what I posted on
+&lt;a href="https://twitter.com/adrinjalali/status/1217434403044876288"&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At NeurIPS @celestekidd gave a keynote on how people form their beliefs. It was
+amazing, and had two plot twists which made the audience stand and clap at the
+end; something you don&amp;#8217;t see often in academic conferences. Here …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="celestekiss" src="files/img/202001-celestekidd-neurips.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;This is a repost of what I posted on
+&lt;a href="https://twitter.com/adrinjalali/status/1217434403044876288"&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At NeurIPS @celestekidd gave a keynote on how people form their beliefs. It was
+amazing, and had two plot twists which made the audience stand and clap at the
+end; something you don&amp;#8217;t see often in academic conferences. Here&amp;#8217;s a summary,
+and I love how it&amp;nbsp;ends.&lt;/p&gt;
+&lt;p&gt;1/ Humans continuously form beliefs. These beliefs are constantly updated. In a
+sense, our beliefs are probabilistic expectations which directly influence what
+we&amp;#8217;re interested&amp;nbsp;in.&lt;/p&gt;
+&lt;p&gt;Things which cause a very low, or a very high surprise level, are usually not
+interesting to&amp;nbsp;us.&lt;/p&gt;
+&lt;p&gt;For instance, there&amp;#8217;s a low chance that I&amp;#8217;d enjoy a book teaching the English
+alphabet, or a book in a language I don&amp;#8217;t understand, and is in an alphabet I
+don&amp;#8217;t know, and a topic I&amp;#8217;m not familiar with. In theory I could learn all
+those things at the same time, but most probably&amp;nbsp;not.&lt;/p&gt;
+&lt;p&gt;2/ Certainty diminishes interest: you&amp;#8217;re not curious about things you think you
+know. Which makes sense and is reasonable; the issue is when people are certain
+about certain issues when they shouldn&amp;#8217;t be. Anybody who&amp;#8217;s discussed politics
+with extended family is familiar with&amp;nbsp;this&lt;/p&gt;
+&lt;p&gt;Research shows it&amp;#8217;s what we think we know defines what we&amp;#8217;re interested in, and
+not what we actually know. Worse: we&amp;#8217;re more inclined to reject a correct
+feedback if we think we already know the [wrong] answer. but why do we have
+those wrong&amp;nbsp;beliefs?&lt;/p&gt;
+&lt;p&gt;3/ Certainty is driven by feedback. At least when it comes to high level
+beliefs such as concepts. If there&amp;#8217;s no feedback to correct people&amp;#8217;s beliefs,
+they may form one w/o proper evidence. If a belief results in correct answers
+even if it&amp;#8217;s not justified, it&amp;#8217;s&amp;nbsp;reinforced.&lt;/p&gt;
+&lt;p&gt;This means: if we have a belief, and we look for material online and the first
+video we see agrees with that belief, it&amp;#8217;s reinforced, and that will make us be
+interested in material which agree with what we now believe in, even if that
+first video was factually&amp;nbsp;wrong.&lt;/p&gt;
+&lt;p&gt;4/ Less feedback may encourage&amp;nbsp;overconfidence.&lt;/p&gt;
+&lt;p&gt;People have different ideas of the same concept, let it be &amp;#8220;Joe Biden&amp;#8221; or &amp;#8220;a
+cup&amp;#8221;, even in the same&amp;nbsp;context.&lt;/p&gt;
+&lt;p&gt;Also, people tend to over estimate how many other people share their
+understanding of the same&amp;nbsp;concept.&lt;/p&gt;
+&lt;p&gt;5/ Humans form beliefs&amp;nbsp;quickly.&lt;/p&gt;
+&lt;p&gt;Early evidence matters more than later&amp;nbsp;evidence.&lt;/p&gt;
+&lt;p&gt;For instance, when it comes to &amp;#8220;activated charcoal&amp;#8221;, people go from &amp;#8220;unsure&amp;#8221; to
+&amp;#8220;certain it has health benefits&amp;#8221; in two or three clicks and a few very short&amp;nbsp;videos.&lt;/p&gt;
+&lt;p&gt;Now we get to the interesting&amp;nbsp;conclusions:&lt;/p&gt;
+&lt;p&gt;There&amp;#8217;s no such thing as a neutral tech platform: not Facebook, not Google, not
+anyone else. Any platform showing content to users, sorts and filters content
+for them resulting in forming different beliefs in different&amp;nbsp;people.&lt;/p&gt;
+&lt;p&gt;Optimizing for engagement on these platforms means we&amp;#8217;re trying to keep users
+on a given platform for longer, and that&amp;#8217;s through showing them what they
+enjoy, which means enforcing what people already believe in and are interested
+in, rather than changing or correcting&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;All of that is to say algorithms pushing content online have profound impact on
+what we believe, which result in us making decisions, and not benign ones. With
+a few clicks we may walk away being convinced that we shouldn&amp;#8217;t vaccinate our
+kid, or that climate change is not&amp;nbsp;real.&lt;/p&gt;
+&lt;p&gt;The best part: it may seem to be a scary time to be a man in tech right now.
+Many men have anxiety about how to talk about gender, and how to interact with
+women post #metoo. There&amp;#8217;s a sense that careers may be destroyed over awkward
+passes or&amp;nbsp;misunderstandings.&lt;/p&gt;
+&lt;p&gt;People do believe that men are being fired for subtle comments or minor jokes.
+And this perception rightfully makes people&amp;nbsp;nervous.&lt;/p&gt;
+&lt;p&gt;The issue is that this perception is not correct, and understanding how we form
+beliefs, this is&amp;nbsp;why:&lt;/p&gt;
+&lt;p&gt;The truth is that it takes an immense amount of mistreatment for most women to
+actually complain, due to the fact that most complaints result in retaliation
+and law suits cost so much money and time that most people cannot&amp;nbsp;afford.&lt;/p&gt;
+&lt;p&gt;This prior should tell us that if we hear about a case, some unusually bad
+behavior has happened. But why do we believe a minor&amp;nbsp;misconduct?&lt;/p&gt;
+&lt;p&gt;when a harassment case becomes public, offenders almost universally apologize
+for a minor fraction of the&amp;nbsp;offense.&lt;/p&gt;
+&lt;p&gt;This makes people believe that they&amp;#8217;re often being prosecuted for a minor
+mistreatment, and makes those reportings seem unreasonable or even&amp;nbsp;unethical.&lt;/p&gt;
+&lt;p&gt;This is unfair to men who are anxious and women who miss out on those
+professional&amp;nbsp;interactions.&lt;/p&gt;
+&lt;p&gt;And finally, 3&amp;nbsp;takes:&lt;/p&gt;
+&lt;p&gt;1/ if you hear about a woman complaining around you, she&amp;#8217;s probably been
+through much more than you&amp;#8217;re aware&amp;nbsp;of.&lt;/p&gt;
+&lt;p&gt;if you hear about a woman having issues, chances are they&amp;#8217;re having more issues
+and that&amp;#8217;s the time to ask questions and help&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;2/ when you hear a man apologizing for a misunderstanding, you should know it&amp;#8217;s
+a standard response and completely predictable, no matter what happened from
+sexual harassment to sexual assault, and that they&amp;#8217;re not apologizing for all
+their&amp;nbsp;misconducts.&lt;/p&gt;
+&lt;p&gt;3/ unless men are deeply doing wrong by women around them, they&amp;#8217;re with very
+rare exceptions, incredibly&amp;nbsp;safe.&lt;/p&gt;
+&lt;p&gt;They shouldn&amp;#8217;t fear being attacked for minor comments or misunderstandings,
+cause that&amp;#8217;s not what&amp;#8217;s&amp;nbsp;happening.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s [false] myth propagated by harassers and&amp;nbsp;offenders.&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s the link for the full video: &lt;a href="https://www.youtube.com/watch?v=6qIodcz8o-Q"&gt;&lt;img alt="Celeste Kidd - NeurIPS 2019 - How to
+Know" src="http://img.youtube.com/vi/6qIodcz8o-Q/0.jpg"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="ethics"></category><category term="ethics"></category><category term="machine-learning"></category></entry><entry><title>A Criticism of “Detecting Sexual Orientation Using Neural Networks”</title><link href="https://adrin.info/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html" rel="alternate"></link><published>2017-10-05T00:00:00+02:00</published><updated>2017-10-05T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2017-10-05:/a-criticism-of-detecting-sexual-orientation-using-neural-networks.html</id><summary type="html">&lt;p&gt;I&amp;#8217;d like to talk about this study: &lt;a href="https://osf.io/fk3xr/"&gt;Deep neural networks are more accurate than humans at detecting sexual orientation from facial images&lt;/a&gt;, and it&amp;#8217;s not going to be a praise of the&amp;nbsp;research!&lt;/p&gt;
 &lt;h2 id="damaging-message"&gt;Damaging&amp;nbsp;Message&lt;/h2&gt;
 &lt;p&gt;I put this study in the same category as studies trying to argue …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;d like to talk about this study: &lt;a href="https://osf.io/fk3xr/"&gt;Deep neural networks are more accurate than humans at detecting sexual orientation from facial images&lt;/a&gt;, and it&amp;#8217;s not going to be a praise of the&amp;nbsp;research!&lt;/p&gt;
 &lt;h2 id="damaging-message"&gt;Damaging&amp;nbsp;Message&lt;/h2&gt;
@@ -30,7 +122,7 @@
 &lt;p&gt;They say they use &lt;span class="caps"&gt;LASSO&lt;/span&gt; with alpha=1 for feature selection. The alpha they refer to is a parameter of elastic net, not &lt;span class="caps"&gt;LASSO&lt;/span&gt;, which results in &lt;span class="caps"&gt;LASSO&lt;/span&gt; when set to 1. In other words, &lt;span class="caps"&gt;LASSO&lt;/span&gt; &lt;span class="caps"&gt;ALWAYS&lt;/span&gt; has that alpha equal to 1, otherwise it&amp;#8217;s not a &lt;span class="caps"&gt;LASSO&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id="final-remarks"&gt;Final&amp;nbsp;Remarks&lt;/h2&gt;
 &lt;p&gt;I guess at the writing of this post, the article has not been accepted and it may be subject to many changes; in which case, I hope reviewers find the problems I found and many more, so that the final version of the article is a much better work than what I read. But even then, I have a hard time understanding the reason behind such studies. I&amp;#8217;m sure there are much better and more beneficial ways of analyzing the same data and coming up with much better&amp;nbsp;conclusions.&lt;/p&gt;
-&lt;p&gt;Also, I could only analyze this research in depth only if I had the code and the data publicly available. One may argue that I can contact the authors asking for the code and the data; but that&amp;#8217;s not what I call &amp;#8220;publicly&amp;nbsp;available&amp;#8221;!&lt;/p&gt;</content><category term="ethics"></category><category term="machine-learning"></category></entry><entry><title>On the ethics of CRISPR</title><link href="http://adrin.info/on-the-ethics-of-crispr.html" rel="alternate"></link><published>2015-09-01T00:00:00+02:00</published><updated>2015-09-01T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2015-09-01:/on-the-ethics-of-crispr.html</id><summary type="html">&lt;p&gt;&lt;img alt="Taken from http://www.economist.com/news/leaders/21661651-new-technique-manipulating-genes-holds-great-promisebut-rules-are-needed-govern-its" src="/files/img/economist-editing-humanity.jpg" title="Credits: Economist"&gt;&lt;/p&gt;
+&lt;p&gt;Also, I could only analyze this research in depth only if I had the code and the data publicly available. One may argue that I can contact the authors asking for the code and the data; but that&amp;#8217;s not what I call &amp;#8220;publicly&amp;nbsp;available&amp;#8221;!&lt;/p&gt;</content><category term="ethics"></category><category term="ethics"></category><category term="machine-learning"></category></entry><entry><title>On the ethics of CRISPR</title><link href="https://adrin.info/on-the-ethics-of-crispr.html" rel="alternate"></link><published>2015-09-01T00:00:00+02:00</published><updated>2015-09-01T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2015-09-01:/on-the-ethics-of-crispr.html</id><summary type="html">&lt;p&gt;&lt;img alt="Taken from http://www.economist.com/news/leaders/21661651-new-technique-manipulating-genes-holds-great-promisebut-rules-are-needed-govern-its" src="/files/img/economist-editing-humanity.jpg" title="Credits: Economist"&gt;&lt;/p&gt;
 &lt;p&gt;I was reading &lt;a href="http://www.economist.com/news/leaders/21661651-new-technique-manipulating-genes-holds-great-promisebut-rules-are-needed-govern-its"&gt;this article&lt;/a&gt; on the ethics of editing human genome and I realized there&amp;#8217;s a missing point in&amp;nbsp;there.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/CRISPR"&gt;&lt;span class="caps"&gt;CRISPR&lt;/span&gt;&lt;/a&gt; in short is a technology that allows us to edit our own genome. Of course it has countless number of useful applications as it&amp;#8217;s very simply …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Taken from http://www.economist.com/news/leaders/21661651-new-technique-manipulating-genes-holds-great-promisebut-rules-are-needed-govern-its" src="/files/img/economist-editing-humanity.jpg" title="Credits: Economist"&gt;&lt;/p&gt;
 &lt;p&gt;I was reading &lt;a href="http://www.economist.com/news/leaders/21661651-new-technique-manipulating-genes-holds-great-promisebut-rules-are-needed-govern-its"&gt;this article&lt;/a&gt; on the ethics of editing human genome and I realized there&amp;#8217;s a missing point in&amp;nbsp;there.&lt;/p&gt;
@@ -38,4 +130,4 @@
 &lt;p&gt;The question I want people to think about is: who should/will have access to this technology? Obviously this technology will be very expensive when it reaches the market. Does it mean only rich people will be able to use it? And I&amp;#8217;m not talking about the applications which concern diseases; I&amp;#8217;m rather talking about editing your child&amp;#8217;s genome, to make it smarter, or stronger, or whatever you feel like&amp;nbsp;it.&lt;/p&gt;
 &lt;p&gt;We already have too much of a difference between classes in our society. This difference has been empowered partially, if not mostly, by the fact that people have been able to accumulate wealth through time and even generations. If we allow them to be the ones benefiting a technology like &lt;span class="caps"&gt;CRISPR&lt;/span&gt;, we will practically give them the power to annihilate the lower classes through&amp;nbsp;time.&lt;/p&gt;
 &lt;p&gt;One piece of good news is that some people are talking about how to regulate this sort of technology (&lt;a href="http://www.nature.com/news/regulate-gene-editing-in-wild-animals-1.17523"&gt;link&lt;/a&gt;). I believe we should start a conversation about who should have access to the technology. This concern is regardless of how and what we decide about the ethics of the method for different applications. If we, as human species, decide not to use it at all, then nobody has access to it. But if we give it a go, then we should make sure all classes of the society have equal access to it. The least and the last we need is to have a rich sub-population with higher physical and mental&amp;nbsp;capabilities.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;EDIT&lt;/span&gt;&lt;/strong&gt;: Thanks to Ian Sample, found a podcast by the guardian &lt;a href="http://www.theguardian.com/science/audio/2015/may/01/genetics"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="ethics"></category><category term="genome"></category></entry></feed>
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;EDIT&lt;/span&gt;&lt;/strong&gt;: Thanks to Ian Sample, found a podcast by the guardian &lt;a href="http://www.theguardian.com/science/audio/2015/may/01/genetics"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="ethics"></category><category term="ethics"></category><category term="genome"></category></entry></feed>

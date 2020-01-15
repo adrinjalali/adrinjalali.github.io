@@ -2,26 +2,30 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'adrin'
 SITENAME = 'Adrin Jalali'
 # SITE_DESCRIPTION="Anyone who knows anything of history knows that great social changes are impossible without feminine upheaval. Social progress can be measured exactly by the social position of the fair sex, the ugly ones included -- Karl Marx"
 SITEURL = 'http://adrin.info'
 #SITEURL = 'localhost:8000'
+
+AUTHOR = 'adrin'
+
+PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
-FEED_DOMAIN=SITEURL
-#FEED_ALL_ATOM = None
-#CATEGORY_FEED_ATOM = None
-#TRANSLATION_FEED_ATOM = None
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),)
+LINKS = (('Pelican', 'http://getpelican.com/'),
+         ('Python.org', 'http://python.org/'),
+         ('Jinja2', 'http://jinja.pocoo.org/'))
 
 # Social widget
 SOCIAL = (('email', 'mailto:adrin.jalali@gmail.com'),
@@ -68,4 +72,3 @@ USE_FOLDER_AS_CATEGORY=False
 #MAILCHIMP_FORM_ACTION=True
 
 SITEMAP={'format':'xml'}
-

@@ -10,7 +10,8 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://adrin.info'
+# If your site is available via HTTPS, make sure SITEURL begins with https://
+SITEURL = 'https://adrin.info'
 RELATIVE_URLS = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -20,7 +21,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
 GOOGLE_ANALYTICS = "UA-47061918-1"
 DISQUS_SITENAME = u'adrin'
 DISQUS_SITEURL= u'adrin.info'

@@ -3,7 +3,7 @@ Date: 2020-01-15
 Tags: ethics, machine-learning
 Category: ethics
 
-![celestekiss](files/img/202001-celestekidd-neurips.jpg)
+![celestekidd](files/img/202001-celestekidd-neurips.png)
 
 This is a repost of what I posted on
 [twitter](https://twitter.com/adrinjalali/status/1217434403044876288).

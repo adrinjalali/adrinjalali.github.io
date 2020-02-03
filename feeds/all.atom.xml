@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/all.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2020-01-15T00:00:00+01:00</updated><entry><title>How we form beliefs, and implications on our beliefs regarding #metoo</title><link href="https://adrin.info/how-we-form-beliefs-and-implications-on-our-beliefs-regarding-metoo.html" rel="alternate"></link><published>2020-01-15T00:00:00+01:00</published><updated>2020-01-15T00:00:00+01:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-01-15:/how-we-form-beliefs-and-implications-on-our-beliefs-regarding-metoo.html</id><summary type="html">&lt;p&gt;&lt;img alt="celestekidd" src="files/img/202001-celestekidd-neurips.png"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/all.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2020-01-15T00:00:00+01:00</updated><entry><title>FOSDEM 2020</title><link href="https://adrin.info/fosdem-2020.html" rel="alternate"></link><published>2020-01-15T00:00:00+01:00</published><updated>2020-01-15T00:00:00+01:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-01-15:/fosdem-2020.html</id><summary type="html">&lt;p&gt;&lt;img alt="fosdem20" src="https://fosdem.org/2020/assets/2020cake-e330eb83a6c466bcd67e7cb3291985576c4fd4f43ff954053ec0acf6c00991ab.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;This was my first &lt;a href="https://fosdem.org/2020/"&gt;&lt;span class="caps"&gt;FOSDEM&lt;/span&gt;&lt;/a&gt;, which has been happening
+in Brussels every year for the past 20 years! It&amp;#8217;s kind of a mostly talk based
+hacker space with no registration required for the attendees. This year the
+estimate was 5000 attendees each day, and that doesn&amp;#8217;t include the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="fosdem20" src="https://fosdem.org/2020/assets/2020cake-e330eb83a6c466bcd67e7cb3291985576c4fd4f43ff954053ec0acf6c00991ab.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;This was my first &lt;a href="https://fosdem.org/2020/"&gt;&lt;span class="caps"&gt;FOSDEM&lt;/span&gt;&lt;/a&gt;, which has been happening
+in Brussels every year for the past 20 years! It&amp;#8217;s kind of a mostly talk based
+hacker space with no registration required for the attendees. This year the
+estimate was 5000 attendees each day, and that doesn&amp;#8217;t include the fringe
+events happening around the main event. The &lt;a href="https://fosdem.org/2020/fringe/"&gt;fringe
+itself&lt;/a&gt; has tons of events and I managed to
+attend one or&amp;nbsp;two.&lt;/p&gt;
+&lt;p&gt;The whole thing has an interesting format; you have the main organization team
+and then the dev rooms, all handled by volunteers, and with a perfectly
+functional delegation system. The dev room volunteers have complete control
+over what happens there, given a few general rules and principles like fire
+safety and a&amp;nbsp;CoC.&lt;/p&gt;
+&lt;p&gt;It was interesting to see that they had very few sponsors, and most sponsors
+would contribute through service rather than money, &lt;em&gt;e.g.&lt;/em&gt; providing the venue,
+or the cabling system or the recycled laptops to process the&amp;nbsp;videos.&lt;/p&gt;
+&lt;p&gt;Another point which I&amp;#8217;d like to take to PyData conferences is that the video
+review was done predominantly by speakers. I received an email after my talk, I
+then suggested exact start/finish times, audio channel, etc., and with all that
+your video would be up and done within an hour after your&amp;nbsp;talk.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s truly impressive to see what they&amp;#8217;ve done with volunteer work and minimal
+external services. It&amp;#8217;s also interesting from a planning point of view that
+they manage the whole thing w/o ever knowing who&amp;#8217;s coming and how many. Of
+course there are long lines behind most of the dev room doors waiting to get
+in, but usually you wouldn&amp;#8217;t wait for more than a talk&amp;#8217;s time long and that was
+mostly around half an&amp;nbsp;hour.&lt;/p&gt;
+&lt;p&gt;One thing which stroke me was the poor gender diversity of the conference and
+the speakers. The Python room for instance, where I gave my talk, had 0 female
+speakers. The diversity wasn&amp;#8217;t much better among attendees either, and it was
+worse in some rooms than&amp;nbsp;others.&lt;/p&gt;
+&lt;p&gt;There were two events/rooms which I particularly found interesting and met a
+ton of really cool people in them were the
+&lt;a href="https://chaoss.community/chaosscon-2020-eu/"&gt;CHAOScon&lt;/a&gt; and the &lt;a href="https://fosdem.org/2020/schedule/track/community_devroom/"&gt;community dev
+room&lt;/a&gt;. We had really
+interesting discussions and talks about how to build a community around a
+project, how to measure community&amp;#8217;s health, and how to sustain it. Most
+definitely useful for the communities I&amp;#8217;m involved&amp;nbsp;with.&lt;/p&gt;
+&lt;p&gt;I also gave a talk on &lt;a href="https://fosdem.org/2020/schedule/event/python2020_scikit_learn_estimator/"&gt;How to write a scikit-learn compatible
+estimator/transformer&lt;/a&gt;
+with the
+&lt;a href="https://mirrors.dotsrc.org/fosdem/2020/UA2.252A/python2020_scikit_learn_estimator.webm"&gt;video&lt;/a&gt;
+and the
+&lt;a href="https://github.com/adrinjalali/talks/blob/master/sklearn-estimator-fosdem-2020/custom_estimators.ipynb"&gt;material&lt;/a&gt;
+both available. It was the first time I presented something (other than
+opening/closing remarks of a conference) to ~500 people. It was such a pleasure
+and privilege to do&amp;nbsp;so.&lt;/p&gt;
+&lt;p&gt;I guess I&amp;#8217;ll try to be more engaged with the community related communities next
+year if I end up going, and should definitely plan my time better. It&amp;#8217;s
+overwhelming and exhausting to try and figure things out there. The talks are
+also all live streamed, that&amp;#8217;s also something to&amp;nbsp;use.&lt;/p&gt;</content><category term="blog"></category><category term="conference"></category><category term="community"></category></entry><entry><title>How we form beliefs, and implications on our beliefs regarding #metoo</title><link href="https://adrin.info/how-we-form-beliefs-and-implications-on-our-beliefs-regarding-metoo.html" rel="alternate"></link><published>2020-01-15T00:00:00+01:00</published><updated>2020-01-15T00:00:00+01:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-01-15:/how-we-form-beliefs-and-implications-on-our-beliefs-regarding-metoo.html</id><summary type="html">&lt;p&gt;&lt;img alt="celestekidd" src="files/img/202001-celestekidd-neurips.png"&gt;&lt;/p&gt;
 &lt;p&gt;This is a repost of what I posted on
 &lt;a href="https://twitter.com/adrinjalali/status/1217434403044876288"&gt;twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;At NeurIPS @celestekidd gave a keynote on how people form their beliefs. It was

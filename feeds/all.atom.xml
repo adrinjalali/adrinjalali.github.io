@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/all.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2020-04-12T00:00:00+02:00</updated><entry><title>Open Source - CoC - Conflicts</title><link href="https://adrin.info/open-source-coc-conflicts.html" rel="alternate"></link><published>2020-04-12T00:00:00+02:00</published><updated>2020-04-12T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-04-12:/open-source-coc-conflicts.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html"&gt;&lt;img alt="CoC" src="files/img/code-of-conduct1-min.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;(Since I don&amp;#8217;t know individuals&amp;#8217; pronouns, &lt;em&gt;they/them&lt;/em&gt; is used in this post&amp;nbsp;instead.)&lt;/p&gt;
+&lt;p&gt;(Since I don&amp;#8217;t know individuals&amp;#8217; pronouns involved in this post, &lt;em&gt;they/them&lt;/em&gt; is
+used&amp;nbsp;instead.)&lt;/p&gt;
 &lt;p&gt;This post was triggered by three of PyTest maintainers leaving the project in a
 single day. That&amp;#8217;s 3 out of 4-5 active developers of a project which is relied
-on by a massive part …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html"&gt;&lt;img alt="CoC" src="files/img/code-of-conduct1-min.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;(Since I don&amp;#8217;t know individuals&amp;#8217; pronouns, &lt;em&gt;they/them&lt;/em&gt; is used in this post&amp;nbsp;instead.)&lt;/p&gt;
+on by a massive …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html"&gt;&lt;img alt="CoC" src="files/img/code-of-conduct1-min.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(Since I don&amp;#8217;t know individuals&amp;#8217; pronouns involved in this post, &lt;em&gt;they/them&lt;/em&gt; is
+used&amp;nbsp;instead.)&lt;/p&gt;
 &lt;p&gt;This post was triggered by three of PyTest maintainers leaving the project in a
 single day. That&amp;#8217;s 3 out of 4-5 active developers of a project which is relied
 on by a massive part of the ecosystem to test their projects/software/library.
@@ -63,8 +65,9 @@ Hahler&lt;/a&gt; who has been very active in PyTest&amp;#8217;s
 development since about &lt;a href="https://github.com/pytest-dev/pytest/graphs/contributors?from=2017-04-22&amp;amp;to=2020-04-11&amp;amp;type=c"&gt;June
 2019&lt;/a&gt;.
 Unfortunately, not all interactions with this person have been productive or
-pleasant. As an example of an interaction which has frustrated Bruno, they have
-pointed to &lt;a href="https://github.com/pytest-dev/pytest/pull/6663#discussion_r375763028"&gt;this &lt;span class="caps"&gt;PR&lt;/span&gt;/comment
+pleasant. As an example of an interaction which has frustrated Bruno, &lt;a href="https://twitter.com/nicoddemus/status/1248946262453424130?s=20"&gt;they
+have pointed&lt;/a&gt;
+to &lt;a href="https://github.com/pytest-dev/pytest/pull/6663#discussion_r375763028"&gt;this &lt;span class="caps"&gt;PR&lt;/span&gt;/comment
 thread&lt;/a&gt;,
 which I completely agree is a very unpleasant interaction. However, when it
 comes to CoC violations, if I were in PyTest&amp;#8217;s CoC committee, I would have a

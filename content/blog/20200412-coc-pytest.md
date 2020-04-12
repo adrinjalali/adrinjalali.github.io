@@ -132,8 +132,8 @@ apparent from this case as well. Let's talk about some of the reasons:
   Gap](https://www.goodreads.com/book/show/4455729-35-dumb-things-well-intended-people-say).
   As individuals, we should be aware of the consequences and the impact of our
   actions and watch for them.
-- Considering the accused's position in the community: I think the most infamous
-  example is [Linus Trovalds' many aggressive
+- Considering the accused's position in the community: I think the most
+  infamous example is [Linus Trovalds' many aggressive
   emails](https://arstechnica.com/information-technology/2013/02/linus-torvalds-i-will-not-change-linux-to-deep-throat-microsoft/)
   in the Linux Kernel community, and the community not reacting with an
   appropriate response. When people are in a position of power or influence, it
@@ -172,10 +172,11 @@ rather experienced and concerned about these issues, and could sit in different
 CoC committees.
 
 Another issue is that handling CoC cases is hard, unpleasant, and is not a
-trivial skill. Unfortunately as a community we don't really appreciate these
-skills [yet] and most people are extremely inexperienced in this regard. As a
-consequence, when a project appoints a CoC committee, most probably many
-members of the committee have not had any experience handling CoC cases.
+trivial skill. Unfortunately in the broader community we don't really
+appreciate these skills [yet] and most people are extremely inexperienced in
+this regard. As a consequence, when a project appoints a CoC committee, most
+probably many members of the committee have not had any experience handling CoC
+cases.
 
 I remember after handling a difficult CoC case, I reached out to people who
 were CoC contacts of different projects to inquire about enforceability of a

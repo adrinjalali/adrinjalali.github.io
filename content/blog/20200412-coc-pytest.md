@@ -5,8 +5,9 @@ Category: open-source
 
 [![CoC](files/img/code-of-conduct1-min.jpg)](https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html)
 
-(Since I don't know individuals' pronouns, _they/them_ is used in this post
-instead.)
+(Since I don't know individuals' pronouns involved in this post, _they/them_ is
+used instead.)
+
 
 This post was triggered by three of PyTest maintainers leaving the project in a
 single day. That's 3 out of 4-5 active developers of a project which is relied
@@ -78,8 +79,9 @@ Hahler](https://github.com/blueyed) who has been very active in PyTest's
 development since about [June
 2019](https://github.com/pytest-dev/pytest/graphs/contributors?from=2017-04-22&to=2020-04-11&type=c).
 Unfortunately, not all interactions with this person have been productive or
-pleasant. As an example of an interaction which has frustrated Bruno, they have
-pointed to [this PR/comment
+pleasant. As an example of an interaction which has frustrated Bruno, [they
+have pointed](https://twitter.com/nicoddemus/status/1248946262453424130?s=20)
+to [this PR/comment
 thread](https://github.com/pytest-dev/pytest/pull/6663#discussion_r375763028),
 which I completely agree is a very unpleasant interaction. However, when it
 comes to CoC violations, if I were in PyTest's CoC committee, I would have a

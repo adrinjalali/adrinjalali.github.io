@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://adrin.info/</loc>
-<lastmod>2020-02-03T11:53:44-00:00</lastmod>
+<lastmod>2020-04-13T00:38:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://adrin.info/tags.html</loc>
-<lastmod>2020-02-03T11:53:44-00:00</lastmod>
+<lastmod>2020-04-13T00:38:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://adrin.info/categories.html</loc>
-<lastmod>2020-02-03T11:53:44-00:00</lastmod>
+<lastmod>2020-04-13T00:38:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -40,7 +40,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://adrin.info/</loc>
-<lastmod>2020-02-03T11:53:44-00:00</lastmod>
+<lastmod>2020-04-13T00:38:37-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://adrin.info/open-source-coc-conflicts.html</loc>
+<lastmod>2020-04-12T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

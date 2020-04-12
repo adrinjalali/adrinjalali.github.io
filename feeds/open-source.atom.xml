@@ -1,5 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - open-source</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/open-source.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2019-06-25T00:00:00+02:00</updated><entry><title>scikit-learn sprint at Nairobi, Kenya</title><link href="https://adrin.info/scikit-learn-sprint-at-nairobi-kenya.html" rel="alternate"></link><published>2019-06-25T00:00:00+02:00</published><updated>2019-06-25T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2019-06-25:/scikit-learn-sprint-at-nairobi-kenya.html</id><summary type="html">&lt;p&gt;&lt;img alt="nairobi/sklearn" src="files/img/nairobi-sklearn.jpg"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - open-source</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/open-source.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2020-04-12T00:00:00+02:00</updated><entry><title>Open Source - CoC - Conflicts</title><link href="https://adrin.info/open-source-coc-conflicts.html" rel="alternate"></link><published>2020-04-12T00:00:00+02:00</published><updated>2020-04-12T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-04-12:/open-source-coc-conflicts.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html"&gt;&lt;img alt="CoC" src="files/img/code-of-conduct1-min.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(Since I don&amp;#8217;t know individuals&amp;#8217; pronouns, &lt;em&gt;they/them&lt;/em&gt; is used in this post&amp;nbsp;instead.)&lt;/p&gt;
+&lt;p&gt;This post was triggered by three of PyTest maintainers leaving the project in a
+single day. That&amp;#8217;s 3 out of 4-5 active developers of a project which is relied
+on by a massive part …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html"&gt;&lt;img alt="CoC" src="files/img/code-of-conduct1-min.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(Since I don&amp;#8217;t know individuals&amp;#8217; pronouns, &lt;em&gt;they/them&lt;/em&gt; is used in this post&amp;nbsp;instead.)&lt;/p&gt;
+&lt;p&gt;This post was triggered by three of PyTest maintainers leaving the project in a
+single day. That&amp;#8217;s 3 out of 4-5 active developers of a project which is relied
+on by a massive part of the ecosystem to test their projects/software/library.
+So it really is a big deal (obviously not as big of a deal as covid19 which is
+happening these days ;)&amp;nbsp;).&lt;/p&gt;
+&lt;p&gt;The first person to leave was &lt;a href="https://mail.python.org/pipermail/pytest-dev/2020-April/004939.html"&gt;Bruno
+Oliveira&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hi&amp;nbsp;everyone,&lt;/p&gt;
+&lt;p&gt;For the past years I&amp;#8217;ve been part of pytest, which is an awesome library
+and also a community with awesome people. It definitely made me a better
+person and better&amp;nbsp;programmer.&lt;/p&gt;
+&lt;p&gt;However, the past months or so one individual has drained my will to work
+on the project because of his interactions, so I decided it is best that I
+leave the project for a while and focus on other&amp;nbsp;things.&lt;/p&gt;
+&lt;p&gt;I of course wish the project and everyone involved the best, and will
+definitely continue to work on my numerous plugins&amp;nbsp;meanwhile.&lt;/p&gt;
+&lt;p&gt;Stay safe, and&amp;nbsp;cheers!&lt;/p&gt;
+&lt;p&gt;Bruno&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Immediately after &lt;a href="https://mail.python.org/pipermail/pytest-dev/2020-April/004940.html"&gt;Anthony
+Sottile&lt;/a&gt;
+and &lt;a href="https://mail.python.org/pipermail/pytest-dev/2020-April/004941.html"&gt;Ronny
+Pfannschmidt&lt;/a&gt;
+left for a similar reason. It seems there have been discussions in PyTest&amp;#8217;s CoC
+committee which have not come to a satisfying conclusion: judging from the fact
+that two of the three developers who have stepped down are/were in PyTest&amp;#8217;s CoC
+(Code of Conduct) team, one of them &lt;a href="https://github.com/pytest-dev/pytest/pull/6857"&gt;removing themself from the
+committee&lt;/a&gt; and &lt;a href="https://mail.python.org/pipermail/pytest-dev/2020-April/004945.html"&gt;this
+email&lt;/a&gt; by
+Brianna, another member of the CoC&amp;nbsp;team:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hi&amp;nbsp;all,&lt;/p&gt;
+&lt;p&gt;As one of the Code of Conduct (CoC) committee members (
+https://github.com/pytest-dev/pytest/blob/master/CODE_OF_CONDUCT.md ) I
+want to apologise for the poor handling of issues that have led Bruno,
+Anthony and Ronny to step back from the project. As a group we failed to
+act decisively and now people who have contributed so much to pytest are
+suffering, and for that I am&amp;nbsp;sorry.&lt;/p&gt;
+&lt;p&gt;I intend to reach out to the &lt;span class="caps"&gt;PSF&lt;/span&gt; Conduct Working Group and ask them to
+advise us on a way&amp;nbsp;forward.&lt;/p&gt;
+&lt;p&gt;thanks,&amp;nbsp;Brianna&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;#8217;m very curious to see how it unfolds and what the &lt;span class="caps"&gt;PSF&lt;/span&gt;&amp;#8217;s CoC team thinks about
+the issue, but having my CoC related experience (writing them, serving in CoC
+committees, dealing with the same issues in other open source projects, etc.),
+I don&amp;#8217;t think there&amp;#8217;s an easy answer to the&amp;nbsp;issue.&lt;/p&gt;
+&lt;p&gt;Before talking about potential solutions, we need to understand what has been
+happening. It is really important to note that &lt;strong&gt;I&amp;#8217;m not a PyTest
+developer/maintainer and I&amp;#8217;m trying to understand the issue from an outsider&amp;#8217;s
+perspective, and the reason I&amp;#8217;m writing this post is that this issue is by far
+not unique to PyTest, and as a community we need to be better equipped to deal
+with such issues&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;It seems the individual in question is &lt;a href="https://github.com/blueyed"&gt;Daniel
+Hahler&lt;/a&gt; who has been very active in PyTest&amp;#8217;s
+development since about &lt;a href="https://github.com/pytest-dev/pytest/graphs/contributors?from=2017-04-22&amp;amp;to=2020-04-11&amp;amp;type=c"&gt;June
+2019&lt;/a&gt;.
+Unfortunately, not all interactions with this person have been productive or
+pleasant. As an example of an interaction which has frustrated Bruno, they have
+pointed to &lt;a href="https://github.com/pytest-dev/pytest/pull/6663#discussion_r375763028"&gt;this &lt;span class="caps"&gt;PR&lt;/span&gt;/comment
+thread&lt;/a&gt;,
+which I completely agree is a very unpleasant interaction. However, when it
+comes to CoC violations, if I were in PyTest&amp;#8217;s CoC committee, I would have a
+hard time deciding whether this single instance warrants banning Danial from
+the project or not. Therefore I decided to dig in and see how other
+interactions with them look.
+&lt;a href="https://github.com/pytest-dev/pytest/pulls?q=is%3Apr+is%3Aopen+involves%3Ablueyed"&gt;Here&lt;/a&gt;
+you can see the list of PRs where Daniel has been involved either as the author
+or as a reviewer. A quick look at the conversations shows that clearly not all
+interactions are hostile, but by looking at just the first page, I found these
+examples clearly not nice:
+&lt;a href="https://github.com/pytest-dev/pytest/pull/7029"&gt;this&lt;/a&gt;,
+&lt;a href="https://github.com/pytest-dev/pytest/pull/6934"&gt;this&lt;/a&gt;, and &lt;a href="https://github.com/pytest-dev/pytest/pull/6840"&gt;this
+one&lt;/a&gt;. One could argue that some
+of the frustrations are miscommunications or cultural differences; but even
+then, my judgment is that they are not constructive or respectful, at&amp;nbsp;all.&lt;/p&gt;
+&lt;p&gt;Now putting all the instances together, it is very clear to me that this person
+is creating an unpleasant and disrespectful environment. But does this warrant
+Daniel&amp;#8217;s removal from the team? &lt;a href="https://github.com/pytest-dev/pytest/blob/master/CODE_OF_CONDUCT.md"&gt;Here&amp;#8217;s PyTest&amp;#8217;s
+CoC&lt;/a&gt;, and
+as examples of expected behavior it&amp;nbsp;states:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Being respectful of differing viewpoints and&amp;nbsp;experiences&lt;/li&gt;
+&lt;li&gt;Gracefully accepting constructive&amp;nbsp;criticism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And in the enforcement section, it&amp;nbsp;states:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project&amp;#8217;s&amp;nbsp;leadership.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now this seems like a very clear case of violation to me, and the CoC seems to
+have defined a clear consequence of those violations. Then why is this person
+still on the&amp;nbsp;project?&lt;/p&gt;
+&lt;p&gt;Unfortunately dealing with CoC cases is usually very complicated and in my
+experience, even in cases where it seems very clear what the judgment should
+be, the committee does not easily agree on a single course of action, as very
+apparent from this case as well. Let&amp;#8217;s talk about some of the&amp;nbsp;reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intent vs Impact: Some would argue that the person violating the CoC did not
+  &lt;em&gt;intend&lt;/em&gt; to disrespect or harass anybody, and that&amp;#8217;s more important than the
+  impact the interaction has had on the disrespected/harassed person. These
+  days I personally don&amp;#8217;t really agree with the argument, especially after
+  reading &lt;a href="https://www.goodreads.com/book/show/4455729-35-dumb-things-well-intended-people-say"&gt;35 Dumb Things Well-Intended People Say: Surprising Things We Say
+  That Widen The Diversity
+  Gap&lt;/a&gt;.
+  As individuals, we should be aware of the consequences and the impact of our
+  actions and watch for&amp;nbsp;them.&lt;/li&gt;
+&lt;li&gt;Considering the accused&amp;#8217;s position in the community: I think the most infamous
+  example is &lt;a href="https://arstechnica.com/information-technology/2013/02/linus-torvalds-i-will-not-change-linux-to-deep-throat-microsoft/"&gt;Linus Trovalds&amp;#8217; many aggressive
+  emails&lt;/a&gt;
+  in the Linux Kernel community, and the community not reacting with an
+  appropriate response. When people are in a position of power or influence, it
+  makes it harder for the community or a CoC committee to act decisively. They
+  don&amp;#8217;t have to be the sole owner of the
+  &lt;a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life"&gt;&lt;span class="caps"&gt;BDFL&lt;/span&gt;&lt;/a&gt; of the
+  project to make it hard to deal with; being a main contributor makes it hard&amp;nbsp;enough.&lt;/li&gt;
+&lt;li&gt;The accused being a peer: In many cases including this PyTest incidence, the
+  accused is in a way a peer to the members of the CoC committee, who are also
+  maintainers of the same project. This makes it really hard to deal with the
+  case, since most people would rather try and &lt;em&gt;resolve&lt;/em&gt; the issue in one way
+  or another, which does not involve banning their peer from the community.
+  Most people would rather resolve the issue in the &lt;em&gt;nicest&lt;/em&gt; way&amp;nbsp;possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In my experience, these [and many other] reasons prevent a candid, timely, and
+decisive decision by the CoC committee. However, understanding the challenges
+does not make individuals who feel strongly about the issue feel better about
+the indecisiveness or lack of action, and as somebody who has been in that
+position, I completely understand&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;So what can we do to improve the&amp;nbsp;situation?&lt;/p&gt;
+&lt;p&gt;I believe having external people in the CoC team helps with providing an
+outsider&amp;#8217;s perspective. They may have a more objective understanding of the
+situation than people who are closely involved with the case. That said, many
+teams may be averse to the idea since it would mean letting an &lt;em&gt;outsider&lt;/em&gt;
+in the team, and in a place which is very intimate and close to the heart of
+many communities. Understandably, people don&amp;#8217;t want to &lt;em&gt;give control&lt;/em&gt; to an
+outsider. However, our community is larger than a single project&amp;#8217;s community,
+and we could help each other out. This doesn&amp;#8217;t have to be a centralized place
+like the &lt;span class="caps"&gt;PSF&lt;/span&gt; to handle all the cases (of course they can be a great place for
+advice), instead it could be a group of trusted and respected people who are
+rather experienced and concerned about these issues, and could sit in different
+CoC&amp;nbsp;committees.&lt;/p&gt;
+&lt;p&gt;Another issue is that handling CoC cases is hard, unpleasant, and is not a
+trivial skill. Unfortunately as a community we don&amp;#8217;t really appreciate these
+skills [yet] and most people are extremely inexperienced in this regard. As a
+consequence, when a project appoints a CoC committee, most probably many
+members of the committee have not had any experience handling CoC&amp;nbsp;cases.&lt;/p&gt;
+&lt;p&gt;I remember after handling a difficult CoC case, I reached out to people who
+were CoC contacts of different projects to inquire about enforceability of a
+given CoC, and almost nobody had any satisfying answer. This is a result of us
+as a community having no clue about how to enforce our CoCs, and sometimes the
+legal challenges attached to the issue make it harder. For instance,
+somebody violating a CoC may not be breaking any laws (CoC are usually more
+strict than the laws of the given country), and therefore it is really tricky
+to enforce that CoC in a &lt;em&gt;public&lt;/em&gt; event. This and many other related details
+are not things which you can expect a usual developer in a project to know&amp;nbsp;about.&lt;/p&gt;
+&lt;p&gt;As I see it, our communities have embraced having a code of conduct in one way
+or another. These CoCs may not be perfect, but they&amp;#8217;re a step towards the right
+direction (&lt;span class="caps"&gt;IMO&lt;/span&gt;). Then we had issues enforcing and actually implementing them,
+and larger communities who have already had cases are now more equipped with
+the tools they need to handle the cases. What needs to happen next, is for us
+to openly talk about our cases without revealing the identities of people
+involved. We should have a conversation about the details, and learn from one
+another. We should also celebrate people who know how to handle these cases,
+know them, and reach out for help when we&amp;#8217;re not sure what to&amp;nbsp;do.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m very happy that this incident has attracted some attention in the
+community, and I hope we learn from it and keep our communities more respectful
+and healthier than what they are now. Afterall, this is one of the reasons we
+are not really good at diversity and inclusion in our communities and improving
+on this front would help with D&amp;amp;I as&amp;nbsp;well.&lt;/p&gt;</content><category term="open-source"></category><category term="community"></category><category term="open-source"></category></entry><entry><title>scikit-learn sprint at Nairobi, Kenya</title><link href="https://adrin.info/scikit-learn-sprint-at-nairobi-kenya.html" rel="alternate"></link><published>2019-06-25T00:00:00+02:00</published><updated>2019-06-25T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2019-06-25:/scikit-learn-sprint-at-nairobi-kenya.html</id><summary type="html">&lt;p&gt;&lt;img alt="nairobi/sklearn" src="files/img/nairobi-sklearn.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Almost a year ago, after being the co-speaker of a &amp;#8220;My first open source
 contribution&amp;#8221; talk at PyData Berlin 2018, I myself became very motivated and
 started actively contributing to the &lt;code&gt;scikit-learn&lt;/code&gt; project. I was surprised to

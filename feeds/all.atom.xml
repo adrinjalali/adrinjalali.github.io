@@ -1,5 +1,422 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/all.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2020-04-12T00:00:00+02:00</updated><entry><title>Open Source - CoC - Conflicts</title><link href="https://adrin.info/open-source-coc-conflicts.html" rel="alternate"></link><published>2020-04-12T00:00:00+02:00</published><updated>2020-04-12T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-04-12:/open-source-coc-conflicts.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html"&gt;&lt;img alt="CoC" src="files/img/code-of-conduct1-min.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/all.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2020-05-28T00:00:00+02:00</updated><entry><title>GIT/GITHUB, how to contribute to an open source project on GitHub?</title><link href="https://adrin.info/gitgithub-how-to-contribute-to-an-open-source-project-on-github.html" rel="alternate"></link><published>2020-05-28T00:00:00+02:00</published><updated>2020-05-28T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-05-28:/gitgithub-how-to-contribute-to-an-open-source-project-on-github.html</id><summary type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img/20190216-git-github.png" title="Credit: https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3"&gt;&lt;/p&gt;
+&lt;p&gt;The idea behind this post is not to show how to install the tools you need, or
+to list a bunch of [at a first glance seemingly random] &lt;code&gt;git&lt;/code&gt; commands. There
+are enough tutorials and blog posts explaining them out there in the wild that
+with a web search you …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img/20190216-git-github.png" title="Credit: https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3"&gt;&lt;/p&gt;
+&lt;p&gt;The idea behind this post is not to show how to install the tools you need, or
+to list a bunch of [at a first glance seemingly random] &lt;code&gt;git&lt;/code&gt; commands. There
+are enough tutorials and blog posts explaining them out there in the wild that
+with a web search you&amp;#8217;ll find too many of them&amp;nbsp;anyway.&lt;/p&gt;
+&lt;p&gt;This goal of this post is to give you the ingredients you need, to contribute
+to a project on the GitHub platform and collaborate with other people&amp;nbsp;there.&lt;/p&gt;
+&lt;p&gt;The first important point is the distinction between &lt;strong&gt;git&lt;/strong&gt; and &lt;strong&gt;GitHub&lt;/strong&gt;!
+GitHub is a platform which uses &lt;code&gt;git&lt;/code&gt;, but it&amp;#8217;s also not the only platform that
+uses it. Another somewhat similar platform is &lt;strong&gt;GitLab&lt;/strong&gt;, but there are crucial
+differences between the two that has made GitHub a much more convenient place
+for a community of strangers to work together. By far the best source of
+information I can recommend is the &lt;a href="https://git-scm.com/book/en/v2"&gt;Pro Git
+book&lt;/a&gt;. To keep it practical, I may not strictly
+stick to the definitions present in the book; the idea is to get you started
+first, then you can cover the concepts more &lt;em&gt;accurately&lt;/em&gt; once you have more&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git&lt;/code&gt; is a version control system, which&amp;nbsp;is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Version control is a system that records changes to a file or set of files
+over time so that you can recall specific versions later&lt;sup id="fnref:f1"&gt;&lt;a class="footnote-ref" href="#fn:f1"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Strictly speaking, to develop a package using &lt;code&gt;git&lt;/code&gt; there is no need for any
+server or a platform. Most &lt;code&gt;git&lt;/code&gt; related tasks you&amp;#8217;d be doing are done
+completely locally on your own machine&amp;nbsp;anyway.&lt;/p&gt;
+&lt;p&gt;The main issue at the beginning when you start to work with &lt;code&gt;git&lt;/code&gt; is all the
+jargon used around it. To get an idea of what we&amp;#8217;re talking about here, the
+&lt;a href="https://www.youtube.com/watch?v=3a2x1iJFJWc"&gt;&lt;span class="caps"&gt;GIT&lt;/span&gt; Workflow - Georgia Tech - Software Development
+Process&lt;/a&gt; short video is a great
+place to&amp;nbsp;start:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=3a2x1iJFJWc" title="GIT Workflow - Georgia Tech - Software Development Process"&gt;&lt;img alt="GIT Workflow - Georgia Tech - Software Development
+Process" src="http://img.youtube.com/vi/3a2x1iJFJWc/0.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s go through some of the concepts you&amp;#8217;d encounter in
+almost any project. For the rest of this post, I&amp;#8217;ll be assuming you&amp;#8217;ve
+installed &lt;code&gt;git&lt;/code&gt; and gone through &lt;a href="https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3"&gt;this
+tutorial&lt;/a&gt;
+up to Step 3: setup &amp;#8220;config&amp;#8221;, and know your way around a &lt;em&gt;shell/terminal&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source tree&lt;/em&gt; is your project&amp;#8217;s folder, with all its subfolders and files that
+are included in the project. Using &lt;code&gt;git&lt;/code&gt; you&amp;#8217;ll be keeping track of all the
+changes on the source&amp;nbsp;tree.&lt;/p&gt;
+&lt;p&gt;However, there are always files and folders which you don&amp;#8217;t want to keep track
+of, for instance the &lt;code&gt;build&lt;/code&gt; directory which keeps compiled binary files of
+your project. Cache and temporary files are also another category of files you
+would like to exclude from being tracked. The way you tell &lt;code&gt;git&lt;/code&gt; to ignore
+those is through a &lt;code&gt;.gitignore&lt;/code&gt; file usually put in the root of the project&amp;#8217;s
+folder. For most programming languages, there are descent &lt;code&gt;.gitignore&lt;/code&gt;
+templates, for instance you can take a look at the
+&lt;a href="https://github.com/github/gitignore/blob/master/Python.gitignore"&gt;Python.gitignore&lt;/a&gt;.
+This means &lt;code&gt;git&lt;/code&gt; will not automatically start tracking any of the files and/or
+folders mentioned in &lt;code&gt;.gitignore&lt;/code&gt;, but you can still explicitly tell it to do
+so if you wish for a particular file or folder. For instance, you may want to
+ignore all &lt;code&gt;.pdf&lt;/code&gt; files, but keep a single &lt;code&gt;.pdf&lt;/code&gt; in your repository for some
+reason. You would be able to do so by explicitly telling &lt;code&gt;git&lt;/code&gt; to keep track of&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;Once you start tracking changes to your project&amp;#8217;s source tree using &lt;code&gt;git&lt;/code&gt;, you
+have a &lt;em&gt;git repository&lt;/em&gt;. The git repository includes all the history of the
+whole project in a &lt;code&gt;.git&lt;/code&gt; folder under the root of the project. It&amp;#8217;s worth
+noting that by default, every file and folder starting with a dot (&lt;code&gt;.&lt;/code&gt;) is a
+&lt;em&gt;hidden&lt;/em&gt; file/folder under&amp;nbsp;linux.&lt;/p&gt;
+&lt;p&gt;For the rest of this post, I&amp;#8217;ll be using the screenshots taken at the time of
+writing the post. It may slightly change through time as GitHub continues its&amp;nbsp;development.&lt;/p&gt;
+&lt;p&gt;For the purpose of this tutorial, I&amp;#8217;ve setup an example repository on GitHub,
+which you can see under &lt;a href="https://github.com/github-tutorials/example-repo"&gt;this
+link&lt;/a&gt;. At first it&amp;#8217;s almost
+empty and it looks like&amp;nbsp;this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git/github" src="files/img/git/initial-orig.png"&gt;&lt;/p&gt;
+&lt;p&gt;A few things to notice here&amp;nbsp;are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There&amp;#8217;s a &lt;em&gt;Watch/Unwatch&lt;/em&gt; button which takes a few states, and you can use it
+  to set the amount of notification you&amp;#8217;d be receiving for the repository. You
+  will receive a notification (depending on your settings, it can be an email)
+  for each event happening on the repository. If you&amp;#8217;d like to be informed and
+  notified of every single post and contribution on the repo, then you&amp;#8217;d want
+  to &amp;#8220;&lt;em&gt;watch&lt;/em&gt;&amp;#8221; it. For a busy repository like &lt;em&gt;scikit-learn&lt;/em&gt;, it can be tens of
+  emails a day. By default, you&amp;#8217;ll be notified if there&amp;#8217;s a response to the
+  issues and pull requests you&amp;#8217;ve been working on (we&amp;#8217;ll get to them&amp;nbsp;shortly).&lt;/li&gt;
+&lt;li&gt;If you like to make the contributors and maintainers of the repository happy,
+  you should consider &amp;#8220;&lt;em&gt;Star&lt;/em&gt;&amp;#8220;ing the&amp;nbsp;repo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The other option up there, is &lt;strong&gt;fork&lt;/strong&gt;, which requires a bit of an explanation.
+When you have a git repository, you can &lt;strong&gt;clone&lt;/strong&gt; that by copying everything
+you have on that repo, including the &lt;code&gt;.git&lt;/code&gt; folder. So copying is the simplest
+type of clone you can have. The clone is the same as the original repository,
+including its history (since you copied the &lt;code&gt;.git&lt;/code&gt; folder as well). But let say
+you want to clone a repository from a server, and every now and then sync your
+local copy with what you have on the server. That&amp;#8217;s why you also have a &amp;#8220;clone
+or download&amp;#8221; button on your repository, which gives you the address of the
+repository which you can use locally to clone using a &lt;code&gt;git&lt;/code&gt; command. Here&amp;#8217;s how
+you could get the address on the original&amp;nbsp;repository:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git/github" src="files/img/git/git-clone-orig.png"&gt;&lt;/p&gt;
+&lt;p&gt;And then you&amp;#8217;d be using the following command to clone that repository&amp;nbsp;locally:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/github-tutorials/example-repo.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The above command will download the repository and put it in a folder named the
+same as the repo itself (&lt;code&gt;example-repo&lt;/code&gt; in this case). At the same time, it
+will store the information about from where it got the repository, which is
+called a &lt;strong&gt;remote&lt;/strong&gt;, and by default this remote is called &lt;em&gt;origin&lt;/em&gt;. You can get
+a list of your remotes using the following command (after going to your repo&amp;#8217;s&amp;nbsp;folder):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; example-repo
+$ git remote -v
+origin  https://github.com/github-tutorials/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
+origin  https://github.com/github-tutorials/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Again, please note that the above command and all the ones from this point
+should be run when you&amp;#8217;re already in your repository&amp;#8217;s folder. As you can see,
+there are two identical addressed for two purposes, &lt;em&gt;fetch&lt;/em&gt; and &lt;em&gt;push&lt;/em&gt;. You can
+&lt;em&gt;fetch&lt;/em&gt; changes on the repository which have happened on the &lt;em&gt;remote&lt;/em&gt; server,
+but you don&amp;#8217;t have, using &lt;code&gt;git fetch&lt;/code&gt;, and &lt;em&gt;push&lt;/em&gt; any changes on your local
+machine using &lt;code&gt;git push&lt;/code&gt;. But there are a few steps before we can do&amp;nbsp;that.&lt;/p&gt;
+&lt;p&gt;You may have noticed that we cloned the repository, without telling a
+maintainer of the original repo that we&amp;#8217;re doing so. That&amp;#8217;s because the repo is
+a &lt;em&gt;public repository&lt;/em&gt;. For a &lt;em&gt;private repository&lt;/em&gt; you need to be given explicit
+permissions by a maintainer/package developer before you can access it.
+Basically if you see a repository on GitHub, you can clone&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;However, since you&amp;#8217;re not given explicit permissions, you cannot modify
+anything on the original repo, and that also means you cannot do a &lt;code&gt;git push&lt;/code&gt;
+directly to it. That&amp;#8217;s why you need to &lt;strong&gt;fork&lt;/strong&gt; the repository before cloning
+it. It&amp;#8217;ll create a server side clone of the repo in your account. You can do
+that by simply pushing the &amp;#8220;&lt;em&gt;fork&lt;/em&gt;&amp;#8221; button up there. Please note that if you&amp;#8217;re
+a member of one or more organizations, it&amp;#8217;ll ask you to choose an organization
+where it should create the fork. Your username will be listed there and you
+can choose that to create the fork under your own user and not touch any of the
+organizations you&amp;#8217;re a member of. Otherwise it&amp;#8217;ll simply create the fork under
+your username. This is what you&amp;#8217;ll see once you fork the&amp;nbsp;repo:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git/github" src="files/img/git/initial-fork.png"&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, it also tells you from where you forked the repository. Now you
+have administrative access to this repository, and that&amp;#8217;s why you also see a
+&amp;#8220;&lt;em&gt;Settings&lt;/em&gt;&amp;#8221; tab. Now if you try to get the clone address of this repo, it
+shows you the one you own. Now you have two options, you can delete what you
+had cloned, and clone a new one using the new address, which in my case would&amp;nbsp;be:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/adrinjalali/example-repo.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Please note that the &lt;code&gt;github-tutorials&lt;/code&gt; is changed to &lt;code&gt;adrinjalali&lt;/code&gt;, my
+username. But you can also manipulate your remotes and change what you have to
+the new remote address, and avoid having to delete and redownload the
+repository. By convention/default, &lt;code&gt;origin&lt;/code&gt; is the remote you own and you sync
+your local copy with, and &lt;code&gt;upstream&lt;/code&gt; is the original repository you forked.
+Every now and then you&amp;#8217;ll be needing to resync your repository with the changes
+which have happened on &lt;code&gt;upstream&lt;/code&gt;, to keep up with the latest changes. So,
+let&amp;#8217;s first rename &lt;code&gt;origin&lt;/code&gt; to &lt;code&gt;upstream&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git remote rename origin upstream
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then add the new &lt;code&gt;origin&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git remote add origin https://github.com/adrinjalali/example-repo.git
+$ git remote -v
+origin  https://github.com/adrinjalali/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
+origin  https://github.com/adrinjalali/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
+upstream    https://github.com/github-tutorials/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
+upstream    https://github.com/github-tutorials/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you had first forked and then cloned your own repo, you&amp;#8217;d need to only add
+the &lt;code&gt;upstream&lt;/code&gt; as a remote, and now you have the ingredients to do&amp;nbsp;so.&lt;/p&gt;
+&lt;p&gt;Now let say you&amp;#8217;d want to find something to work on, related to this repo.
+Usually (but not always), there&amp;#8217;s an issue related what you&amp;#8217;d be working on.
+You can either report an issue yourself before starting a change, or you can
+pick up an issue and say you&amp;#8217;d like to work on it. The &amp;#8220;&lt;em&gt;issues&lt;/em&gt;&amp;#8221; tab on the
+original repository (the upstream, not yours) would be the place to start. For
+instance, I&amp;#8217;ve added two issues on our example and it looks&amp;nbsp;like:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git/github" src="files/img/git/issues.png"&gt;&lt;/p&gt;
+&lt;p&gt;Now assume you&amp;#8217;d like to work on the &amp;#8220;Explain what this repository is&amp;#8221; issue.
+It states what should be done, and you can leave a comment saying you&amp;#8217;ll fix
+it. It&amp;#8217;ll be different for you since you&amp;#8217;re not a member/maintainer of the
+repo, but it&amp;#8217;ll look similar to this&amp;nbsp;one:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git/github" src="files/img/git/issue-1.png"&gt;&lt;/p&gt;
+&lt;p&gt;Please also note that on the right side of the title of the issue, and in the
+&lt;span class="caps"&gt;URL&lt;/span&gt; of the issue, the &lt;span class="caps"&gt;ID&lt;/span&gt; of the issue is mentioned, which is 1 in this case
+(the first issue in the repository); we&amp;#8217;ll get back to it&amp;nbsp;later.&lt;/p&gt;
+&lt;p&gt;Going back to your local copy of the repo, you can start contributing using a
+&lt;em&gt;git workflow&lt;/em&gt;, which involves proper &lt;em&gt;branching&lt;/em&gt; and &lt;em&gt;merging&lt;/em&gt; and so on.
+There are different ways you can do that, and with a quick search you&amp;#8217;ll find
+proposals such as &lt;a href="https://sandofsky.com/blog/git-workflow.html"&gt;this&lt;/a&gt;,
+&lt;a href="https://www.atlassian.com/git/tutorials/comparing-workflows"&gt;this&lt;/a&gt;, and
+&lt;a href="https://nvie.com/posts/a-successful-git-branching-model/"&gt;this&lt;/a&gt; one. It&amp;#8217;s good
+to go through some of those and familiarize yourself with the process, but it&amp;#8217;s
+not a must. Those workflows become more important if a few collaborators start
+working on the same repository, which would happen in an organization and
+specially on a GitLab platform. However, since you&amp;#8217;ll be doing everything on
+your own repository and not the upstream, you can do whatever you want without
+disturbing the &lt;em&gt;upstream&lt;/em&gt;. Something they all have in common is the concept of
+a &lt;strong&gt;branch&lt;/strong&gt;. As &lt;a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"&gt;the book has
+it&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Nearly every &lt;span class="caps"&gt;VCS&lt;/span&gt; [(Version Control System)] has some form of branching
+support. Branching means you diverge from the main line of development and
+continue to do work without messing with that main line. In many &lt;span class="caps"&gt;VCS&lt;/span&gt; tools,
+this is a somewhat expensive process, often requiring you to create a new
+copy of your source code directory, which can take a long time for large&amp;nbsp;projects.&lt;/p&gt;
+&lt;p&gt;Some people refer to Git’s branching model as its “killer feature,” and it
+certainly sets Git apart in the &lt;span class="caps"&gt;VCS&lt;/span&gt; community. Why is it so special? The way
+Git branches is incredibly lightweight, making branching operations nearly
+instantaneous, and switching back and forth between branches generally just
+as fast. Unlike many other VCSs, Git encourages workflows that branch and
+merge often, even multiple times in a day. Understanding and mastering this
+feature gives you a powerful and unique tool and can entirely change the way
+that you&amp;nbsp;develop.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The main branch is always &lt;code&gt;master&lt;/code&gt;. Another main branch in a project may be
+&lt;code&gt;dev&lt;/code&gt;, &lt;code&gt;devel&lt;/code&gt;, or &lt;code&gt;develop&lt;/code&gt;, but not all projects have it, and it depends on
+the kind of &lt;em&gt;workflow&lt;/em&gt; they choose to follow. If they choose to have &lt;code&gt;master&lt;/code&gt;
+very stable and corresponding to the latest release, then the main development
+would happen on &lt;code&gt;develop&lt;/code&gt;. On the other hand, if they decide to have release
+branches and have the main development happen on &lt;code&gt;master&lt;/code&gt;, they&amp;#8217;ll probably not
+have the &lt;code&gt;develop&lt;/code&gt; branch and instead have branches such as &lt;code&gt;v1.2&lt;/code&gt;, &lt;code&gt;v1.3&lt;/code&gt;,
+etc. You usually would need to &lt;em&gt;base&lt;/em&gt; your development on the active and under
+development branch. When you &lt;em&gt;fork&lt;/em&gt; or &lt;em&gt;clone&lt;/em&gt; a repository, it also includes
+all the branches that repository, and you can simply change to that branch&amp;nbsp;locally.&lt;/p&gt;
+&lt;p&gt;You can always see the branch you have as active&amp;nbsp;using:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git status
+On branch master
+nothing to commit, working tree clean
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As you can see, by default you&amp;#8217;re on the &lt;code&gt;master&lt;/code&gt; branch. Now since &lt;code&gt;master&lt;/code&gt; is
+our main development branch, you can base your work on it and create a branch
+from it. You can create a branch based on your current active branch&amp;nbsp;using:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git branch &lt;span class="nb"&gt;test&lt;/span&gt;
+$ git status
+On branch master
+nothing to commit, working tree clean
+$ git branch --list
+* master
+  &lt;span class="nb"&gt;test&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As you can see, we created a branch, but still stayed on master. In order to
+change to the newly created branch, you should &lt;strong&gt;checkout&lt;/strong&gt; the&amp;nbsp;branch:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git checkout &lt;span class="nb"&gt;test&lt;/span&gt;
+Switched to branch &lt;span class="s1"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;
+$ git branch --list
+  master
+* &lt;span class="nb"&gt;test&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can also go back to &lt;code&gt;master&lt;/code&gt;, and safely delete this &lt;code&gt;test&lt;/code&gt; branch:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git checkout master
+Switched to branch &lt;span class="s1"&gt;&amp;#39;master&amp;#39;&lt;/span&gt;
+$ git branch -D &lt;span class="nb"&gt;test&lt;/span&gt;
+Deleted branch &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;was ea65abd&lt;span class="o"&gt;)&lt;/span&gt;.
+$ git branch --list
+* master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;ea65abd&lt;/code&gt; is the &lt;em&gt;abbreviated commit hash&lt;/em&gt; which you can ignore for&amp;nbsp;now.&lt;/p&gt;
+&lt;p&gt;A more convenient way to create a new branch and check it out at the same time
+would&amp;nbsp;be:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git checkout -b doc/readme
+Switched to a new branch &lt;span class="s1"&gt;&amp;#39;doc/readme&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As you can see, the name of the new branch is &lt;code&gt;doc/readme&lt;/code&gt;. The name can be
+almost anything, and one convention that some people follow is to name branches
+as &lt;code&gt;category/item&lt;/code&gt;, but you could as well do &lt;code&gt;category-item&lt;/code&gt;, or
+&lt;code&gt;my-random-branch-name&lt;/code&gt;. I&amp;#8217;d suggest you always keep your master clean and in
+sync with your remote, and only work on branches for each&amp;nbsp;feature/issue.&lt;/p&gt;
+&lt;p&gt;Now we can finally start working on the issue. This is the &lt;code&gt;README.md&lt;/code&gt; now:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat README.md 
+&lt;span class="c1"&gt;# example-repo&lt;/span&gt;
+example repository &lt;span class="k"&gt;for&lt;/span&gt; github tutorials
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And let&amp;#8217;s change it&amp;nbsp;to:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat README.md 
+&lt;span class="c1"&gt;# example-repo&lt;/span&gt;
+example repository &lt;span class="k"&gt;for&lt;/span&gt; github tutorials
+
+This repository is made to showcase some common tasks and processes on GitHub
+and to present the related &lt;span class="sb"&gt;`&lt;/span&gt;git&lt;span class="sb"&gt;`&lt;/span&gt; commands. The post explaining these processes
+is located
+&lt;span class="o"&gt;[&lt;/span&gt;here&lt;span class="o"&gt;](&lt;/span&gt;gitgithub-how-to-contribute-to-an-open-source-project-on-github.html&lt;span class="o"&gt;)&lt;/span&gt;.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now let&amp;#8217;s see what the status of the local repo&amp;nbsp;is:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git status
+On branch doc/readme
+Changes not staged &lt;span class="k"&gt;for&lt;/span&gt; commit:
+  &lt;span class="o"&gt;(&lt;/span&gt;use &lt;span class="s2"&gt;&amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot;&lt;/span&gt; to update what will be committed&lt;span class="o"&gt;)&lt;/span&gt;
+  &lt;span class="o"&gt;(&lt;/span&gt;use &lt;span class="s2"&gt;&amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot;&lt;/span&gt; to discard changes in working directory&lt;span class="o"&gt;)&lt;/span&gt;
+
+    modified:   README.md
+
+no changes added to commit &lt;span class="o"&gt;(&lt;/span&gt;use &lt;span class="s2"&gt;&amp;quot;git add&amp;quot;&lt;/span&gt; and/or &lt;span class="s2"&gt;&amp;quot;git commit -a&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As you can see, it says the &lt;code&gt;README.md&lt;/code&gt; file is &lt;strong&gt;modified&lt;/strong&gt;. You would need to
+&lt;strong&gt;add&lt;/strong&gt; the file. That brings us to the lifecycle of a file on a git repo. As
+shown in &lt;a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"&gt;the
+book&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git/github" src="files/img/git/lifecycle.png"&gt;&lt;/p&gt;
+&lt;p&gt;These are the 4 states a file can have under the&amp;nbsp;repo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Untracked&lt;/em&gt;: the file exists in the project tree, but it&amp;#8217;s not being tracked
+  by&amp;nbsp;git.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Unmodified&lt;/em&gt;: &lt;code&gt;git status&lt;/code&gt; won&amp;#8217;t report any of these files, since there has
+  been no changes to them since the last &lt;em&gt;snapshot&lt;/em&gt; git has taken from them.
+  That snapshot happens when you &lt;strong&gt;commit&lt;/strong&gt; the changes to&amp;nbsp;files.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Modified&lt;/em&gt;: the previous version of the file is recorded in the git repo, but
+  since then, there has been changes to it, and these changes are not recorded&amp;nbsp;yet.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Staged&lt;/em&gt;: there has been changes to the file since the last &lt;em&gt;snapshot&lt;/em&gt;, and
+  these changes are set to be recorded by a &lt;strong&gt;commit&lt;/strong&gt;, but that commit hasn&amp;#8217;t
+  happened&amp;nbsp;yet.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A more comprehensive explanation of how to record changes in the repo can be
+found
+&lt;a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So now we need to move the &lt;code&gt;README.md&lt;/code&gt; from &lt;em&gt;modified&lt;/em&gt; to &lt;em&gt;staged&lt;/em&gt; (using &lt;code&gt;git
+add&lt;/code&gt;), and then to &lt;em&gt;unmodified&lt;/em&gt; (using &lt;code&gt;git commit&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git add README.md
+$ git commit -m &lt;span class="s2"&gt;&amp;quot;added required changes to the README.md&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Always include a message with the commit. Meaningful &lt;em&gt;Commit messages&lt;/em&gt; are
+extremely helpful for later coming back and finding some changes you&amp;#8217;ve made
+previously. Alternatively, you could summarize the above two commands in&amp;nbsp;one:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git commit -am &lt;span class="s2"&gt;&amp;quot;added required changes to the README.md&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;doc/readme b43f0b6&lt;span class="o"&gt;]&lt;/span&gt; added required changes to the README.md
+ &lt;span class="m"&gt;1&lt;/span&gt; file changed, &lt;span class="m"&gt;5&lt;/span&gt; insertions&lt;span class="o"&gt;(&lt;/span&gt;+&lt;span class="o"&gt;)&lt;/span&gt;
+$ git status
+On branch doc/readme
+nothing to commit, working tree clean
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The difference is that &lt;code&gt;git commit -a&lt;/code&gt; adds all modified files to the staging
+area, which may not be what you want. For more control you can use the two
+separate commands. Also, as you can see, the working tree is &lt;em&gt;clean&lt;/em&gt;&amp;nbsp;again.&lt;/p&gt;
+&lt;p&gt;Now it&amp;#8217;s time to &lt;strong&gt;push&lt;/strong&gt; the changes to our remote copy of the repository,
+which we can do by &lt;code&gt;git push&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git push
+fatal: The current branch doc/readme has no upstream branch.
+To push the current branch and &lt;span class="nb"&gt;set&lt;/span&gt; the remote as upstream, use
+
+    git push --set-upstream origin doc/readme
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;span class="caps"&gt;OOPS&lt;/span&gt;, it failed, because there is no corresponding branch on the remote copy
+which corresponds to the local branch we&amp;#8217;ve made. Your own remote copy is the
+&lt;em&gt;upstream&lt;/em&gt; to the local copy, and you see that you need to tell git which
+branch on the upstream should be the corresponding one. As you can see, by
+default it suggests the same branch name, on the &lt;code&gt;origin&lt;/code&gt; remote. The suggested
+command would create a new branch on your remote copy, and upload the changes
+to that&amp;nbsp;branch:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;upstream&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;
+&lt;span class="n"&gt;Enumerating&lt;/span&gt; &lt;span class="nl"&gt;objects&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;Counting&lt;/span&gt; &lt;span class="nl"&gt;objects&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;Delta&lt;/span&gt; &lt;span class="n"&gt;compression&lt;/span&gt; &lt;span class="n"&gt;using&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="n"&gt;threads&lt;/span&gt;
+&lt;span class="n"&gt;Compressing&lt;/span&gt; &lt;span class="nl"&gt;objects&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;Writing&lt;/span&gt; &lt;span class="nl"&gt;objects&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="mi"&gt;461&lt;/span&gt; &lt;span class="n"&gt;bytes&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;461.00&lt;/span&gt; &lt;span class="n"&gt;KiB&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;Total&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;delta&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;reused&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;delta&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nl"&gt;remote&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+&lt;span class="nl"&gt;remote&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Create&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;pull&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;GitHub&lt;/span&gt; &lt;span class="n"&gt;by&lt;/span&gt; &lt;span class="nl"&gt;visiting&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nl"&gt;remote&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;      &lt;span class="nl"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/adrinjalali/example-repo/pull/new/doc/readme&lt;/span&gt;
+&lt;span class="nl"&gt;remote&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+&lt;span class="n"&gt;To&lt;/span&gt; &lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;adrinjalali&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;repo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+ &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;      &lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;
+&lt;span class="n"&gt;Branch&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;track&lt;/span&gt; &lt;span class="n"&gt;remote&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;from&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Your output would be slightly different. Here I had to change my remote and use
+the ssh connection instead. Not only it&amp;#8217;s more secure, it also allows you to
+interact with your account without the need to enter your username/password
+every time you need permissions. You can find the guides to setup that for your
+account
+&lt;a href="https://help.github.com/articles/connecting-to-github-with-ssh/"&gt;here&lt;/a&gt;. I also
+recommend activating a two factor authentication (&lt;span class="caps"&gt;2FA&lt;/span&gt;) for your&amp;nbsp;account.&lt;/p&gt;
+&lt;p&gt;Now if you go back to your account and check the repository, you&amp;#8217;ll see that a
+new branch has been&amp;nbsp;created:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git/github" src="files/img/git/github-branches.png"&gt;&lt;/p&gt;
+&lt;p&gt;Now that you have the changes on your account, you can go ahead and create the
+first &lt;strong&gt;pull request&lt;/strong&gt;. It basically means you&amp;#8217;d send a request to the
+maintainers of the repository to pull the changes you&amp;#8217;ve made, from your repo
+into the original repo. For that, you also need to specify your &lt;code&gt;doc/readme&lt;/code&gt;
+branch as the &lt;em&gt;from&lt;/em&gt; branch, and the &lt;em&gt;master&lt;/em&gt; on the original repo as the &lt;em&gt;to&lt;/em&gt;
+branch. Please note that it would be the &lt;em&gt;develop&lt;/em&gt; branch on the upstream repo
+if that was what you based your changes on. But in this case, we based the
+changes on the &lt;code&gt;master&lt;/code&gt; branch of the upstream&amp;nbsp;repo.&lt;/p&gt;
+&lt;p&gt;Now you could click on the &amp;#8220;&lt;em&gt;Compare &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; pull request&lt;/em&gt;&amp;#8221; button, or you could go
+to the upstream repository, then &lt;em&gt;Pull requests&lt;/em&gt; (&lt;span class="caps"&gt;PR&lt;/span&gt;), and then &lt;em&gt;New pull
+request&lt;/em&gt;, which brings you to a page where you can explain what the does and
+then create&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;Once you create the &lt;span class="caps"&gt;PR&lt;/span&gt;, you can wait for reviewers to review your &lt;span class="caps"&gt;PR&lt;/span&gt;, which
+usually means they&amp;#8217;ll ask you to change a few things. To apply those changes,
+you don&amp;#8217;t need to create a new &lt;span class="caps"&gt;PR&lt;/span&gt; or a new branch, you simply need to be sure
+you&amp;#8217;re on the same branch as before, apply your changes, commit to your local
+clone (&lt;code&gt;git add&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt; commands), and then push (&lt;code&gt;git push&lt;/code&gt;). This will
+add your changes to your existing &lt;span class="caps"&gt;PR&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I hope this helps a few people a little bit. I&amp;#8217;d be happy to get some feedback
+and see if it&amp;#8217;s helpful or&amp;nbsp;not.&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:f1"&gt;
+&lt;p&gt;Chacon, Scott, and Ben Straub. Pro git. Apress, 2014.&amp;#160;&lt;a class="footnote-backref" href="#fnref:f1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="open-source"></category><category term="open-source"></category></entry><entry><title>Open Source - CoC - Conflicts</title><link href="https://adrin.info/open-source-coc-conflicts.html" rel="alternate"></link><published>2020-04-12T00:00:00+02:00</published><updated>2020-04-12T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-04-12:/open-source-coc-conflicts.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html"&gt;&lt;img alt="CoC" src="files/img/code-of-conduct1-min.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;(Since I don&amp;#8217;t know individuals&amp;#8217; pronouns involved in this post, &lt;em&gt;they/them&lt;/em&gt; is
 used&amp;nbsp;instead.)&lt;/p&gt;
 &lt;p&gt;This post was triggered by three of PyTest maintainers leaving the project in a

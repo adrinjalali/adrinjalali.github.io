@@ -1,6 +1,5 @@
 Title: GIT/GITHUB, how to contribute to an open source project on GitHub?
-Status: draft
-Date: 2019-02-16
+Date: 2020-05-28
 Tags: open-source
 Category: open-source
 
@@ -433,9 +432,19 @@ if that was what you based your changes on. But in this case, we based the
 changes on the `master` branch of the upstream repo.
 
 Now you could click on the "_Compare & pull request_" button, or you could go
-to the upstream repository, then _Pull requests_, and then _New pull request_,
-which brings you to this page:
+to the upstream repository, then _Pull requests_ (PR), and then _New pull
+request_, which brings you to a page where you can explain what the does and
+then create it.
 
+Once you create the PR, you can wait for reviewers to review your PR, which
+usually means they'll ask you to change a few things. To apply those changes,
+you don't need to create a new PR or a new branch, you simply need to be sure
+you're on the same branch as before, apply your changes, commit to your local
+clone (`git add`, `git commit` commands), and then push (`git push`). This will
+add your changes to your existing PR.
+
+I hope this helps a few people a little bit. I'd be happy to get some feedback
+and see if it's helpful or not.
 
 
 [^f1]: Chacon, Scott, and Ben Straub. Pro git. Apress, 2014.

@@ -4,7 +4,9 @@ Tags: open-source
 Category: open-source
 
 ![git/github](files/img/people_remote_teams_world.png "Credit:
-https://opensource.com") Image by: `opensource.com`
+https://opensource.com")
+
+Image by: `opensource.com`
 
 This post is about how a team or project can benefit from engaging with open
 source communities related to that project. There are countless, much better,

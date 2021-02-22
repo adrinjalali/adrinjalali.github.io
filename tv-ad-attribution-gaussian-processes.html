@@ -137,7 +137,7 @@
 <p><img alt="Normal Distribution" src="/files/img/20161006-normal.png" width="40%"></p>
 <p><em>Fig. 4: Normal distribution and three different observed values - credit:&nbsp;thefemalecelebrity.com</em></p>
 <p>The area under the curve marked by the blue areas shown in Fig. 4 is between 0 and 1. It is 0 if the expected value is the same as our observed value, and is close to 1 if it is the two observed and expected mean are far from each other. Hereafter <em>score(x)</em> represents this area under the curve. The piece of code bellow shows how this is calculated in&nbsp;python:</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">scipy</span>
 
 <span class="k">def</span> <span class="nf">phi</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -147,8 +147,7 @@
     <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="nb">abs</span><span class="p">(</span><span class="n">phi</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">phi</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="p">))</span>
 
 <span class="n">x_score</span> <span class="o">=</span> <span class="n">score</span><span class="p">((</span><span class="n">x</span> <span class="o">-</span> <span class="n">expected_mean</span><span class="p">)</span> <span class="o">/</span> <span class="n">expected_std</span><span class="p">)</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Now for a moment, assume we know a given data point (number of sessions) is influenced by a <span class="caps">TV</span>-ad. Still not all those sessions are because of the event. Some of them would have been there even with no <span class="caps">TV</span>-ad event. We take the predicted mean as the background session count, and the rest as <span class="caps">TV</span>-ad influenced sessions. Therefore, if <em>x</em> is observed value, and <em>x&#8217;</em> is predicted value, <em>(x - x&#8217;) / x</em> is the portion of sessions attributed to a <span class="caps">TV</span>-ad&nbsp;event.</p>
 <p>At the end, we take <em>score(x) * (x - x&#8217;) / x</em> as the likelihood of each session being attributed to a <span class="caps">TV</span>-ad.</p>
@@ -174,11 +173,10 @@ By looking at the data, I would sum these three kernels and optimize on the&nbsp
 <li>Calculate the abovementioned scores for each data point which corresponds to one&nbsp;minute.</li>
 </ul>
 <p>Using <em>GPy</em>, I train the model&nbsp;as:</p>
-<div class="highlight"><pre><span></span><span class="err">kernel = GPy.kern.RBF(input_dim=1) + GPy.kern.White(input_dim=1)</span>
+<div class="highlight"><pre><span></span><code><span class="err">kernel = GPy.kern.RBF(input_dim=1) + GPy.kern.White(input_dim=1)</span>
 <span class="err">m = GPy.models.GPRegression(Xtr.reshape(-1,1),ytr.reshape(-1,1),kernel)</span>
 <span class="err">m.optimize()</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>In the above code, <code>Xtr</code> and <code>ytr</code> are the input/output vectors respectively. The <code>Xtr</code> is a sequence of integers representing the minute distance from where the data started, and <code>ytr</code> is the normalized number of sessions for that minute. This results in a model depicted in Fig. 5. The blue gradient represents the variance of the expected output, showing the expected value should be somewhere in the blue region. Please note that we&#8217;re only interested in the regions inside the data, and not the region outside the data&nbsp;range.</p>
 <p><img alt="Trained GP" src="/files/img/20161006-GP.png" title="Trained Gaussian Process Model"></p>
@@ -1633,6 +1631,16 @@ By looking at the data, I would sum these three kernels and optimize on the&nbsp
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="./archives.html">all posts</a></h4>
         <div class="recent-posts">
             <article>
+                <a href="./on-benefits-of-working-with-an-open-source-community-corporate-perspective.html">On Benefits of Working with an Open Source Community - Corporate&nbsp;Perspective  </a>
+                <section>
+                    posted in
+                <a href="./categories.html#open-source-ref">open-source</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2021-02-19T00:00:00+01:00">Fri 19 February 2021</time>
+                </div>
+                </section>
+            </article>
+            <article>
                 <a href="./gitgithub-how-to-contribute-to-an-open-source-project-on-github.html"><span class="caps">GIT</span>/<span class="caps">GITHUB</span>, how to contribute to an open source project on&nbsp;GitHub?  </a>
                 <section>
                     posted in
@@ -1669,16 +1677,6 @@ By looking at the data, I would sum these three kernels and optimize on the&nbsp
                 <a href="./categories.html#ethics-ref">ethics</a>
                 <div class="recent-posts-time">
                 <time pubdate="pubdate" datetime="2020-01-15T00:00:00+01:00">Wed 15 January 2020</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./scikit-learn-sprint-at-nairobi-kenya.html">scikit-learn sprint at Nairobi,&nbsp;Kenya  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#open-source-ref">open-source</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2019-06-25T00:00:00+02:00">Tue 25 June 2019</time>
                 </div>
                 </section>
             </article>

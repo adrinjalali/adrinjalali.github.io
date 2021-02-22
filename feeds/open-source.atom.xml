@@ -1,5 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - open-source</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/open-source.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2020-05-28T00:00:00+02:00</updated><entry><title>GIT/GITHUB, how to contribute to an open source project on GitHub?</title><link href="https://adrin.info/gitgithub-how-to-contribute-to-an-open-source-project-on-github.html" rel="alternate"></link><published>2020-05-28T00:00:00+02:00</published><updated>2020-05-28T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-05-28:/gitgithub-how-to-contribute-to-an-open-source-project-on-github.html</id><summary type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img/20190216-git-github.png" title="Credit: https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - open-source</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/open-source.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2021-02-19T00:00:00+01:00</updated><entry><title>On Benefits of Working with an Open Source Community - Corporate Perspective</title><link href="https://adrin.info/on-benefits-of-working-with-an-open-source-community-corporate-perspective.html" rel="alternate"></link><published>2021-02-19T00:00:00+01:00</published><updated>2021-02-19T00:00:00+01:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2021-02-19:/on-benefits-of-working-with-an-open-source-community-corporate-perspective.html</id><summary type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img2/0190216-git-github.png" title="Credit: https://opensource.com"&gt; Image by: &lt;code&gt;opensource.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This post is about how a team or project can benefit from engaging with open
+source communities related to that project. There are countless, much better,
+and incredible resources out there on the topic, but I needed to organize my
+thoughts around it, and here&amp;#8217;s …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img2/0190216-git-github.png" title="Credit: https://opensource.com"&gt; Image by: &lt;code&gt;opensource.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This post is about how a team or project can benefit from engaging with open
+source communities related to that project. There are countless, much better,
+and incredible resources out there on the topic, but I needed to organize my
+thoughts around it, and here&amp;#8217;s the&amp;nbsp;result.&lt;/p&gt;
+&lt;h2 id="collaborating-with-the-experts"&gt;Collaborating with the&amp;nbsp;Experts&lt;/h2&gt;
+&lt;p&gt;One thing I do when I want to go deep in a topic, is to go and contribute to a
+project related to what I want to learn. The core developers of such a library
+or project together have the expertise to have such a project up and running.
+That means if one starts contributing to those libraries, one will get reviewed
+by those people, and that&amp;#8217;s extremely&amp;nbsp;valuable.&lt;/p&gt;
+&lt;p&gt;If you continue to work on a project, and if the project is truly open and
+they&amp;#8217;re happy to have new contributors on the project, that&amp;#8217;ll get you
+eventually more involved and at some point your voice matters more and you can
+contribute to the general direction of the project. At some point you will work
+together with the other contributors and core developers on issues and projects
+inside this project which are important or more relevant to&amp;nbsp;you.&lt;/p&gt;
+&lt;p&gt;All of that sounds really nice, but it may not be clear what exactly it brings
+to the team and company in which you work. For that, think of it from the
+talent acquisition perspective. Finding the experts of the field in whatever
+you do is usually not easy. And the more experts you have, the better the
+quality of the product you design. Now, if we could have access to a pool of
+experts in a topic and we could get their feedback and have them improve
+whatever we develop, it&amp;#8217;d be pretty nice, wouldn&amp;#8217;t it? Working on a relevant
+open source project can bring you exactly that. You can start working on a
+topic inside that project which is more relevant to your product/goals, and
+since those core developers and contributors care about what goes in the
+library, they&amp;#8217;ll do their best to get your contribution to the best state to
+the best of their abilities. This in effect, means you have their direct
+engagement in something you need and you&amp;#8217;re working&amp;nbsp;on.&lt;/p&gt;
+&lt;p&gt;This usually, but not always, applies more in libraries which are closer to the
+edge of science and technology rather than the more established ones. There are
+other motivations for why contributing to the more established libraries is
+beneficial to your team/company in&amp;nbsp;general.&lt;/p&gt;
+&lt;p&gt;To give you an example, as a part of our work on model cards at Zalando, we
+need to work on a way to standardize the way we use fairness related metrics&amp;#8217;
+names across our teams. The fairness community in general is still evolving
+around metrics and their names and use cases, and you can see several names
+referring to the same metric, or a common name which doesn&amp;#8217;t refer to any
+specific metric at all. This happens to be something we also care about in
+&lt;code&gt;fairlearn&lt;/code&gt; (which is a library originally developed by people at Microsoft and
+is now a community project), and therefore I&amp;#8217;d work on it to be added to our
+documentation on the &lt;code&gt;fairlearn&lt;/code&gt; side. This means I&amp;#8217;d get the feedback of all
+those experts in the field who contribute to the library, before my
+contribution would be added to the&amp;nbsp;documentation.&lt;/p&gt;
+&lt;p&gt;When you leave your bubble, whether that be your company or your team in
+academia, you realize how much brain-power is out there, and how effective
+working with people from all around the world in improving your work&amp;nbsp;is!&lt;/p&gt;
+&lt;h2 id="innovation"&gt;Innovation&lt;/h2&gt;
+&lt;p&gt;This is somewhat related to the previous point. The innovation as a result of
+people with very different backgrounds working together is high quality and
+fast. Open source may seem quite slow if you look at an individual pull request
+or an issue, especially if you look at the more established projects, but even
+in those projects you have changes every once in a while which change the whole
+landscape. This is more pronounced in new and under development libraries
+especially if you manage to have quite a few people with very different
+interests and backgrounds&amp;nbsp;onboard.&lt;/p&gt;
+&lt;p&gt;A couple of people living and working in the same city in the same environment,
+almost never can match the creativity coming out of a group of people who live
+in different continents, and work in different parts of the industry and&amp;nbsp;academia.&lt;/p&gt;
+&lt;p&gt;It happens so very often that a solution which sounds pretty cool and creative
+is started in a company, but very soon the project will look and feel outdated
+and the new ones out there look much more attractive. Joining the forces with
+the work done outside your bubble, will keep you up to date and&amp;nbsp;relevant.&lt;/p&gt;
+&lt;h2 id="talent-acquisition"&gt;Talent&amp;nbsp;Acquisition&lt;/h2&gt;
+&lt;p&gt;People aren&amp;#8217;t going to be attracted to your team unless they know what you do
+and they like it. If you work on something used by people who are your target
+audience, soon they&amp;#8217;ll notice you and would like to work in a place which
+contributes to their beloved tools and&amp;nbsp;ideas.&lt;/p&gt;
+&lt;p&gt;If I want to add a new member to my team, it&amp;#8217;ll be much easier for me to go and
+say &amp;#8220;hey, we need people, and we also work on &lt;span class="caps"&gt;XXX&lt;/span&gt; in case you were wondering&amp;#8221;,
+rather than having to explain what exactly we do and how it&amp;#8217;d be interesting to
+the potential&amp;nbsp;candidates.&lt;/p&gt;
+&lt;p&gt;This is independent of whether you start your own open source project or if you
+contribute to an existing one, and each come with their own benefits and&amp;nbsp;challenges.&lt;/p&gt;
+&lt;p&gt;This is on top of the open attractive culture you create once you work openly
+on projects. But bare in mind that the open source culture has many diversity
+and inclusion related issues and you need to actively work on them if you want
+a diverse set of people working around the project; it doesn&amp;#8217;t happen on its&amp;nbsp;own.&lt;/p&gt;
+&lt;h2 id="sustainability-of-your-dependencies"&gt;Sustainability of your&amp;nbsp;Dependencies&lt;/h2&gt;
+&lt;p&gt;If your project depends on something, you want that thing to stay up to date
+and under development. No matter how well developed a library is, if its
+development is stalled, it&amp;#8217;ll be a risk to your&amp;nbsp;operations.&lt;/p&gt;
+&lt;p&gt;There are many ways a company can support those dependencies, one is by
+sponsoring the project to make sure maintainers stay on the project, another
+one is to have employees contribute to the project and make sure it stays&amp;nbsp;active.&lt;/p&gt;
+&lt;h2 id="concluding-remarks"&gt;Concluding&amp;nbsp;Remarks&lt;/h2&gt;
+&lt;p&gt;The benefits of working with a community on open source projects aren&amp;#8217;t
+necessarily obvious if you haven&amp;#8217;t really worked with them in the past. I
+definitely wasn&amp;#8217;t aware of all of this before I started being more engaged with
+a few communities, and I&amp;#8217;m sure there&amp;#8217;s still a ton for me to&amp;nbsp;learn.&lt;/p&gt;
+&lt;p&gt;I would also like to emphasize how important the &amp;#8220;community&amp;#8221; aspect is. Having
+an open source library where you&amp;#8217;re the only contributor doesn&amp;#8217;t necessarily
+bring much. Most of what I talked about in this post are things you get out of
+the community, not just because you work on something which is open source.
+That also means you should be aware of the challenges of creating a community
+or working with one. For example, you can&amp;#8217;t have a meeting behind closed doors
+and then create a pull request and change something in your library. You need
+to make sure anybody who comes to your repository/website, feels welcome and
+included in all discussions. It also means you actually need to take those
+inputs into account and keep them&amp;nbsp;engaged.&lt;/p&gt;
+&lt;p&gt;Also, when engaging with an existing community, you should realize it takes a
+while for them to trust you and take you more seriously. You need to work on
+things they have agreed for a while, before you can start having a more
+substantial influence on the&amp;nbsp;project.&lt;/p&gt;
+&lt;p&gt;All in all, I truly believe being engaged with those projects is worth the
+challenge and in the end you&amp;#8217;ll benefit from&amp;nbsp;it.&lt;/p&gt;</content><category term="open-source"></category><category term="open-source"></category></entry><entry><title>GIT/GITHUB, how to contribute to an open source project on GitHub?</title><link href="https://adrin.info/gitgithub-how-to-contribute-to-an-open-source-project-on-github.html" rel="alternate"></link><published>2020-05-28T00:00:00+02:00</published><updated>2020-05-28T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2020-05-28:/gitgithub-how-to-contribute-to-an-open-source-project-on-github.html</id><summary type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img/20190216-git-github.png" title="Credit: https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3"&gt;&lt;/p&gt;
 &lt;p&gt;The idea behind this post is not to show how to install the tools you need, or
 to list a bunch of [at a first glance seemingly random] &lt;code&gt;git&lt;/code&gt; commands. There
 are enough tutorials and blog posts explaining them out there in the wild that
@@ -92,21 +202,19 @@ repository which you can use locally to clone using a &lt;code&gt;git&lt;/code&g
 you could get the address on the original&amp;nbsp;repository:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="git/github" src="files/img/git/git-clone-orig.png"&gt;&lt;/p&gt;
 &lt;p&gt;And then you&amp;#8217;d be using the following command to clone that repository&amp;nbsp;locally:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/github-tutorials/example-repo.git
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git clone https://github.com/github-tutorials/example-repo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The above command will download the repository and put it in a folder named the
 same as the repo itself (&lt;code&gt;example-repo&lt;/code&gt; in this case). At the same time, it
 will store the information about from where it got the repository, which is
 called a &lt;strong&gt;remote&lt;/strong&gt;, and by default this remote is called &lt;em&gt;origin&lt;/em&gt;. You can get
 a list of your remotes using the following command (after going to your repo&amp;#8217;s&amp;nbsp;folder):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; example-repo
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; example-repo
 $ git remote -v
 origin  https://github.com/github-tutorials/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
 origin  https://github.com/github-tutorials/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Again, please note that the above command and all the ones from this point
 should be run when you&amp;#8217;re already in your repository&amp;#8217;s folder. As you can see,
@@ -135,9 +243,8 @@ have administrative access to this repository, and that&amp;#8217;s why you also
 &amp;#8220;&lt;em&gt;Settings&lt;/em&gt;&amp;#8221; tab. Now if you try to get the clone address of this repo, it
 shows you the one you own. Now you have two options, you can delete what you
 had cloned, and clone a new one using the new address, which in my case would&amp;nbsp;be:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/adrinjalali/example-repo.git
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git clone https://github.com/adrinjalali/example-repo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Please note that the &lt;code&gt;github-tutorials&lt;/code&gt; is changed to &lt;code&gt;adrinjalali&lt;/code&gt;, my
 username. But you can also manipulate your remotes and change what you have to
@@ -147,19 +254,17 @@ your local copy with, and &lt;code&gt;upstream&lt;/code&gt; is the original repo
 Every now and then you&amp;#8217;ll be needing to resync your repository with the changes
 which have happened on &lt;code&gt;upstream&lt;/code&gt;, to keep up with the latest changes. So,
 let&amp;#8217;s first rename &lt;code&gt;origin&lt;/code&gt; to &lt;code&gt;upstream&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git remote rename origin upstream
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git remote rename origin upstream
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And then add the new &lt;code&gt;origin&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git remote add origin https://github.com/adrinjalali/example-repo.git
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git remote add origin https://github.com/adrinjalali/example-repo.git
 $ git remote -v
 origin  https://github.com/adrinjalali/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
 origin  https://github.com/adrinjalali/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
 upstream    https://github.com/github-tutorials/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
 upstream    https://github.com/github-tutorials/example-repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If you had first forked and then cloned your own repo, you&amp;#8217;d need to only add
 the &lt;code&gt;upstream&lt;/code&gt; as a remote, and now you have the ingredients to do&amp;nbsp;so.&lt;/p&gt;
@@ -218,52 +323,47 @@ etc. You usually would need to &lt;em&gt;base&lt;/em&gt; your development on the
 development branch. When you &lt;em&gt;fork&lt;/em&gt; or &lt;em&gt;clone&lt;/em&gt; a repository, it also includes
 all the branches that repository, and you can simply change to that branch&amp;nbsp;locally.&lt;/p&gt;
 &lt;p&gt;You can always see the branch you have as active&amp;nbsp;using:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git status
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git status
 On branch master
 nothing to commit, working tree clean
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;As you can see, by default you&amp;#8217;re on the &lt;code&gt;master&lt;/code&gt; branch. Now since &lt;code&gt;master&lt;/code&gt; is
 our main development branch, you can base your work on it and create a branch
 from it. You can create a branch based on your current active branch&amp;nbsp;using:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git branch &lt;span class="nb"&gt;test&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git branch &lt;span class="nb"&gt;test&lt;/span&gt;
 $ git status
 On branch master
 nothing to commit, working tree clean
 $ git branch --list
 * master
   &lt;span class="nb"&gt;test&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;As you can see, we created a branch, but still stayed on master. In order to
 change to the newly created branch, you should &lt;strong&gt;checkout&lt;/strong&gt; the&amp;nbsp;branch:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git checkout &lt;span class="nb"&gt;test&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git checkout &lt;span class="nb"&gt;test&lt;/span&gt;
 Switched to branch &lt;span class="s1"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;
 $ git branch --list
   master
 * &lt;span class="nb"&gt;test&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;You can also go back to &lt;code&gt;master&lt;/code&gt;, and safely delete this &lt;code&gt;test&lt;/code&gt; branch:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git checkout master
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git checkout master
 Switched to branch &lt;span class="s1"&gt;&amp;#39;master&amp;#39;&lt;/span&gt;
 $ git branch -D &lt;span class="nb"&gt;test&lt;/span&gt;
 Deleted branch &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;was ea65abd&lt;span class="o"&gt;)&lt;/span&gt;.
 $ git branch --list
 * master
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code&gt;ea65abd&lt;/code&gt; is the &lt;em&gt;abbreviated commit hash&lt;/em&gt; which you can ignore for&amp;nbsp;now.&lt;/p&gt;
 &lt;p&gt;A more convenient way to create a new branch and check it out at the same time
 would&amp;nbsp;be:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git checkout -b doc/readme
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git checkout -b doc/readme
 Switched to a new branch &lt;span class="s1"&gt;&amp;#39;doc/readme&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;As you can see, the name of the new branch is &lt;code&gt;doc/readme&lt;/code&gt;. The name can be
 almost anything, and one convention that some people follow is to name branches
@@ -271,14 +371,13 @@ as &lt;code&gt;category/item&lt;/code&gt;, but you could as well do &lt;code&gt;
 &lt;code&gt;my-random-branch-name&lt;/code&gt;. I&amp;#8217;d suggest you always keep your master clean and in
 sync with your remote, and only work on branches for each&amp;nbsp;feature/issue.&lt;/p&gt;
 &lt;p&gt;Now we can finally start working on the issue. This is the &lt;code&gt;README.md&lt;/code&gt; now:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat README.md 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ cat README.md 
 &lt;span class="c1"&gt;# example-repo&lt;/span&gt;
 example repository &lt;span class="k"&gt;for&lt;/span&gt; github tutorials
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And let&amp;#8217;s change it&amp;nbsp;to:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat README.md 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ cat README.md 
 &lt;span class="c1"&gt;# example-repo&lt;/span&gt;
 example repository &lt;span class="k"&gt;for&lt;/span&gt; github tutorials
 
@@ -286,11 +385,10 @@ This repository is made to showcase some common tasks and processes on GitHub
 and to present the related &lt;span class="sb"&gt;`&lt;/span&gt;git&lt;span class="sb"&gt;`&lt;/span&gt; commands. The post explaining these processes
 is located
 &lt;span class="o"&gt;[&lt;/span&gt;here&lt;span class="o"&gt;](&lt;/span&gt;gitgithub-how-to-contribute-to-an-open-source-project-on-github.html&lt;span class="o"&gt;)&lt;/span&gt;.
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now let&amp;#8217;s see what the status of the local repo&amp;nbsp;is:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git status
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git status
 On branch doc/readme
 Changes not staged &lt;span class="k"&gt;for&lt;/span&gt; commit:
   &lt;span class="o"&gt;(&lt;/span&gt;use &lt;span class="s2"&gt;&amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot;&lt;/span&gt; to update what will be committed&lt;span class="o"&gt;)&lt;/span&gt;
@@ -299,8 +397,7 @@ Changes not staged &lt;span class="k"&gt;for&lt;/span&gt; commit:
     modified:   README.md
 
 no changes added to commit &lt;span class="o"&gt;(&lt;/span&gt;use &lt;span class="s2"&gt;&amp;quot;git add&amp;quot;&lt;/span&gt; and/or &lt;span class="s2"&gt;&amp;quot;git commit -a&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;As you can see, it says the &lt;code&gt;README.md&lt;/code&gt; file is &lt;strong&gt;modified&lt;/strong&gt;. You would need to
 &lt;strong&gt;add&lt;/strong&gt; the file. That brings us to the lifecycle of a file on a git repo. As
@@ -325,35 +422,32 @@ found
 &lt;a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;So now we need to move the &lt;code&gt;README.md&lt;/code&gt; from &lt;em&gt;modified&lt;/em&gt; to &lt;em&gt;staged&lt;/em&gt; (using &lt;code&gt;git
 add&lt;/code&gt;), and then to &lt;em&gt;unmodified&lt;/em&gt; (using &lt;code&gt;git commit&lt;/code&gt;):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git add README.md
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git add README.md
 $ git commit -m &lt;span class="s2"&gt;&amp;quot;added required changes to the README.md&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Always include a message with the commit. Meaningful &lt;em&gt;Commit messages&lt;/em&gt; are
 extremely helpful for later coming back and finding some changes you&amp;#8217;ve made
 previously. Alternatively, you could summarize the above two commands in&amp;nbsp;one:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git commit -am &lt;span class="s2"&gt;&amp;quot;added required changes to the README.md&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git commit -am &lt;span class="s2"&gt;&amp;quot;added required changes to the README.md&amp;quot;&lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;doc/readme b43f0b6&lt;span class="o"&gt;]&lt;/span&gt; added required changes to the README.md
  &lt;span class="m"&gt;1&lt;/span&gt; file changed, &lt;span class="m"&gt;5&lt;/span&gt; insertions&lt;span class="o"&gt;(&lt;/span&gt;+&lt;span class="o"&gt;)&lt;/span&gt;
 $ git status
 On branch doc/readme
 nothing to commit, working tree clean
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The difference is that &lt;code&gt;git commit -a&lt;/code&gt; adds all modified files to the staging
 area, which may not be what you want. For more control you can use the two
 separate commands. Also, as you can see, the working tree is &lt;em&gt;clean&lt;/em&gt;&amp;nbsp;again.&lt;/p&gt;
 &lt;p&gt;Now it&amp;#8217;s time to &lt;strong&gt;push&lt;/strong&gt; the changes to our remote copy of the repository,
 which we can do by &lt;code&gt;git push&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git push
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git push
 fatal: The current branch doc/readme has no upstream branch.
 To push the current branch and &lt;span class="nb"&gt;set&lt;/span&gt; the remote as upstream, use
 
     git push --set-upstream origin doc/readme
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;span class="caps"&gt;OOPS&lt;/span&gt;, it failed, because there is no corresponding branch on the remote copy
 which corresponds to the local branch we&amp;#8217;ve made. Your own remote copy is the
@@ -362,7 +456,7 @@ branch on the upstream should be the corresponding one. As you can see, by
 default it suggests the same branch name, on the &lt;code&gt;origin&lt;/code&gt; remote. The suggested
 command would create a new branch on your remote copy, and upload the changes
 to that&amp;nbsp;branch:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;upstream&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;upstream&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;
 &lt;span class="n"&gt;Enumerating&lt;/span&gt; &lt;span class="nl"&gt;objects&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
 &lt;span class="n"&gt;Counting&lt;/span&gt; &lt;span class="nl"&gt;objects&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
 &lt;span class="n"&gt;Delta&lt;/span&gt; &lt;span class="n"&gt;compression&lt;/span&gt; &lt;span class="n"&gt;using&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="n"&gt;threads&lt;/span&gt;
@@ -376,8 +470,7 @@ to that&amp;nbsp;branch:&lt;/p&gt;
 &lt;span class="n"&gt;To&lt;/span&gt; &lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;adrinjalali&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;repo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
  &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;      &lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;
 &lt;span class="n"&gt;Branch&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;track&lt;/span&gt; &lt;span class="n"&gt;remote&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;readme&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;from&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Your output would be slightly different. Here I had to change my remote and use
 the ssh connection instead. Not only it&amp;#8217;s more secure, it also allows you to

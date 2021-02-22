@@ -58,7 +58,7 @@
 &lt;p&gt;&lt;img alt="Normal Distribution" src="/files/img/20161006-normal.png" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Fig. 4: Normal distribution and three different observed values - credit:&amp;nbsp;thefemalecelebrity.com&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The area under the curve marked by the blue areas shown in Fig. 4 is between 0 and 1. It is 0 if the expected value is the same as our observed value, and is close to 1 if it is the two observed and expected mean are far from each other. Hereafter &lt;em&gt;score(x)&lt;/em&gt; represents this area under the curve. The piece of code bellow shows how this is calculated in&amp;nbsp;python:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;math&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;math&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;phi&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -68,8 +68,7 @@
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;phi&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;phi&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 
 &lt;span class="n"&gt;x_score&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;score&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;expected_mean&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;expected_std&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now for a moment, assume we know a given data point (number of sessions) is influenced by a &lt;span class="caps"&gt;TV&lt;/span&gt;-ad. Still not all those sessions are because of the event. Some of them would have been there even with no &lt;span class="caps"&gt;TV&lt;/span&gt;-ad event. We take the predicted mean as the background session count, and the rest as &lt;span class="caps"&gt;TV&lt;/span&gt;-ad influenced sessions. Therefore, if &lt;em&gt;x&lt;/em&gt; is observed value, and &lt;em&gt;x&amp;#8217;&lt;/em&gt; is predicted value, &lt;em&gt;(x - x&amp;#8217;) / x&lt;/em&gt; is the portion of sessions attributed to a &lt;span class="caps"&gt;TV&lt;/span&gt;-ad&amp;nbsp;event.&lt;/p&gt;
 &lt;p&gt;At the end, we take &lt;em&gt;score(x) * (x - x&amp;#8217;) / x&lt;/em&gt; as the likelihood of each session being attributed to a &lt;span class="caps"&gt;TV&lt;/span&gt;-ad.&lt;/p&gt;
@@ -95,11 +94,10 @@ By looking at the data, I would sum these three kernels and optimize on the&amp;
 &lt;li&gt;Calculate the abovementioned scores for each data point which corresponds to one&amp;nbsp;minute.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Using &lt;em&gt;GPy&lt;/em&gt;, I train the model&amp;nbsp;as:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;kernel = GPy.kern.RBF(input_dim=1) + GPy.kern.White(input_dim=1)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;kernel = GPy.kern.RBF(input_dim=1) + GPy.kern.White(input_dim=1)&lt;/span&gt;
 &lt;span class="err"&gt;m = GPy.models.GPRegression(Xtr.reshape(-1,1),ytr.reshape(-1,1),kernel)&lt;/span&gt;
 &lt;span class="err"&gt;m.optimize()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In the above code, &lt;code&gt;Xtr&lt;/code&gt; and &lt;code&gt;ytr&lt;/code&gt; are the input/output vectors respectively. The &lt;code&gt;Xtr&lt;/code&gt; is a sequence of integers representing the minute distance from where the data started, and &lt;code&gt;ytr&lt;/code&gt; is the normalized number of sessions for that minute. This results in a model depicted in Fig. 5. The blue gradient represents the variance of the expected output, showing the expected value should be somewhere in the blue region. Please note that we&amp;#8217;re only interested in the regions inside the data, and not the region outside the data&amp;nbsp;range.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Trained GP" src="/files/img/20161006-GP.png" title="Trained Gaussian Process Model"&gt;&lt;/p&gt;

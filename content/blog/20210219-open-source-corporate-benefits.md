@@ -3,7 +3,7 @@ Date: 2021-02-19
 Tags: open-source
 Category: open-source
 
-![git/github](files/img2/0190216-git-github.png "Credit:
+![git/github](files/img/people_remote_teams_world.png "Credit:
 https://opensource.com") Image by: `opensource.com`
 
 This post is about how a team or project can benefit from engaging with open

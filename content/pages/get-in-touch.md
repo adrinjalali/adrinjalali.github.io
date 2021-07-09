@@ -2,7 +2,7 @@ title: Get in Touch
 date: 2018-10-09
 
 
-#### E-Mails
+#### E-Mail
 * adrin.jalali ^as-usual^ gmail.com
 
 #### Profiles

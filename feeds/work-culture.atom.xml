@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - work-culture</title><link href="https://adrin.info/" rel="alternate"></link><link href="https://adrin.info/feeds/work-culture.atom.xml" rel="self"></link><id>https://adrin.info/</id><updated>2021-05-06T00:00:00+02:00</updated><entry><title>Remote Work - Connections - Open Source</title><link href="https://adrin.info/remote-work-connections-open-source.html" rel="alternate"></link><published>2021-05-06T00:00:00+02:00</published><updated>2021-05-06T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2021-05-06:/remote-work-connections-open-source.html</id><summary type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img/remote-work.png" title="Credit: https://blog.1password.com/remote-work-tips/"&gt;&lt;/p&gt;
-&lt;p&gt;Image on: &lt;code&gt;https://blog.1password.com/remote-work-tips/&lt;/code&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adrin Jalali - work-culture</title><link href="https://adrin.info/" rel="alternate"/><link href="https://adrin.info/feeds/work-culture.atom.xml" rel="self"/><id>https://adrin.info/</id><updated>2021-05-06T00:00:00+02:00</updated><entry><title>Remote Work - Connections - Open Source</title><link href="https://adrin.info/remote-work-connections-open-source.html" rel="alternate"/><published>2021-05-06T00:00:00+02:00</published><updated>2021-05-06T00:00:00+02:00</updated><author><name>adrin</name></author><id>tag:adrin.info,2021-05-06:/remote-work-connections-open-source.html</id><summary type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img/remote-work.png" title="Credit: https://blog.1password.com/remote-work-tips/"&gt;&lt;/p&gt;
+&lt;p&gt;Image&amp;nbsp;on: &lt;code&gt;https://blog.1password.com/remote-work-tips/&lt;/code&gt;&lt;/p&gt;
 &lt;h1 id="remote-work"&gt;Remote&amp;nbsp;Work&lt;/h1&gt;
 &lt;p&gt;I&amp;#8217;ve been working mostly remotely / from home for the past couple of years.
 I&amp;#8217;ve worked in teams and with people whom I&amp;#8217;ve never met in person, and yet I
 have a deep appreciation for them, and feel very …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="git/github" src="files/img/remote-work.png" title="Credit: https://blog.1password.com/remote-work-tips/"&gt;&lt;/p&gt;
-&lt;p&gt;Image on: &lt;code&gt;https://blog.1password.com/remote-work-tips/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Image&amp;nbsp;on: &lt;code&gt;https://blog.1password.com/remote-work-tips/&lt;/code&gt;&lt;/p&gt;
 &lt;h1 id="remote-work"&gt;Remote&amp;nbsp;Work&lt;/h1&gt;
 &lt;p&gt;I&amp;#8217;ve been working mostly remotely / from home for the past couple of years.
 I&amp;#8217;ve worked in teams and with people whom I&amp;#8217;ve never met in person, and yet I
@@ -77,4 +77,4 @@ and it has a lot to do with good communication. We should also think about the
 difference between a distributed team and remote work. If a team is really
 distributed, there is no central place for people to be remote from it. It
 changes the way you think about where to put your communication, ie. online and
-in a place everybody regardless of their location and timezone can&amp;nbsp;read.&lt;/p&gt;</content><category term="work-culture"></category><category term="work"></category><category term="remote-work"></category><category term="open-source"></category></entry></feed>
+in a place everybody regardless of their location and timezone can&amp;nbsp;read.&lt;/p&gt;</content><category term="work-culture"/><category term="work"/><category term="remote-work"/><category term="open-source"/></entry></feed>

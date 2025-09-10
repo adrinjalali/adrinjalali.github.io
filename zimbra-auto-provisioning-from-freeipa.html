@@ -101,28 +101,28 @@
             
             <p>After quite a few days struggling to configure a Zimbra server so that it automatically fetches users from our freeIPA (<span class="caps">LDAP</span>) server, I finally managed to have a configuration which works. I got help from a bunch of pages like <a href="http://imanudin.net/2014/12/09/zimbra-external-ad-automatically-create-mailboxes-zimbra-with-lazy-mode-auto-provisioning/">this</a> and <a href="https://www.zimbra.com/docs/ne/8.0.2/administration_guide/wwhelp/wwhimpl/js/html/wwhelp.htm#href=ZCS_8_0_2_Admin_Guide.Auto_Provisioning_New_Accounts_from_External_LDAP.html">this</a> one. This comes after you fix the external <span class="caps">LDAP</span> authentication and probably also external <span class="caps">GAL</span> configuration on your Zimbra&nbsp;server.</p>
 <p><code>zmprov</code> gives you a nice terminal to configure the&nbsp;server:</p>
-<div class="highlight"><pre><span></span><code>$ su - zimbra
-$ zmprov
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>zimbra
+$<span class="w"> </span>zmprov
 </code></pre></div>
 
 <p>This is the set of commands I used to set it&nbsp;up:</p>
-<div class="highlight"><pre><span></span><code><span class="err">prov&gt; md mysampledomain.net zimbraAutoProvAccountNameMap &quot;uid&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvAttrMap &quot;givenName=givenName&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net +zimbraAutoProvAttrMap &quot;sn=sn&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvBatchSize 80</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvLdapAdminBindDn &quot;uid=mail_server,cn=users,cn=accounts,dc=mysampledomain,dc=net&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvLdapAdminBindPassword &quot;myverysecretpassword&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvLdapBindDn &quot;uid=mail_server,cn=users,cn=accounts,dc=mysampledomain,dc=net&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvLdapSearchBase &quot;cn=accounts,dc=mysampledomain,dc=net&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvLdapSearchFilter &quot;(&amp;(ObjectClass=person))&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvLdapStartTlsEnabled TRUE</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvLdapURL &quot;ldaps://ipa.mysampledomain.net:636&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvPollingInterval &quot;10m&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvScheduledDomains &quot;mysampledomain.net&quot;</span>
-<span class="err">prov&gt; md mysampledomain.net zimbraAutoProvMode &quot;EAGER&quot;</span>
+<div class="highlight"><pre><span></span><code>prov&gt; md mysampledomain.net zimbraAutoProvAccountNameMap &quot;uid&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvAttrMap &quot;givenName=givenName&quot;
+prov&gt; md mysampledomain.net +zimbraAutoProvAttrMap &quot;sn=sn&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvBatchSize 80
+prov&gt; md mysampledomain.net zimbraAutoProvLdapAdminBindDn &quot;uid=mail_server,cn=users,cn=accounts,dc=mysampledomain,dc=net&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvLdapAdminBindPassword &quot;myverysecretpassword&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvLdapBindDn &quot;uid=mail_server,cn=users,cn=accounts,dc=mysampledomain,dc=net&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvLdapSearchBase &quot;cn=accounts,dc=mysampledomain,dc=net&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvLdapSearchFilter &quot;(&amp;(ObjectClass=person))&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvLdapStartTlsEnabled TRUE
+prov&gt; md mysampledomain.net zimbraAutoProvLdapURL &quot;ldaps://ipa.mysampledomain.net:636&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvPollingInterval &quot;10m&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvScheduledDomains &quot;mysampledomain.net&quot;
+prov&gt; md mysampledomain.net zimbraAutoProvMode &quot;EAGER&quot;
 </code></pre></div>
 
-<p>To diagnose why the system wasn&#8217;t working, I also had to figure out where the log files are, and how to produce more logs. Oddly enough, they&#8217;re not in <code>/var/log</code>, and instead they are written by default in <code>/opt/zimbra/log/mailbox.log</code>, or other related files in that folder. I added <code>log4j.logger.zimbra.autoprov=TRACE</code> at the end of my <code>/opt/zimbra/conf/log4j.properties</code> file, which will be overwritten next time I restart the services using the configurations in <code>/opt/zimbra/conf/log4j.properties.in</code>. Finally to make the logging system reload the logging configuration, you need to run <code>zmprov rlog</code>. You find more info <a href="http://wiki.zimbra.com/wiki/Using_log4j_to_Configure_mailboxd_Logging">here</a>.</p>
+<p>To diagnose why the system wasn&#8217;t working, I also had to figure out where the log files are, and how to produce more logs. Oddly enough, they&#8217;re not&nbsp;in <code>/var/log</code>, and instead they are written by default&nbsp;in <code>/opt/zimbra/log/mailbox.log</code>, or other related files in that folder. I&nbsp;added <code>log4j.logger.zimbra.autoprov=TRACE</code> at the end of&nbsp;my <code>/opt/zimbra/conf/log4j.properties</code> file, which will be overwritten next time I restart the services using the configurations&nbsp;in <code>/opt/zimbra/conf/log4j.properties.in</code>. Finally to make the logging system reload the logging configuration, you need to&nbsp;run <code>zmprov rlog</code>. You find more info <a href="http://wiki.zimbra.com/wiki/Using_log4j_to_Configure_mailboxd_Logging">here</a>.</p>
             
             <section>
 <div class="accordion" id="accordion2">
@@ -208,6 +208,16 @@ $ zmprov
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="./archives.html">all posts</a></h4>
         <div class="recent-posts">
             <article>
+                <a href="./the-cost-of-ai-in-open-source-maintenance.html">The Cost of <span class="caps">AI</span> in Open Source&nbsp;Maintenance  </a>
+                <section>
+                    posted in
+                <a href="./categories.html#open-source-ref">open-source</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2025-09-10T00:00:00+02:00">Wed 10 September 2025</time>
+                </div>
+                </section>
+            </article>
+            <article>
                 <a href="./remote-work-connections-open-source.html">Remote Work - Connections - Open&nbsp;Source  </a>
                 <section>
                     posted in
@@ -244,16 +254,6 @@ $ zmprov
                 <a href="./categories.html#open-source-ref">open-source</a>
                 <div class="recent-posts-time">
                 <time pubdate="pubdate" datetime="2020-04-12T00:00:00+02:00">Sun 12 April 2020</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./fosdem-2020.html"><span class="caps">FOSDEM</span>&nbsp;2020  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#blog-ref">blog</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2020-02-02T00:00:00+01:00">Sun 02 February 2020</time>
                 </div>
                 </section>
             </article>

@@ -14,12 +14,12 @@
 
 <meta property="og:title" content="GIT/GITHUB, how to contribute to an open source project on GitHub? "/>
 <meta property="og:url" content="./gitgithub-how-to-contribute-to-an-open-source-project-on-github.html" />
-<meta property="og:description" content="The idea behind this post is not to show how to install the tools you need, or to list a bunch of [at a first glance seemingly random] git commands. There are enough tutorials and blog posts explaining them out there in the wild that with a web search you …" />
+<meta property="og:description" content="The idea behind this post is not to show how to install the tools you need, or to list a bunch of [at a first glance seemingly random] git commands. There are enough tutorials and blog posts explaining them out there in the wild that with a web search you …" />
 <meta property="og:site_name" content="Adrin Jalali" />
 <meta property="og:article:author" content="adrin" />
 <meta property="og:article:published_time" content="2020-05-28T00:00:00+02:00" />
 <meta name="twitter:title" content="GIT/GITHUB, how to contribute to an open source project on GitHub? ">
-<meta name="twitter:description" content="The idea behind this post is not to show how to install the tools you need, or to list a bunch of [at a first glance seemingly random] git commands. There are enough tutorials and blog posts explaining them out there in the wild that with a web search you …">
+<meta name="twitter:description" content="The idea behind this post is not to show how to install the tools you need, or to list a bunch of [at a first glance seemingly random] git commands. There are enough tutorials and blog posts explaining them out there in the wild that with a web search you …">
 
         <title>GIT/GITHUB, how to contribute to an open source project on GitHub?  · Adrin Jalali
 </title>
@@ -101,13 +101,13 @@
             
             <p><img alt="git/github" src="files/img/20190216-git-github.png" title="Credit: https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3"></p>
 <p>The idea behind this post is not to show how to install the tools you need, or
-to list a bunch of [at a first glance seemingly random] <code>git</code> commands. There
+to list a bunch of [at a first glance seemingly&nbsp;random] <code>git</code> commands. There
 are enough tutorials and blog posts explaining them out there in the wild that
 with a web search you&#8217;ll find too many of them&nbsp;anyway.</p>
 <p>This goal of this post is to give you the ingredients you need, to contribute
 to a project on the GitHub platform and collaborate with other people&nbsp;there.</p>
 <p>The first important point is the distinction between <strong>git</strong> and <strong>GitHub</strong>!
-GitHub is a platform which uses <code>git</code>, but it&#8217;s also not the only platform that
+GitHub is a platform which&nbsp;uses <code>git</code>, but it&#8217;s also not the only platform that
 uses it. Another somewhat similar platform is <strong>GitLab</strong>, but there are crucial
 differences between the two that has made GitHub a much more convenient place
 for a community of strangers to work together. By far the best source of
@@ -120,10 +120,10 @@ first, then you can cover the concepts more <em>accurately</em> once you have mo
 <p>Version control is a system that records changes to a file or set of files
 over time so that you can recall specific versions later<sup id="fnref:f1"><a class="footnote-ref" href="#fn:f1">1</a></sup>.</p>
 </blockquote>
-<p>Strictly speaking, to develop a package using <code>git</code> there is no need for any
-server or a platform. Most <code>git</code> related tasks you&#8217;d be doing are done
+<p>Strictly speaking, to develop a package&nbsp;using <code>git</code> there is no need for any
+server or a platform.&nbsp;Most <code>git</code> related tasks you&#8217;d be doing are done
 completely locally on your own machine&nbsp;anyway.</p>
-<p>The main issue at the beginning when you start to work with <code>git</code> is all the
+<p>The main issue at the beginning when you start to work&nbsp;with <code>git</code> is all the
 jargon used around it. To get an idea of what we&#8217;re talking about here, the
 <a href="https://www.youtube.com/watch?v=3a2x1iJFJWc"><span class="caps">GIT</span> Workflow - Georgia Tech - Software Development
 Process</a> short video is a great
@@ -131,30 +131,29 @@ place to&nbsp;start:</p>
 <p><a href="https://www.youtube.com/watch?v=3a2x1iJFJWc" title="GIT Workflow - Georgia Tech - Software Development Process"><img alt="GIT Workflow - Georgia Tech - Software Development
 Process" src="http://img.youtube.com/vi/3a2x1iJFJWc/0.jpg"></a></p>
 <p>Now let&#8217;s go through some of the concepts you&#8217;d encounter in
-almost any project. For the rest of this post, I&#8217;ll be assuming you&#8217;ve
-installed <code>git</code> and gone through <a href="https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3">this
+almost any project. For the rest of this post, I&#8217;ll be assuming you&#8217;ve&nbsp;installed <code>git</code> and gone through <a href="https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3">this
 tutorial</a>
 up to Step 3: setup &#8220;config&#8221;, and know your way around a <em>shell/terminal</em>.</p>
 <p><em>Source tree</em> is your project&#8217;s folder, with all its subfolders and files that
-are included in the project. Using <code>git</code> you&#8217;ll be keeping track of all the
+are included in the project.&nbsp;Using <code>git</code> you&#8217;ll be keeping track of all the
 changes on the source&nbsp;tree.</p>
 <p>However, there are always files and folders which you don&#8217;t want to keep track
-of, for instance the <code>build</code> directory which keeps compiled binary files of
+of, for instance&nbsp;the <code>build</code> directory which keeps compiled binary files of
 your project. Cache and temporary files are also another category of files you
-would like to exclude from being tracked. The way you tell <code>git</code> to ignore
-those is through a <code>.gitignore</code> file usually put in the root of the project&#8217;s
-folder. For most programming languages, there are descent <code>.gitignore</code>
+would like to exclude from being tracked. The way you&nbsp;tell <code>git</code> to ignore
+those is through&nbsp;a <code>.gitignore</code> file usually put in the root of the project&#8217;s
+folder. For most programming languages, there are&nbsp;descent <code>.gitignore</code>
 templates, for instance you can take a look at the
 <a href="https://github.com/github/gitignore/blob/master/Python.gitignore">Python.gitignore</a>.
-This means <code>git</code> will not automatically start tracking any of the files and/or
-folders mentioned in <code>.gitignore</code>, but you can still explicitly tell it to do
+This&nbsp;means <code>git</code> will not automatically start tracking any of the files and/or
+folders mentioned&nbsp;in <code>.gitignore</code>, but you can still explicitly tell it to do
 so if you wish for a particular file or folder. For instance, you may want to
-ignore all <code>.pdf</code> files, but keep a single <code>.pdf</code> in your repository for some
-reason. You would be able to do so by explicitly telling <code>git</code> to keep track of&nbsp;it.</p>
-<p>Once you start tracking changes to your project&#8217;s source tree using <code>git</code>, you
+ignore&nbsp;all <code>.pdf</code> files, but keep a&nbsp;single <code>.pdf</code> in your repository for some
+reason. You would be able to do so by explicitly&nbsp;telling <code>git</code> to keep track of&nbsp;it.</p>
+<p>Once you start tracking changes to your project&#8217;s source tree&nbsp;using <code>git</code>, you
 have a <em>git repository</em>. The git repository includes all the history of the
-whole project in a <code>.git</code> folder under the root of the project. It&#8217;s worth
-noting that by default, every file and folder starting with a dot (<code>.</code>) is a
+whole project in&nbsp;a <code>.git</code> folder under the root of the project. It&#8217;s worth
+noting that by default, every file and folder starting with a dot&nbsp;(<code>.</code>) is a
 <em>hidden</em> file/folder under&nbsp;linux.</p>
 <p>For the rest of this post, I&#8217;ll be using the screenshots taken at the time of
 writing the post. It may slightly change through time as GitHub continues its&nbsp;development.</p>
@@ -178,43 +177,43 @@ empty and it looks like&nbsp;this:</p>
 </ul>
 <p>The other option up there, is <strong>fork</strong>, which requires a bit of an explanation.
 When you have a git repository, you can <strong>clone</strong> that by copying everything
-you have on that repo, including the <code>.git</code> folder. So copying is the simplest
+you have on that repo, including&nbsp;the <code>.git</code> folder. So copying is the simplest
 type of clone you can have. The clone is the same as the original repository,
-including its history (since you copied the <code>.git</code> folder as well). But let say
+including its history (since you copied&nbsp;the <code>.git</code> folder as well). But let say
 you want to clone a repository from a server, and every now and then sync your
 local copy with what you have on the server. That&#8217;s why you also have a &#8220;clone
 or download&#8221; button on your repository, which gives you the address of the
-repository which you can use locally to clone using a <code>git</code> command. Here&#8217;s how
+repository which you can use locally to clone using&nbsp;a <code>git</code> command. Here&#8217;s how
 you could get the address on the original&nbsp;repository:</p>
 <p><img alt="git/github" src="files/img/git/git-clone-orig.png"></p>
 <p>And then you&#8217;d be using the following command to clone that repository&nbsp;locally:</p>
-<div class="highlight"><pre><span></span><code>$ git clone https://github.com/github-tutorials/example-repo.git
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/github-tutorials/example-repo.git
 </code></pre></div>
 
 <p>The above command will download the repository and put it in a folder named the
-same as the repo itself (<code>example-repo</code> in this case). At the same time, it
+same as the repo itself&nbsp;(<code>example-repo</code> in this case). At the same time, it
 will store the information about from where it got the repository, which is
 called a <strong>remote</strong>, and by default this remote is called <em>origin</em>. You can get
 a list of your remotes using the following command (after going to your repo&#8217;s&nbsp;folder):</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> example-repo
-$ git remote -v
-origin  https://github.com/github-tutorials/example-repo.git <span class="o">(</span>fetch<span class="o">)</span>
-origin  https://github.com/github-tutorials/example-repo.git <span class="o">(</span>push<span class="o">)</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>example-repo
+$<span class="w"> </span>git<span class="w"> </span>remote<span class="w"> </span>-v
+origin<span class="w">  </span>https://github.com/github-tutorials/example-repo.git<span class="w"> </span><span class="o">(</span>fetch<span class="o">)</span>
+origin<span class="w">  </span>https://github.com/github-tutorials/example-repo.git<span class="w"> </span><span class="o">(</span>push<span class="o">)</span>
 </code></pre></div>
 
 <p>Again, please note that the above command and all the ones from this point
 should be run when you&#8217;re already in your repository&#8217;s folder. As you can see,
 there are two identical addressed for two purposes, <em>fetch</em> and <em>push</em>. You can
 <em>fetch</em> changes on the repository which have happened on the <em>remote</em> server,
-but you don&#8217;t have, using <code>git fetch</code>, and <em>push</em> any changes on your local
-machine using <code>git push</code>. But there are a few steps before we can do&nbsp;that.</p>
+but you don&#8217;t have,&nbsp;using <code>git fetch</code>, and <em>push</em> any changes on your local
+machine&nbsp;using <code>git push</code>. But there are a few steps before we can do&nbsp;that.</p>
 <p>You may have noticed that we cloned the repository, without telling a
 maintainer of the original repo that we&#8217;re doing so. That&#8217;s because the repo is
 a <em>public repository</em>. For a <em>private repository</em> you need to be given explicit
 permissions by a maintainer/package developer before you can access it.
 Basically if you see a repository on GitHub, you can clone&nbsp;it.</p>
 <p>However, since you&#8217;re not given explicit permissions, you cannot modify
-anything on the original repo, and that also means you cannot do a <code>git push</code>
+anything on the original repo, and that also means you cannot do&nbsp;a <code>git push</code>
 directly to it. That&#8217;s why you need to <strong>fork</strong> the repository before cloning
 it. It&#8217;ll create a server side clone of the repo in your account. You can do
 that by simply pushing the &#8220;<em>fork</em>&#8221; button up there. Please note that if you&#8217;re
@@ -229,31 +228,30 @@ have administrative access to this repository, and that&#8217;s why you also see
 &#8220;<em>Settings</em>&#8221; tab. Now if you try to get the clone address of this repo, it
 shows you the one you own. Now you have two options, you can delete what you
 had cloned, and clone a new one using the new address, which in my case would&nbsp;be:</p>
-<div class="highlight"><pre><span></span><code>$ git clone https://github.com/adrinjalali/example-repo.git
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/adrinjalali/example-repo.git
 </code></pre></div>
 
-<p>Please note that the <code>github-tutorials</code> is changed to <code>adrinjalali</code>, my
+<p>Please note that&nbsp;the <code>github-tutorials</code> is changed&nbsp;to <code>adrinjalali</code>, my
 username. But you can also manipulate your remotes and change what you have to
 the new remote address, and avoid having to delete and redownload the
-repository. By convention/default, <code>origin</code> is the remote you own and you sync
-your local copy with, and <code>upstream</code> is the original repository you forked.
+repository. By&nbsp;convention/default, <code>origin</code> is the remote you own and you sync
+your local copy with,&nbsp;and <code>upstream</code> is the original repository you forked.
 Every now and then you&#8217;ll be needing to resync your repository with the changes
-which have happened on <code>upstream</code>, to keep up with the latest changes. So,
-let&#8217;s first rename <code>origin</code> to <code>upstream</code>:</p>
-<div class="highlight"><pre><span></span><code>$ git remote rename origin upstream
+which have happened&nbsp;on <code>upstream</code>, to keep up with the latest changes. So,
+let&#8217;s first&nbsp;rename <code>origin</code> to <code>upstream</code>:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>remote<span class="w"> </span>rename<span class="w"> </span>origin<span class="w"> </span>upstream
 </code></pre></div>
 
-<p>And then add the new <code>origin</code>:</p>
-<div class="highlight"><pre><span></span><code>$ git remote add origin https://github.com/adrinjalali/example-repo.git
-$ git remote -v
-origin  https://github.com/adrinjalali/example-repo.git <span class="o">(</span>fetch<span class="o">)</span>
-origin  https://github.com/adrinjalali/example-repo.git <span class="o">(</span>push<span class="o">)</span>
-upstream    https://github.com/github-tutorials/example-repo.git <span class="o">(</span>fetch<span class="o">)</span>
-upstream    https://github.com/github-tutorials/example-repo.git <span class="o">(</span>push<span class="o">)</span>
+<p>And then add the&nbsp;new <code>origin</code>:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/adrinjalali/example-repo.git
+$<span class="w"> </span>git<span class="w"> </span>remote<span class="w"> </span>-v
+origin<span class="w">  </span>https://github.com/adrinjalali/example-repo.git<span class="w"> </span><span class="o">(</span>fetch<span class="o">)</span>
+origin<span class="w">  </span>https://github.com/adrinjalali/example-repo.git<span class="w"> </span><span class="o">(</span>push<span class="o">)</span>
+upstream<span class="w">    </span>https://github.com/github-tutorials/example-repo.git<span class="w"> </span><span class="o">(</span>fetch<span class="o">)</span>
+upstream<span class="w">    </span>https://github.com/github-tutorials/example-repo.git<span class="w"> </span><span class="o">(</span>push<span class="o">)</span>
 </code></pre></div>
 
-<p>If you had first forked and then cloned your own repo, you&#8217;d need to only add
-the <code>upstream</code> as a remote, and now you have the ingredients to do&nbsp;so.</p>
+<p>If you had first forked and then cloned your own repo, you&#8217;d need to only add&nbsp;the <code>upstream</code> as a remote, and now you have the ingredients to do&nbsp;so.</p>
 <p>Now let say you&#8217;d want to find something to work on, related to this repo.
 Usually (but not always), there&#8217;s an issue related what you&#8217;d be working on.
 You can either report an issue yourself before starting a change, or you can
@@ -298,94 +296,93 @@ merge often, even multiple times in a day. Understanding and mastering this
 feature gives you a powerful and unique tool and can entirely change the way
 that you&nbsp;develop.</p>
 </blockquote>
-<p>The main branch is always <code>master</code>. Another main branch in a project may be
-<code>dev</code>, <code>devel</code>, or <code>develop</code>, but not all projects have it, and it depends on
-the kind of <em>workflow</em> they choose to follow. If they choose to have <code>master</code>
+<p>The main branch is&nbsp;always <code>master</code>. Another main branch in a project may&nbsp;be
+<code>dev</code>, <code>devel</code>,&nbsp;or <code>develop</code>, but not all projects have it, and it depends on
+the kind of <em>workflow</em> they choose to follow. If they choose to&nbsp;have <code>master</code>
 very stable and corresponding to the latest release, then the main development
-would happen on <code>develop</code>. On the other hand, if they decide to have release
-branches and have the main development happen on <code>master</code>, they&#8217;ll probably not
-have the <code>develop</code> branch and instead have branches such as <code>v1.2</code>, <code>v1.3</code>,
+would happen&nbsp;on <code>develop</code>. On the other hand, if they decide to have release
+branches and have the main development happen&nbsp;on <code>master</code>, they&#8217;ll probably not
+have&nbsp;the <code>develop</code> branch and instead have branches such&nbsp;as <code>v1.2</code>, <code>v1.3</code>,
 etc. You usually would need to <em>base</em> your development on the active and under
 development branch. When you <em>fork</em> or <em>clone</em> a repository, it also includes
 all the branches that repository, and you can simply change to that branch&nbsp;locally.</p>
 <p>You can always see the branch you have as active&nbsp;using:</p>
-<div class="highlight"><pre><span></span><code>$ git status
-On branch master
-nothing to commit, working tree clean
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
+On<span class="w"> </span>branch<span class="w"> </span>master
+nothing<span class="w"> </span>to<span class="w"> </span>commit,<span class="w"> </span>working<span class="w"> </span>tree<span class="w"> </span>clean
 </code></pre></div>
 
-<p>As you can see, by default you&#8217;re on the <code>master</code> branch. Now since <code>master</code> is
+<p>As you can see, by default you&#8217;re on&nbsp;the <code>master</code> branch. Now&nbsp;since <code>master</code> is
 our main development branch, you can base your work on it and create a branch
 from it. You can create a branch based on your current active branch&nbsp;using:</p>
-<div class="highlight"><pre><span></span><code>$ git branch <span class="nb">test</span>
-$ git status
-On branch master
-nothing to commit, working tree clean
-$ git branch --list
-* master
-  <span class="nb">test</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>branch<span class="w"> </span><span class="nb">test</span>
+$<span class="w"> </span>git<span class="w"> </span>status
+On<span class="w"> </span>branch<span class="w"> </span>master
+nothing<span class="w"> </span>to<span class="w"> </span>commit,<span class="w"> </span>working<span class="w"> </span>tree<span class="w"> </span>clean
+$<span class="w"> </span>git<span class="w"> </span>branch<span class="w"> </span>--list
+*<span class="w"> </span>master
+<span class="w">  </span><span class="nb">test</span>
 </code></pre></div>
 
 <p>As you can see, we created a branch, but still stayed on master. In order to
 change to the newly created branch, you should <strong>checkout</strong> the&nbsp;branch:</p>
-<div class="highlight"><pre><span></span><code>$ git checkout <span class="nb">test</span>
-Switched to branch <span class="s1">&#39;test&#39;</span>
-$ git branch --list
-  master
-* <span class="nb">test</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span><span class="nb">test</span>
+Switched<span class="w"> </span>to<span class="w"> </span>branch<span class="w"> </span><span class="s1">&#39;test&#39;</span>
+$<span class="w"> </span>git<span class="w"> </span>branch<span class="w"> </span>--list
+<span class="w">  </span>master
+*<span class="w"> </span><span class="nb">test</span>
 </code></pre></div>
 
-<p>You can also go back to <code>master</code>, and safely delete this <code>test</code> branch:</p>
-<div class="highlight"><pre><span></span><code>$ git checkout master
-Switched to branch <span class="s1">&#39;master&#39;</span>
-$ git branch -D <span class="nb">test</span>
-Deleted branch <span class="nb">test</span> <span class="o">(</span>was ea65abd<span class="o">)</span>.
-$ git branch --list
-* master
+<p>You can also go back&nbsp;to <code>master</code>, and safely delete&nbsp;this <code>test</code> branch:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>master
+Switched<span class="w"> </span>to<span class="w"> </span>branch<span class="w"> </span><span class="s1">&#39;master&#39;</span>
+$<span class="w"> </span>git<span class="w"> </span>branch<span class="w"> </span>-D<span class="w"> </span><span class="nb">test</span>
+Deleted<span class="w"> </span>branch<span class="w"> </span><span class="nb">test</span><span class="w"> </span><span class="o">(</span>was<span class="w"> </span>ea65abd<span class="o">)</span>.
+$<span class="w"> </span>git<span class="w"> </span>branch<span class="w"> </span>--list
+*<span class="w"> </span>master
 </code></pre></div>
 
 <p><code>ea65abd</code> is the <em>abbreviated commit hash</em> which you can ignore for&nbsp;now.</p>
 <p>A more convenient way to create a new branch and check it out at the same time
 would&nbsp;be:</p>
-<div class="highlight"><pre><span></span><code>$ git checkout -b doc/readme
-Switched to a new branch <span class="s1">&#39;doc/readme&#39;</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>doc/readme
+Switched<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>branch<span class="w"> </span><span class="s1">&#39;doc/readme&#39;</span>
 </code></pre></div>
 
-<p>As you can see, the name of the new branch is <code>doc/readme</code>. The name can be
-almost anything, and one convention that some people follow is to name branches
-as <code>category/item</code>, but you could as well do <code>category-item</code>, or
+<p>As you can see, the name of the new branch&nbsp;is <code>doc/readme</code>. The name can be
+almost anything, and one convention that some people follow is to name branches&nbsp;as <code>category/item</code>, but you could as well&nbsp;do <code>category-item</code>,&nbsp;or
 <code>my-random-branch-name</code>. I&#8217;d suggest you always keep your master clean and in
 sync with your remote, and only work on branches for each&nbsp;feature/issue.</p>
-<p>Now we can finally start working on the issue. This is the <code>README.md</code> now:</p>
-<div class="highlight"><pre><span></span><code>$ cat README.md 
+<p>Now we can finally start working on the issue. This is&nbsp;the <code>README.md</code> now:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>cat<span class="w"> </span>README.md<span class="w"> </span>
 <span class="c1"># example-repo</span>
-example repository <span class="k">for</span> github tutorials
+example<span class="w"> </span>repository<span class="w"> </span><span class="k">for</span><span class="w"> </span>github<span class="w"> </span>tutorials
 </code></pre></div>
 
 <p>And let&#8217;s change it&nbsp;to:</p>
-<div class="highlight"><pre><span></span><code>$ cat README.md 
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>cat<span class="w"> </span>README.md<span class="w"> </span>
 <span class="c1"># example-repo</span>
-example repository <span class="k">for</span> github tutorials
+example<span class="w"> </span>repository<span class="w"> </span><span class="k">for</span><span class="w"> </span>github<span class="w"> </span>tutorials
 
-This repository is made to showcase some common tasks and processes on GitHub
-and to present the related <span class="sb">`</span>git<span class="sb">`</span> commands. The post explaining these processes
-is located
+This<span class="w"> </span>repository<span class="w"> </span>is<span class="w"> </span>made<span class="w"> </span>to<span class="w"> </span>showcase<span class="w"> </span>some<span class="w"> </span>common<span class="w"> </span>tasks<span class="w"> </span>and<span class="w"> </span>processes<span class="w"> </span>on<span class="w"> </span>GitHub
+and<span class="w"> </span>to<span class="w"> </span>present<span class="w"> </span>the<span class="w"> </span>related<span class="w"> </span><span class="sb">`</span>git<span class="sb">`</span><span class="w"> </span>commands.<span class="w"> </span>The<span class="w"> </span>post<span class="w"> </span>explaining<span class="w"> </span>these<span class="w"> </span>processes
+is<span class="w"> </span>located
 <span class="o">[</span>here<span class="o">](</span>gitgithub-how-to-contribute-to-an-open-source-project-on-github.html<span class="o">)</span>.
 </code></pre></div>
 
 <p>Now let&#8217;s see what the status of the local repo&nbsp;is:</p>
-<div class="highlight"><pre><span></span><code>$ git status
-On branch doc/readme
-Changes not staged <span class="k">for</span> commit:
-  <span class="o">(</span>use <span class="s2">&quot;git add &lt;file&gt;...&quot;</span> to update what will be committed<span class="o">)</span>
-  <span class="o">(</span>use <span class="s2">&quot;git checkout -- &lt;file&gt;...&quot;</span> to discard changes in working directory<span class="o">)</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
+On<span class="w"> </span>branch<span class="w"> </span>doc/readme
+Changes<span class="w"> </span>not<span class="w"> </span>staged<span class="w"> </span><span class="k">for</span><span class="w"> </span>commit:
+<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git add &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>update<span class="w"> </span>what<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>committed<span class="o">)</span>
+<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git checkout -- &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>discard<span class="w"> </span>changes<span class="w"> </span><span class="k">in</span><span class="w"> </span>working<span class="w"> </span>directory<span class="o">)</span>
 
-    modified:   README.md
+<span class="w">    </span>modified:<span class="w">   </span>README.md
 
-no changes added to commit <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> and/or <span class="s2">&quot;git commit -a&quot;</span><span class="o">)</span>
+no<span class="w"> </span>changes<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>commit<span class="w"> </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git add&quot;</span><span class="w"> </span>and/or<span class="w"> </span><span class="s2">&quot;git commit -a&quot;</span><span class="o">)</span>
 </code></pre></div>
 
-<p>As you can see, it says the <code>README.md</code> file is <strong>modified</strong>. You would need to
+<p>As you can see, it says&nbsp;the <code>README.md</code> file is <strong>modified</strong>. You would need to
 <strong>add</strong> the file. That brings us to the lifecycle of a file on a git repo. As
 shown in <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">the
 book</a>:</p>
@@ -406,56 +403,56 @@ book</a>:</p>
 <p>A more comprehensive explanation of how to record changes in the repo can be
 found
 <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">here</a>.</p>
-<p>So now we need to move the <code>README.md</code> from <em>modified</em> to <em>staged</em> (using <code>git
-add</code>), and then to <em>unmodified</em> (using <code>git commit</code>):</p>
-<div class="highlight"><pre><span></span><code>$ git add README.md
-$ git commit -m <span class="s2">&quot;added required changes to the README.md&quot;</span>
+<p>So now we need to move&nbsp;the <code>README.md</code> from <em>modified</em> to <em>staged</em>&nbsp;(using <code>git
+add</code>), and then to <em>unmodified</em>&nbsp;(using <code>git commit</code>):</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>README.md
+$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;added required changes to the README.md&quot;</span>
 </code></pre></div>
 
 <p>Always include a message with the commit. Meaningful <em>Commit messages</em> are
 extremely helpful for later coming back and finding some changes you&#8217;ve made
 previously. Alternatively, you could summarize the above two commands in&nbsp;one:</p>
-<div class="highlight"><pre><span></span><code>$ git commit -am <span class="s2">&quot;added required changes to the README.md&quot;</span>
-<span class="o">[</span>doc/readme b43f0b6<span class="o">]</span> added required changes to the README.md
- <span class="m">1</span> file changed, <span class="m">5</span> insertions<span class="o">(</span>+<span class="o">)</span>
-$ git status
-On branch doc/readme
-nothing to commit, working tree clean
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-am<span class="w"> </span><span class="s2">&quot;added required changes to the README.md&quot;</span>
+<span class="o">[</span>doc/readme<span class="w"> </span>b43f0b6<span class="o">]</span><span class="w"> </span>added<span class="w"> </span>required<span class="w"> </span>changes<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>README.md
+<span class="w"> </span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">5</span><span class="w"> </span>insertions<span class="o">(</span>+<span class="o">)</span>
+$<span class="w"> </span>git<span class="w"> </span>status
+On<span class="w"> </span>branch<span class="w"> </span>doc/readme
+nothing<span class="w"> </span>to<span class="w"> </span>commit,<span class="w"> </span>working<span class="w"> </span>tree<span class="w"> </span>clean
 </code></pre></div>
 
-<p>The difference is that <code>git commit -a</code> adds all modified files to the staging
+<p>The difference is&nbsp;that <code>git commit -a</code> adds all modified files to the staging
 area, which may not be what you want. For more control you can use the two
 separate commands. Also, as you can see, the working tree is <em>clean</em>&nbsp;again.</p>
 <p>Now it&#8217;s time to <strong>push</strong> the changes to our remote copy of the repository,
-which we can do by <code>git push</code>:</p>
-<div class="highlight"><pre><span></span><code>$ git push
-fatal: The current branch doc/readme has no upstream branch.
-To push the current branch and <span class="nb">set</span> the remote as upstream, use
+which we can do&nbsp;by <code>git push</code>:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>push
+fatal:<span class="w"> </span>The<span class="w"> </span>current<span class="w"> </span>branch<span class="w"> </span>doc/readme<span class="w"> </span>has<span class="w"> </span>no<span class="w"> </span>upstream<span class="w"> </span>branch.
+To<span class="w"> </span>push<span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>branch<span class="w"> </span>and<span class="w"> </span><span class="nb">set</span><span class="w"> </span>the<span class="w"> </span>remote<span class="w"> </span>as<span class="w"> </span>upstream,<span class="w"> </span>use
 
-    git push --set-upstream origin doc/readme
+<span class="w">    </span>git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>doc/readme
 </code></pre></div>
 
 <p><span class="caps">OOPS</span>, it failed, because there is no corresponding branch on the remote copy
 which corresponds to the local branch we&#8217;ve made. Your own remote copy is the
 <em>upstream</em> to the local copy, and you see that you need to tell git which
 branch on the upstream should be the corresponding one. As you can see, by
-default it suggests the same branch name, on the <code>origin</code> remote. The suggested
+default it suggests the same branch name, on&nbsp;the <code>origin</code> remote. The suggested
 command would create a new branch on your remote copy, and upload the changes
 to that&nbsp;branch:</p>
-<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">set</span><span class="o">-</span><span class="n">upstream</span> <span class="n">origin</span> <span class="n">doc</span><span class="o">/</span><span class="n">readme</span>
-<span class="n">Enumerating</span> <span class="nl">objects</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="n">done</span><span class="p">.</span>
-<span class="n">Counting</span> <span class="nl">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">5</span><span class="p">),</span> <span class="n">done</span><span class="p">.</span>
-<span class="n">Delta</span> <span class="n">compression</span> <span class="n">using</span> <span class="n">up</span> <span class="n">to</span> <span class="mi">4</span> <span class="n">threads</span>
-<span class="n">Compressing</span> <span class="nl">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="n">done</span><span class="p">.</span>
-<span class="n">Writing</span> <span class="nl">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="mi">461</span> <span class="n">bytes</span> <span class="o">|</span> <span class="mf">461.00</span> <span class="n">KiB</span><span class="o">/</span><span class="n">s</span><span class="p">,</span> <span class="n">done</span><span class="p">.</span>
-<span class="n">Total</span> <span class="mi">3</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">),</span> <span class="n">reused</span> <span class="mi">0</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">)</span>
-<span class="nl">remote</span><span class="p">:</span> 
-<span class="nl">remote</span><span class="p">:</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">pull</span> <span class="n">request</span> <span class="k">for</span> <span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span> <span class="n">on</span> <span class="n">GitHub</span> <span class="n">by</span> <span class="nl">visiting</span><span class="p">:</span>
-<span class="nl">remote</span><span class="p">:</span>      <span class="nl">https</span><span class="p">:</span><span class="c1">//github.com/adrinjalali/example-repo/pull/new/doc/readme</span>
-<span class="nl">remote</span><span class="p">:</span> 
-<span class="n">To</span> <span class="n">github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">adrinjalali</span><span class="o">/</span><span class="n">example</span><span class="o">-</span><span class="n">repo</span><span class="p">.</span><span class="n">git</span>
- <span class="o">*</span> <span class="p">[</span><span class="n">new</span> <span class="n">branch</span><span class="p">]</span>      <span class="n">doc</span><span class="o">/</span><span class="n">readme</span> <span class="o">-&gt;</span> <span class="n">doc</span><span class="o">/</span><span class="n">readme</span>
-<span class="n">Branch</span> <span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span> <span class="n">set</span> <span class="n">up</span> <span class="n">to</span> <span class="n">track</span> <span class="n">remote</span> <span class="n">branch</span> <span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span> <span class="n">from</span> <span class="err">&#39;</span><span class="n">origin</span><span class="err">&#39;</span><span class="p">.</span>
+<div class="highlight"><pre><span></span><code><span class="n">$</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="o">--</span><span class="n">set</span><span class="o">-</span><span class="n">upstream</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span>
+<span class="n">Enumerating</span><span class="w"> </span><span class="n">objects</span><span class="o">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">done</span><span class="p">.</span>
+<span class="n">Counting</span><span class="w"> </span><span class="n">objects</span><span class="o">:</span><span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">5</span><span class="p">),</span><span class="w"> </span><span class="n">done</span><span class="p">.</span>
+<span class="n">Delta</span><span class="w"> </span><span class="n">compression</span><span class="w"> </span><span class="n">using</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="n">threads</span>
+<span class="n">Compressing</span><span class="w"> </span><span class="n">objects</span><span class="o">:</span><span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="n">done</span><span class="p">.</span>
+<span class="n">Writing</span><span class="w"> </span><span class="n">objects</span><span class="o">:</span><span class="w"> </span><span class="mi">100</span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span><span class="w"> </span><span class="mi">461</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mf">461.00</span><span class="w"> </span><span class="n">KiB</span><span class="o">/</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">done</span><span class="p">.</span>
+<span class="n">Total</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">(</span><span class="n">delta</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="n">reused</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">(</span><span class="n">delta</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="nl">remote</span><span class="p">:</span><span class="w"> </span>
+<span class="nl">remote</span><span class="p">:</span><span class="w"> </span><span class="n">Create</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">pull</span><span class="w"> </span><span class="n">request</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">GitHub</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">visiting</span><span class="o">:</span>
+<span class="nl">remote</span><span class="p">:</span><span class="w">      </span><span class="n">https</span><span class="o">:</span><span class="c1">//github.com/adrinjalali/example-repo/pull/new/doc/readme</span>
+<span class="nl">remote</span><span class="p">:</span><span class="w"> </span>
+<span class="n">To</span><span class="w"> </span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">:</span><span class="n">adrinjalali</span><span class="o">/</span><span class="n">example</span><span class="o">-</span><span class="n">repo</span><span class="p">.</span><span class="n">git</span>
+<span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">[</span><span class="n">new</span><span class="w"> </span><span class="n">branch</span><span class="p">]</span><span class="w">      </span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span>
+<span class="n">Branch</span><span class="w"> </span><span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">track</span><span class="w"> </span><span class="n">remote</span><span class="w"> </span><span class="n">branch</span><span class="w"> </span><span class="err">&#39;</span><span class="n">doc</span><span class="o">/</span><span class="n">readme</span><span class="err">&#39;</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="err">&#39;</span><span class="n">origin</span><span class="err">&#39;</span><span class="p">.</span>
 </code></pre></div>
 
 <p>Your output would be slightly different. Here I had to change my remote and use
@@ -471,11 +468,11 @@ new branch has been&nbsp;created:</p>
 <p>Now that you have the changes on your account, you can go ahead and create the
 first <strong>pull request</strong>. It basically means you&#8217;d send a request to the
 maintainers of the repository to pull the changes you&#8217;ve made, from your repo
-into the original repo. For that, you also need to specify your <code>doc/readme</code>
+into the original repo. For that, you also need to specify&nbsp;your <code>doc/readme</code>
 branch as the <em>from</em> branch, and the <em>master</em> on the original repo as the <em>to</em>
 branch. Please note that it would be the <em>develop</em> branch on the upstream repo
 if that was what you based your changes on. But in this case, we based the
-changes on the <code>master</code> branch of the upstream&nbsp;repo.</p>
+changes on&nbsp;the <code>master</code> branch of the upstream&nbsp;repo.</p>
 <p>Now you could click on the &#8220;<em>Compare <span class="amp">&amp;</span> pull request</em>&#8221; button, or you could go
 to the upstream repository, then <em>Pull requests</em> (<span class="caps">PR</span>), and then <em>New pull
 request</em>, which brings you to a page where you can explain what the does and
@@ -484,7 +481,7 @@ then create&nbsp;it.</p>
 usually means they&#8217;ll ask you to change a few things. To apply those changes,
 you don&#8217;t need to create a new <span class="caps">PR</span> or a new branch, you simply need to be sure
 you&#8217;re on the same branch as before, apply your changes, commit to your local
-clone (<code>git add</code>, <code>git commit</code> commands), and then push (<code>git push</code>). This will
+clone&nbsp;(<code>git add</code>, <code>git commit</code> commands), and then push&nbsp;(<code>git push</code>). This will
 add your changes to your existing <span class="caps">PR</span>.</p>
 <p>I hope this helps a few people a little bit. I&#8217;d be happy to get some feedback
 and see if it&#8217;s helpful or&nbsp;not.</p>
@@ -542,7 +539,7 @@ and see if it&#8217;s helpful or&nbsp;not.</p>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="./tags.html#open-source-ref">open-source
-                    <span>8</span>
+                    <span>9</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
@@ -574,6 +571,16 @@ and see if it&#8217;s helpful or&nbsp;not.</p>
 </ul>
             <h4 id="recent-posts">Recent Posts <a id="allposts" href="./archives.html">all posts</a></h4>
         <div class="recent-posts">
+            <article>
+                <a href="./the-cost-of-ai-in-open-source-maintenance.html">The Cost of <span class="caps">AI</span> in Open Source&nbsp;Maintenance  </a>
+                <section>
+                    posted in
+                <a href="./categories.html#open-source-ref">open-source</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2025-09-10T00:00:00+02:00">Wed 10 September 2025</time>
+                </div>
+                </section>
+            </article>
             <article>
                 <a href="./remote-work-connections-open-source.html">Remote Work - Connections - Open&nbsp;Source  </a>
                 <section>
@@ -611,16 +618,6 @@ and see if it&#8217;s helpful or&nbsp;not.</p>
                 <a href="./categories.html#open-source-ref">open-source</a>
                 <div class="recent-posts-time">
                 <time pubdate="pubdate" datetime="2020-04-12T00:00:00+02:00">Sun 12 April 2020</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./fosdem-2020.html"><span class="caps">FOSDEM</span>&nbsp;2020  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#blog-ref">blog</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2020-02-02T00:00:00+01:00">Sun 02 February 2020</time>
                 </div>
                 </section>
             </article>

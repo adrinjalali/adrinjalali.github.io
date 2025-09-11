@@ -80,7 +80,7 @@ different&amp;nbsp;forms:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id="modesystem-evaluation-and-dataset-creation"&gt;Mode/System Evaluation and Dataset&amp;nbsp;Creation&lt;/h1&gt;
+&lt;h1 id="modelsystem-evaluation-and-dataset-creation"&gt;Model/System Evaluation and Dataset&amp;nbsp;Creation&lt;/h1&gt;
 &lt;p&gt;Sometimes interactions with &lt;span class="caps"&gt;AI&lt;/span&gt; generated content on the repo is due to an
 individual, a research group, or a company trying to gather real world data by
 testing their models and systems on our projects. This results in those entities
@@ -107,6 +107,26 @@ building that portfolio as much as they&amp;nbsp;can.&lt;/p&gt;
 way we treat first time contributors and is harming them by making their
 experience less enjoyable, as well as hurting the project by losing some
 potential long term&amp;nbsp;contributors.&lt;/p&gt;
+&lt;h1 id="battling-the-surge"&gt;Battling the&amp;nbsp;Surge&lt;/h1&gt;
+&lt;p&gt;In our community&amp;nbsp;at &lt;code&gt;scikit-learn&lt;/code&gt;, this has been a central point of discussion
+in the past couple of months. People don&amp;#8217;t approach the issue all the same way,
+and some are more tolerant to such content than&amp;nbsp;others.&lt;/p&gt;
+&lt;p&gt;Some maintainers are flagging the issues / PRs with a &amp;#8220;spam&amp;#8221; label, to come back
+to them later and see if there&amp;#8217;s been a kind of activity from the original
+poster convincing them it shouldn&amp;#8217;t be spammed /&amp;nbsp;banned.&lt;/p&gt;
+&lt;p&gt;Some other maintainers are banning any user who seems to be using &lt;span class="caps"&gt;AI&lt;/span&gt; where the
+generated code quality is not worth the review&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;GitHub also released an &lt;a href="https://github.com/github/ai-moderator"&gt;ai-moderator&lt;/a&gt;
+action which uses &lt;span class="caps"&gt;AI&lt;/span&gt; to find &lt;span class="caps"&gt;AI&lt;/span&gt; generated content. We&amp;#8217;ve been discussing whether
+to use it in our project or not. We might test it out, but it also doesn&amp;#8217;t seem
+too hard to circumvent it, since the prompts used to detect &lt;span class="caps"&gt;AI&lt;/span&gt; generated content
+are also open source and easy to include in an adversary&amp;#8217;s agent&amp;#8217;s system&amp;nbsp;prompt.&lt;/p&gt;
+&lt;p&gt;Another idea has been to give first time contributors a sort of a task to
+somewhat prove they&amp;#8217;re human, but that creates quite a bit of noise, and makes
+the experience of people genuinely trying to contribute less&amp;nbsp;pleasant.&lt;/p&gt;
+&lt;p&gt;We&amp;#8217;re also thinking of asking people to check a box when submitting issues and
+PRs stating that they understand our rules of play, including our policy on &lt;span class="caps"&gt;AI&lt;/span&gt;
+generated&amp;nbsp;content.&lt;/p&gt;
 &lt;h1 id="use-ai-the-right-way"&gt;Use &lt;span class="caps"&gt;AI&lt;/span&gt; the Right&amp;nbsp;Way!&lt;/h1&gt;
 &lt;p&gt;In this day an age, it would be unreasonable to expect folks not to use any &lt;span class="caps"&gt;AI&lt;/span&gt;
 tools. Many of us use these tools one way or another. However, you should never
@@ -136,26 +156,6 @@ maintainer to review it. These are some of the ways you can engage with your &lt
   faster than fixing &lt;span class="caps"&gt;AI&lt;/span&gt; generated&amp;nbsp;code.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id="battling-the-surge"&gt;Battling the&amp;nbsp;Surge&lt;/h1&gt;
-&lt;p&gt;In our community&amp;nbsp;at &lt;code&gt;scikit-learn&lt;/code&gt;, this has been a central point of discussion
-in the past couple of months. People don&amp;#8217;t approach the issue all the same way,
-and some are more tolerant to such content than&amp;nbsp;others.&lt;/p&gt;
-&lt;p&gt;Some maintainers are flagging the issues / PRs with a &amp;#8220;spam&amp;#8221; label, to come back
-to them later and see if there&amp;#8217;s been a kind of activity from the original
-poster convincing them it shouldn&amp;#8217;t be spammed /&amp;nbsp;banned.&lt;/p&gt;
-&lt;p&gt;Some other maintainers are banning any user who seems to be using &lt;span class="caps"&gt;AI&lt;/span&gt; where the
-generated code quality is not worth the review&amp;nbsp;time.&lt;/p&gt;
-&lt;p&gt;GitHub also released an &lt;a href="https://github.com/github/ai-moderator"&gt;ai-moderator&lt;/a&gt;
-action which uses &lt;span class="caps"&gt;AI&lt;/span&gt; to find &lt;span class="caps"&gt;AI&lt;/span&gt; generated content. We&amp;#8217;ve been discussing whether
-to use it in our project or not. We might test it out, but it also doesn&amp;#8217;t seem
-too hard to circumvent it, since the prompts used to detect &lt;span class="caps"&gt;AI&lt;/span&gt; generated content
-are also open source and easy to include in an adversary&amp;#8217;s agent&amp;#8217;s system&amp;nbsp;prompt.&lt;/p&gt;
-&lt;p&gt;Another idea has been to give first time contributors a sort of a task to
-somewhat prove they&amp;#8217;re human, but that creates quite a bit of noise, and makes
-the experience of people genuinely trying to contribute less&amp;nbsp;pleasant.&lt;/p&gt;
-&lt;p&gt;We&amp;#8217;re also thinking of asking people to check a box when submitting issues and
-PRs stating that they understand our rules of play, including our policy on &lt;span class="caps"&gt;AI&lt;/span&gt;
-generated&amp;nbsp;content.&lt;/p&gt;
 &lt;h1 id="closing-thoughts"&gt;Closing&amp;nbsp;Thoughts&lt;/h1&gt;
 &lt;p&gt;All of this is wearing maintainers down, and maintainers are losing patience.
 When these contributions started coming in the form of an issue or a &lt;span class="caps"&gt;PR&lt;/span&gt;, we&amp;#8217;d

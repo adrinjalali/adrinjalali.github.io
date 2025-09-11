@@ -138,7 +138,8 @@ maintainer to review it. These are some of the ways you can engage with your &lt
 &lt;p&gt;&lt;em&gt;Explain codebase&lt;/em&gt; : Existing tools are rather good at explaining what a piece
   of code does, or for them to show you which parts of the codebase are relevant
   for a given task. They can substantially speed up your learning curve on an
-  existing&amp;nbsp;codebase.&lt;/p&gt;
+  existing codebase. Note that there&amp;#8217;s no need for you to share these
+  explanations on the issue tracker. Maintainers already know their&amp;nbsp;codebase.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;Help with boilerplate&lt;/em&gt; : In many cases, there&amp;#8217;s some boilerplate code which

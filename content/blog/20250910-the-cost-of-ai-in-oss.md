@@ -154,7 +154,8 @@ tools:
 - *Explain codebase* : Existing tools are rather good at explaining what a piece
   of code does, or for them to show you which parts of the codebase are relevant
   for a given task. They can substantially speed up your learning curve on an
-  existing codebase.
+  existing codebase. Note that there's no need for you to share these
+  explanations on the issue tracker. Maintainers already know their codebase.
 
 - *Help with boilerplate* : In many cases, there's some boilerplate code which
   needs to be written and sometimes repeated a few times in a contribution. The

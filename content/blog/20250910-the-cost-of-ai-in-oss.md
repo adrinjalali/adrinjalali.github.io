@@ -79,7 +79,7 @@ different forms:
       and no maintainer has had time to check if it's a real issue.
   
 
-# Mode/System Evaluation and Dataset Creation
+# Model/System Evaluation and Dataset Creation
 
 Sometimes interactions with AI generated content on the repo is due to an
 individual, a research group, or a company trying to gather real world data by
@@ -114,33 +114,6 @@ way we treat first time contributors and is harming them by making their
 experience less enjoyable, as well as hurting the project by losing some
 potential long term contributors.
 
-# Use AI the Right Way!
-
-In this day an age, it would be unreasonable to expect folks not to use any AI
-tools. Many of us use these tools one way or another. However, you should never
-submit contributions w/o understanding what you're submitting. You should be
-spending at least as much time creating your contribution, as it takes a
-maintainer to review it. These are some of the ways you can engage with your AI
-tools:
-
-- *Explain codebase* : Existing tools are rather good at explaining what a piece
-  of code does, or for them to show you which parts of the codebase are relevant
-  for a given task. They can substantially speed up your learning curve on an
-  existing codebase.
-
-- *Help with boilerplate* : In many cases, there's some boilerplate code which
-  needs to be written and sometimes repeated a few times in a contribution. The
-  existing tools are rather good at auto-completing your code to speed up your
-  development process.
-
-- *Help giving you a starting point* : You can use your coding agents to get to
-  a starting point which would give you an idea of what a solution to the
-  problem might look like. However, you should never submit that generated code
-  w/o understanding it and most probably, modifying it to fit the codebase's
-  style and for it to be maintainable by humans. Note that sometimes this might
-  actually slow you down, since very often writing code from scratch can be
-  faster than fixing AI generated code.
-
 # Battling the Surge
 
 In our community at `scikit-learn`, this has been a central point of discussion
@@ -168,6 +141,33 @@ the experience of people genuinely trying to contribute less pleasant.
 We're also thinking of asking people to check a box when submitting issues and
 PRs stating that they understand our rules of play, including our policy on AI
 generated content.
+
+# Use AI the Right Way!
+
+In this day an age, it would be unreasonable to expect folks not to use any AI
+tools. Many of us use these tools one way or another. However, you should never
+submit contributions w/o understanding what you're submitting. You should be
+spending at least as much time creating your contribution, as it takes a
+maintainer to review it. These are some of the ways you can engage with your AI
+tools:
+
+- *Explain codebase* : Existing tools are rather good at explaining what a piece
+  of code does, or for them to show you which parts of the codebase are relevant
+  for a given task. They can substantially speed up your learning curve on an
+  existing codebase.
+
+- *Help with boilerplate* : In many cases, there's some boilerplate code which
+  needs to be written and sometimes repeated a few times in a contribution. The
+  existing tools are rather good at auto-completing your code to speed up your
+  development process.
+
+- *Help giving you a starting point* : You can use your coding agents to get to
+  a starting point which would give you an idea of what a solution to the
+  problem might look like. However, you should never submit that generated code
+  w/o understanding it and most probably, modifying it to fit the codebase's
+  style and for it to be maintainable by humans. Note that sometimes this might
+  actually slow you down, since very often writing code from scratch can be
+  faster than fixing AI generated code.
 
 # Closing Thoughts
 

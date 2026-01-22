@@ -144,7 +144,7 @@ generated content.
 
 # Use AI the Right Way!
 
-In this day an age, it would be unreasonable to expect folks not to use any AI
+In this day and age, it would be unreasonable to expect folks not to use any AI
 tools. Many of us use these tools one way or another. However, you should never
 submit contributions w/o understanding what you're submitting. You should be
 spending at least as much time creating your contribution, as it takes a

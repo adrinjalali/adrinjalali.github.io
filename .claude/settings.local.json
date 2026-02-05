@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(uv sync:*)",
+      "Bash(make build:*)",
+      "Bash(ls:*)",
+      "Bash(make html:*)"
+    ]
+  }
+}

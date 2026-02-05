@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+    {% for article in articles_page.object_list %}
+        <div class="col">
+            <article class="card h-100 shadow-sm">
+                {% if article.image %}
+                <img src="{{ SITEURL }}/{{ article.image }}" class="card-img-top" alt="{{ article.title|striptags|e }}" style="height: 200px; object-fit: cover;">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none text-body-emphasis">
+                            {{ article.title }}
+                        </a>
+                    </h5>
+                    <p class="card-text text-body-secondary small">
+                        <i class="bi bi-calendar"></i> {{ article.date.strftime('%B %d, %Y') }}
+                    </p>
+                    <p class="card-text">{{ article.summary|striptags|truncate(150) }}</p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-outline-primary btn-sm">Read more</a>
+                </div>
+            </article>
+        </div>
+    {% endfor %}
+    </div>
+    <div class="mt-4">
+        {% include "pagination.html" %}
+    </div>
+{% endblock content %}

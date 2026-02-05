@@ -1,18 +1,22 @@
-.bundle
+# Python
+*.pyc
+__pycache__/
+.venv/
+
+# Build output
+output/
+cache/
+
+# Node
+node_modules/
+
+# Editor/OS
 .DS_Store
+*~
+*.pid
+
+# Old cruft (can be removed after cleanup)
+.bundle
 .sass-cache
 .gist-cache
 .pygments-cache
-_deploy
-public
-sass.old
-source.old
-source/_stash
-source/stylesheets/screen.css
-vendor
-node_modules
-*.pyc
-cache/
-output/
-*~
-*.pid

@@ -4,51 +4,51 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a personal blog/website built with [Pelican](https://getpelican.com/), a static site generator written in Python. The site is published to GitHub Pages.
+Personal blog built with [Pelican](https://getpelican.com/) (Python static site generator), using the [Plumage](https://github.com/kdeldycke/plumage) theme and [Pagefind](https://pagefind.app/) for search.
 
-## Common Commands
+## Commands
 
 ```bash
 # Install dependencies
-pip install pelican typogrify Markdown bs4 ghp-import
+uv sync
 
-# Update submodules (themes and plugins)
-git submodule update --recursive --remote
+# Development server with auto-reload
+make serve
 
-# Generate site (development)
+# Full production build (pelican + pagefind)
+make build
+
+# Generate without pagefind (faster for dev)
 make html
-
-# Serve locally with auto-regeneration
-make devserver              # default port 8000
-make devserver PORT=8080    # custom port
-
-# Generate for production
-make publish
-
-# Deploy to GitHub Pages (generates and pushes to master branch)
-make github
-
-# Clean generated output
-make clean
 ```
+
+## Deployment
+
+Push to `source` branch triggers GitHub Actions (`.github/workflows/deploy.yml`) which builds and deploys to GitHub Pages.
 
 ## Project Structure
 
-- `content/` - Source content
-  - `blog/` - Blog posts as Markdown files (named `YYYYMMDD-slug.md`)
-  - `pages/` - Static pages (home, CV, contact)
-  - `files/` - Static files (PDFs, images)
-- `pelicanconf.py` - Development configuration
-- `publishconf.py` - Production configuration (extends pelicanconf.py)
-- `pelican-themes/` - Git submodule containing theme (uses `pelican-elegant`)
-- `pelican-plugins/` - Git submodule containing plugins (uses `sitemap`, `extract_toc`, `tipue_search`)
-- `output/` - Generated static site (not committed on `source` branch)
-
-## Branch Structure
-
-- `source` - Main development branch containing Pelican source
-- `master` - GitHub Pages deployment branch (generated HTML)
+- `content/blog/` - Blog posts (Markdown, named `YYYYMMDD-slug.md`)
+- `content/pages/` - Static pages
+- `content/files/` - Static assets (PDFs, images)
+- `pelicanconf.py` - Development config
+- `publishconf.py` - Production config (extends pelicanconf)
 
 ## Content Format
 
-Blog posts use Pelican's Markdown format with metadata headers. Static files go in `content/files/` and are referenced via `/files/` paths.
+Posts use Pelican's metadata format (not YAML front-matter):
+
+```markdown
+Title: My Post Title
+Date: 2024-01-15
+Tags: tag1, tag2
+Category: category-name
+
+Content starts here...
+```
+
+## Notes
+
+- Theme (Plumage) and plugins are pip-installed, not vendored
+- MyST reader is disabled in config (we use standard Pelican markdown)
+- Search page at `/pages/search.html` uses Pagefind UI

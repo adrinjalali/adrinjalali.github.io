@@ -5,7 +5,8 @@
       "Bash(uv sync:*)",
       "Bash(make build:*)",
       "Bash(ls:*)",
-      "Bash(make html:*)"
+      "Bash(make html:*)",
+      "Bash(grep:*)"
     ]
   }
 }

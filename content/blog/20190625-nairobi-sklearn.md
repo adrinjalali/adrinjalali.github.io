@@ -2,6 +2,7 @@ Title: scikit-learn sprint at Nairobi, Kenya
 Date: 2019-06-25
 Tags: open-source
 Category: open-source
+Image: files/img/nairobi-sklearn.jpg
 
 ![nairobi/sklearn](files/img/nairobi-sklearn.jpg)
 

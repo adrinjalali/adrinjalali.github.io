@@ -2,6 +2,7 @@ Title: How we form beliefs, and implications on our beliefs regarding #metoo
 Date: 2020-01-15
 Tags: ethics, machine-learning
 Category: ethics
+Image: files/img/202001-celestekidd-neurips.png
 
 ![celestekidd](files/img/202001-celestekidd-neurips.png)
 

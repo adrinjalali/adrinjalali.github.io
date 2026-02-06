@@ -2,6 +2,7 @@ Title: Clue-WATTx Hackathon
 Date: 2017-04-02
 Category: machine-learning
 Tags: hackathon
+Image: files/img/Clue-screenshot-500x253.png
 
 ### [Hackathon](http://cluehackathon.wattx.io/)
 To me, a hackathon is when a group of people gather for a day or two, working for a somewhat common goal, develop, have fun, meet new people, and to home. Unfortunately for whatever reason, most hackathons have become a competition, with a set prize, organized by some company. The good part is that some attendees might get some money out of the hackathon, but the down side is that it usually becomes a competition and people stop collaborating. I was very happy to see that was not very the case in this hackathon, and we had mostly a really nice atmosphere for the whole weekend. It was a pleasurable experience working and chatting with Clue and WATTx people as well as the attendees.

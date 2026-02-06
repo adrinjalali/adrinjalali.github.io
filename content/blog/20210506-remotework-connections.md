@@ -2,6 +2,7 @@ Title: Remote Work - Connections - Open Source
 Date: 2021-05-06
 Tags: work, remote-work, open-source
 Category: work-culture
+Image: files/img/remote-work.png
 
 ![git/github](files/img/remote-work.png "Credit:
 https://blog.1password.com/remote-work-tips/")

@@ -2,6 +2,7 @@ Title: The Cost of AI in Open Source Maintenance
 Date: 2025-09-10
 Tags: open-source, maintenance, ai
 Category: open-source
+Image: files/img/20250910-AI-maintenance.png
 
 ![The burden of AI](files/img/20250910-AI-maintenance.png)
 

@@ -2,6 +2,7 @@ Title: VectorFight - Winning "Hacking Global Health"
 Date: 2017-12-06
 Tags: hackathon, ideas, healthcare
 Category: healthcare
+Image: files/img/vectorfight-Winning_team-700.jpg
 
 ![VectorFight](files/img/vectorfight-Winning_team-700.jpg
 "Credit: http://health.bmz.de/events/Events_2017/KfW_hackathon_innovative_urban_health_solutions/index.html")

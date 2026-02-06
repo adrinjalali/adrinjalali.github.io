@@ -2,6 +2,7 @@ Title: Why would you want to contribute to an open source project?
 Date: 2018-10-09
 Tags: open-source
 Category: open-source
+Image: files/img/open-source-bart.jpg
 
 ![OpenSource](files/img/open-source-bart.jpg)
 

@@ -2,6 +2,7 @@ Title: How to find a good open source project for contributions?
 Date: 2018-10-13
 Tags: open-source
 Category: open-source
+Image: files/img/foss-diversity.jpg
 
 ![Diversity](files/img/foss-diversity.jpg
 "Credit: https://blog.mapbox.com/our-code-of-conduct-for-open-source-2b3a81c00c80")

@@ -2,6 +2,7 @@ Title: On Benefits of Working with an Open Source Community - Corporate Perspect
 Date: 2021-02-19
 Tags: open-source
 Category: open-source
+Image: files/img/people_remote_teams_world.png
 
 ![git/github](files/img/people_remote_teams_world.png "Credit:
 https://opensource.com")

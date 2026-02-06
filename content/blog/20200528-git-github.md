@@ -2,6 +2,7 @@ Title: GIT/GITHUB, how to contribute to an open source project on GitHub?
 Date: 2020-05-28
 Tags: open-source
 Category: open-source
+Image: files/img/20190216-git-github.png
 
 ![git/github](files/img/20190216-git-github.png
 "Credit: https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3")

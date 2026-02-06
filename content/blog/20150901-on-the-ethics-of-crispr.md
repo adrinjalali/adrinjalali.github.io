@@ -2,6 +2,7 @@ Title: On the ethics of CRISPR
 Date: 2015-09-01
 Tags: ethics, genome
 Category: ethics
+Image: files/img/economist-editing-humanity.jpg
 
 ![Taken from http://www.economist.com/news/leaders/21661651-new-technique-manipulating-genes-holds-great-promisebut-rules-are-needed-govern-its](/files/img/economist-editing-humanity.jpg "Credits: Economist")
 

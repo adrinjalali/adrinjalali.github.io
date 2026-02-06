@@ -2,6 +2,7 @@ Title: TV-ad Attribution, Gaussian Processes
 Date: 2016-10-06
 Tags: gaussian-processes, attribution
 Category: machine-learning
+Image: files/img/20161006-week.png
 
 
 ### Problem description:

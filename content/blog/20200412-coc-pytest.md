@@ -2,6 +2,7 @@ Title: Open Source - CoC - Conflicts
 Date: 2020-04-12
 Tags: community, open-source
 Category: open-source
+Image: files/img/code-of-conduct1-min.jpg
 
 [![CoC](files/img/code-of-conduct1-min.jpg)](https://www.stalawfirm.com/en/news/view/jordanian-code-of-conduct.html)
 

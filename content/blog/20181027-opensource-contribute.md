@@ -2,6 +2,7 @@ Title: Ways to contribute to open source projects!
 Date: 2018-10-27
 Tags: open-source
 Category: open-source
+Image: files/img/20181027-opensource.png
 
 ![OpenSource](files/img/20181027-opensource.png)
 

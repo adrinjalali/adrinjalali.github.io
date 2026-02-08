@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% set has_right = true %}
+{% block head %}
+    <link rel="stylesheet" href="{{ SITEURL }}/static/css/custom.css">
+{% endblock head %}
 {% block title %}{{ page.title|striptags }}{% endblock title %}
 {% block top_center %}
     <h1>
@@ -11,36 +14,46 @@
 {% block content %}
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
-    <div>{{ page.content }}</div>
+    <div class="page-content">{{ page.content }}</div>
 {% endblock content %}
 {% block right_sidebar %}
     <div class="card shadow-sm mb-4">
-        <div class="card-header">
-            <h5 class="mb-0"><i class="bi bi-journal-text"></i> Recent Posts</h5>
+        <div class="card-header bg-primary text-white">
+            <h6 class="mb-0"><i class="bi bi-journal-text me-2"></i>Recent Posts</h6>
         </div>
         <ul class="list-group list-group-flush">
             {% for article in articles[:5] %}
-            <li class="list-group-item">
-                <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none">
+            <li class="list-group-item px-3 py-2">
+                <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none d-block">
                     {{ article.title }}
                 </a>
-                <small class="text-body-secondary d-block">{{ article.date.strftime('%B %d, %Y') }}</small>
+                <small class="text-body-secondary">{{ article.date.strftime('%b %d, %Y') }}</small>
             </li>
             {% endfor %}
         </ul>
-    </div>
-    <div class="card shadow-sm">
-        <div class="card-header">
-            <h5 class="mb-0"><i class="bi bi-person"></i> Connect</h5>
+        <div class="card-footer text-center">
+            <a href="{{ SITEURL }}/" class="text-decoration-none small">View all posts</a>
         </div>
-        <ul class="list-group list-group-flush">
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-secondary text-white">
+            <h6 class="mb-0"><i class="bi bi-person-circle me-2"></i>Connect</h6>
+        </div>
+        <div class="card-body text-center py-3">
+            {% set icon_map = {
+                'email': 'envelope-fill',
+                'github': 'github',
+                'stack-overflow': 'stack-overflow',
+                'linkedin': 'linkedin',
+                'twitter': 'twitter-x',
+                'mastodon': 'mastodon'
+            } %}
             {% for name, link in SOCIAL %}
-            <li class="list-group-item">
-                <a href="{{ link }}" class="text-decoration-none">
-                    <i class="bi bi-{{ name }}"></i> {{ name|capitalize }}
-                </a>
-            </li>
+            <a href="{{ link }}" class="btn btn-outline-secondary btn-sm me-1 mb-1" title="{{ name|capitalize }}">
+                <i class="bi bi-{{ icon_map.get(name, 'link') }}"></i>
+            </a>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 {% endblock right_sidebar %}

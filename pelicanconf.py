@@ -37,7 +37,20 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 # Static files
-STATIC_PATHS = ["files", "images"]
+STATIC_PATHS = ["files", "images", "static"]
+
+# Favicon files - copy to root
+EXTRA_PATH_METADATA = {
+    "files/favicon.ico": {"path": "favicon.ico"},
+    "files/favicon-16x16.png": {"path": "favicon-16x16.png"},
+    "files/favicon-32x32.png": {"path": "favicon-32x32.png"},
+    "files/apple-touch-icon.png": {"path": "apple-touch-icon.png"},
+    "files/android-chrome-192x192.png": {"path": "android-chrome-192x192.png"},
+    "files/favicon.png": {"path": "favicon.png"},
+}
+
+# Disable Plumage's auto-generated favicons
+FAVICONS = False
 OUTPUT_RETENTION = [".git"]
 
 # Theme
@@ -71,10 +84,14 @@ MARKDOWN = {
 from pelican.readers import MarkdownReader
 READERS = {"md": MarkdownReader}
 
-# Disable unused outputs
+# Disable unused outputs (also hides "Browse content by" in footer)
 TAG_SAVE_AS = ""
+TAGS_SAVE_AS = ""
 CATEGORY_SAVE_AS = ""
+CATEGORIES_SAVE_AS = ""
 AUTHOR_SAVE_AS = ""
+AUTHORS_SAVE_AS = ""
+ARCHIVES_SAVE_AS = ""
 USE_FOLDER_AS_CATEGORY = False
 
 # License (displayed in footer by Plumage)

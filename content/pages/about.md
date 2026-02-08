@@ -34,6 +34,9 @@ When choosing teammates, I rather go for a team where people bring different
 perspectives to the table rather than people who are strong individuals.
 Diversity is a quite important aspect for me in this regard.
 
+<a href="https://github.com/adrinjalali/cv/raw/master/adrin-jalali.pdf" class="btn btn-primary btn-sm"><i class="bi bi-file-earmark-pdf me-1"></i>Download CV</a>
+<a href="https://github.com/adrinjalali/cv" class="btn btn-outline-secondary btn-sm"><i class="bi bi-github me-1"></i>CV Source</a>
+
 
 ### Area of research
 I used/designed machine learning tools to classify samples. The datasets I

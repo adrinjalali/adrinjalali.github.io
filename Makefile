@@ -21,12 +21,18 @@ clean:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
+	cp $(INPUTDIR)/files/favicon.ico $(OUTPUTDIR)/favicon.ico
+	cp $(INPUTDIR)/files/favicon-*.png $(OUTPUTDIR)/
+	cp $(INPUTDIR)/files/apple-touch-icon.png $(OUTPUTDIR)/
 
 serve:
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
 
 build: clean
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF)
+	cp $(INPUTDIR)/files/favicon.ico $(OUTPUTDIR)/favicon.ico
+	cp $(INPUTDIR)/files/favicon-*.png $(OUTPUTDIR)/
+	cp $(INPUTDIR)/files/apple-touch-icon.png $(OUTPUTDIR)/
 	npx pagefind --site $(OUTPUTDIR)
 
 publish: build

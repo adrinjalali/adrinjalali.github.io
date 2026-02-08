@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% set has_right = true %}
+{% block title %}{{ page.title|striptags }}{% endblock title %}
+{% block top_center %}
+    <h1>
+        <a href="{{ SITEURL }}/{{ page.url }}"
+           rel="bookmark"
+           title="Permalink to {{ page.title|striptags|e }}">{{ page.title }}</a>
+    </h1>
+{% endblock top_center %}
+{% block content %}
+    {% import 'translations.html' as translations with context %}
+    {{ translations.translations_for(page) }}
+    <div>{{ page.content }}</div>
+{% endblock content %}
+{% block right_sidebar %}
+    <div class="card shadow-sm mb-4">
+        <div class="card-header">
+            <h5 class="mb-0"><i class="bi bi-journal-text"></i> Recent Posts</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            {% for article in articles[:5] %}
+            <li class="list-group-item">
+                <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none">
+                    {{ article.title }}
+                </a>
+                <small class="text-body-secondary d-block">{{ article.date.strftime('%B %d, %Y') }}</small>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="card shadow-sm">
+        <div class="card-header">
+            <h5 class="mb-0"><i class="bi bi-person"></i> Connect</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            {% for name, link in SOCIAL %}
+            <li class="list-group-item">
+                <a href="{{ link }}" class="text-decoration-none">
+                    <i class="bi bi-{{ name }}"></i> {{ name|capitalize }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock right_sidebar %}

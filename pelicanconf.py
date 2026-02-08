@@ -27,7 +27,6 @@ SOCIAL = (
 # Menu items (displayed before pages in navigation)
 MENUITEMS = (
     ("Blog", "/"),
-    ("Archives", "/archives.html"),
     ("Search", "/pages/search.html"),
 )
 

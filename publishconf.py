@@ -15,4 +15,4 @@ FEED_ALL_ATOM = "feeds/all.atom.xml"
 DELETE_OUTPUT_DIRECTORY = True
 
 # Include CNAME for GitHub Pages custom domain
-STATIC_PATHS = ["files", "images", "CNAME"]
+# Note: inherits STATIC_PATHS from pelicanconf.py which includes "static"

@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% block head %}
     <link rel="stylesheet" href="{{ SITEURL }}/static/css/custom.css">
+    <script src="{{ SITEURL }}/static/js/theme.js"></script>
 {% endblock head %}
 {% block content %}
+    <button id="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+        <i class="bi bi-moon-fill"></i>
+    </button>
     <div class="row justify-content-center">
         <div class="col-lg-10">
             {% for article in articles_page.object_list %}

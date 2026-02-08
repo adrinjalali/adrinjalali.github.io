@@ -36,7 +36,7 @@ LINKS = ()
 DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
-# Static files
+# Static files (includes custom CSS and JS)
 STATIC_PATHS = ["files", "images", "static"]
 
 # Favicon files - copy to root

@@ -2,6 +2,7 @@
 {% set has_right = true %}
 {% block head %}
     <link rel="stylesheet" href="{{ SITEURL }}/static/css/custom.css">
+    <script src="{{ SITEURL }}/static/js/theme.js"></script>
 {% endblock head %}
 {% block title %}{{ page.title|striptags }}{% endblock title %}
 {% block top_center %}
@@ -12,6 +13,9 @@
     </h1>
 {% endblock top_center %}
 {% block content %}
+    <button id="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+        <i class="bi bi-moon-fill"></i>
+    </button>
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
     <div class="page-content">{{ page.content }}</div>

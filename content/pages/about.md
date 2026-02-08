@@ -36,6 +36,7 @@ Diversity is a quite important aspect for me in this regard.
 
 <a href="https://github.com/adrinjalali/cv/raw/master/adrin-jalali.pdf" class="btn btn-primary btn-sm"><i class="bi bi-file-earmark-pdf me-1"></i>Download CV</a>
 <a href="https://github.com/adrinjalali/cv" class="btn btn-outline-secondary btn-sm"><i class="bi bi-github me-1"></i>CV Source</a>
+<a href="/pages/talks.html" class="btn btn-outline-secondary btn-sm"><i class="bi bi-play-circle me-1"></i>Watch my Talks</a>
 
 
 ### Area of research

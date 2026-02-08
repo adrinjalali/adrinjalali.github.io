@@ -5,6 +5,39 @@ I've given talks at various Python, data science, and machine learning conferenc
 
 ---
 
+### From scientific research to innovation – :probabl.
+**Open Science Days 2025**
+
+A talk about the journey from scientific research to innovation, featuring :probabl. (probabl.ai) - the company behind the sustainable development of scikit-learn and other open source machine learning tools. I discuss how open source scientific software can be transformed into sustainable products while maintaining the spirit of open science and community collaboration.
+
+<div class="ratio ratio-16x9 mb-4">
+<iframe src="https://www.youtube.com/embed/314WxS7lKv4" title="From scientific research to innovation – :probabl." allowfullscreen></iframe>
+</div>
+
+---
+
+### Writing a scikit-learn compatible estimator in the modern age
+**PyCon Italia 2025** · Bologna, Italy
+
+A modern take on writing custom scikit-learn estimators and transformers. This talk covers the latest best practices for creating estimators that work seamlessly with scikit-learn pipelines, including the new estimator tags system, metadata routing API, and testing infrastructure. An updated guide for anyone wanting to extend scikit-learn with their own algorithms.
+
+<div class="ratio ratio-16x9 mb-4">
+<iframe src="https://www.youtube.com/embed/2x04ikf1JYM" title="Writing a scikit-learn compatible estimator in the modern age" allowfullscreen></iframe>
+</div>
+
+---
+
+### EU AI Act: Unveiling Lesser-Known Aspects and Implementation Entities
+**EuroPython 2024** · Prague, Czech Republic
+
+The EU AI Act is now partly in effect, prohibiting certain AI systems. This talk explores the lesser-known aspects of the regulation and the various entities responsible for its implementation. I discuss what practitioners and developers need to know about compliance, the classification of AI systems by risk level, and the practical implications for those building and deploying machine learning systems in Europe.
+
+<div class="ratio ratio-16x9 mb-4">
+<iframe src="https://www.youtube.com/embed/inho6ObzZYY" title="EU AI Act: Unveiling Lesser-Known Aspects and Implementation Entities" allowfullscreen></iframe>
+</div>
+
+---
+
 ### Let's exploit pickle, and `skops` to the rescue!
 **EuroSciPy 2023** · Basel, Switzerland · [Conference page](https://pretalx.com/euroscipy-2023/talk/ARBBQF/)
 

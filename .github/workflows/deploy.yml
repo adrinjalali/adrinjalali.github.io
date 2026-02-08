@@ -37,6 +37,10 @@ jobs:
       - name: Build site
         run: |
           uv run pelican content -o output -s publishconf.py
+          # Copy favicons after Pelican (Plumage overwrites them)
+          cp content/files/favicon.ico output/favicon.ico
+          cp content/files/favicon-*.png output/
+          cp content/files/apple-touch-icon.png output/
           npx pagefind --site output
 
       - name: Upload artifact

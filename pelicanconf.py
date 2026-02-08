@@ -47,6 +47,7 @@ EXTRA_PATH_METADATA = {
     "files/apple-touch-icon.png": {"path": "apple-touch-icon.png"},
     "files/android-chrome-192x192.png": {"path": "android-chrome-192x192.png"},
     "files/favicon.png": {"path": "favicon.png"},
+    "files/CNAME": {"path": "CNAME"},
 }
 
 # Disable Plumage's auto-generated favicons
